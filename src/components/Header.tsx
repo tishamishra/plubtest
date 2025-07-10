@@ -20,6 +20,9 @@ export default function Header() {
             <Link href="/locations" className="text-gray-700 hover:text-blue-700 px-3 py-2 text-sm font-medium transition">
               Locations
             </Link>
+            <Link href="/subdomains" className="text-gray-700 hover:text-blue-700 px-3 py-2 text-sm font-medium transition">
+              Subdomains
+            </Link>
             <Link href="/services" className="text-gray-700 hover:text-blue-700 px-3 py-2 text-sm font-medium transition">
               Services
             </Link>

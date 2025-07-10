@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header from "@/components/Header";
 
 export default function Home() {
@@ -85,7 +84,7 @@ export default function Home() {
           ].map((t) => (
             <div key={t.name} className="bg-white rounded-lg shadow p-6 flex flex-col items-center">
               <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 text-xl font-bold mb-4">{t.name[0]}</div>
-              <p className="text-gray-700 italic mb-2 text-center">"{t.text}"</p>
+              <p className="text-gray-700 italic mb-2 text-center">&ldquo;{t.text}&rdquo;</p>
               <span className="text-gray-500 text-sm">- {t.name}</span>
             </div>
           ))}

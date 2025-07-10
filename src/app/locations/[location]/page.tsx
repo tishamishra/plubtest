@@ -137,7 +137,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
                       <p className="text-sm text-gray-500">{testimonial.location}</p>
                     </div>
                   </div>
-                  <p className="text-gray-700 italic">"{testimonial.text}"</p>
+                  <p className="text-gray-700 italic">&ldquo;{testimonial.text}&rdquo;</p>
                 </div>
               ))}
             </div>

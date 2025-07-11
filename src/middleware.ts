@@ -4,20 +4,30 @@ export function middleware(request: NextRequest) {
   const hostname = request.headers.get('host') || '';
   const url = request.nextUrl;
 
-  // Remove .affinsight.com from hostname
-  const subdomain = hostname.replace('.affinsight.com', '');
+  // Handle different domain patterns
+  let subdomain = '';
+  
+  if (hostname.includes('.affinsight.com')) {
+    subdomain = hostname.replace('.affinsight.com', '');
+  } else if (hostname.includes('.plumpro.com')) {
+    subdomain = hostname.replace('.plumpro.com', '');
+  } else if (hostname.includes('localhost')) {
+    // For local development, extract subdomain from localhost
+    const parts = hostname.split('.');
+    if (parts.length > 1) {
+      subdomain = parts[0];
+    }
+  }
 
   // If it's www or the root domain, let it go normally
-  if (subdomain === 'www' || subdomain === 'affinsight') {
+  if (subdomain === 'www' || subdomain === 'affinsight' || subdomain === 'plumpro' || subdomain === 'localhost') {
     return NextResponse.next();
   }
 
-  // Optionally, handle allowed cities only
-  // const allowedCities = ['ny', 'delhi', 'la', 'london'];
-  // if (!allowedCities.includes(subdomain)) {
-  //   url.pathname = '/404';
-  //   return NextResponse.rewrite(url);
-  // }
+  // If no subdomain found, continue normally
+  if (!subdomain) {
+    return NextResponse.next();
+  }
 
   // Rewrite to /locations with the subdomain as query
   url.pathname = `/locations`;

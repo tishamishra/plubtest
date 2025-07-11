@@ -1,6 +1,5 @@
 import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
-import SubdomainInfo from '@/components/SubdomainInfo';
 import locationsData from '@/data/locations.json';
 
 interface LocationPageProps {
@@ -20,11 +19,6 @@ export default async function LocationPage({ params }: LocationPageProps) {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-      
-      {/* Subdomain Info */}
-      <div className="max-w-4xl mx-auto px-4 pt-8">
-        <SubdomainInfo locationName={location.name} />
-      </div>
       
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-700 to-blue-400 text-white py-20 px-4">

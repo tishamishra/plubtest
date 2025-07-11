@@ -1,8 +1,39 @@
 import Header from '@/components/Header';
 import SubdomainInfo from '@/components/SubdomainInfo';
 
+interface Service {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+interface Testimonial {
+  name: string;
+  location: string;
+  text: string;
+}
+
+interface FAQ {
+  question: string;
+  answer: string;
+}
+
+interface Location {
+  id: string;
+  name: string;
+  state: string;
+  fullName: string;
+  heroTitle: string;
+  heroSubtitle: string;
+  phone: string;
+  services: Service[];
+  areas: string[];
+  testimonials?: Testimonial[];
+  faqs?: FAQ[];
+}
+
 interface LocationPageContentProps {
-  location: any;
+  location: Location;
 }
 
 export default function LocationPageContent({ location }: LocationPageContentProps) {
@@ -42,7 +73,7 @@ export default function LocationPageContent({ location }: LocationPageContentPro
           Our Plumbing Services in {location.name}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {location.services.map((service: any, index: number) => (
+          {location.services.map((service: Service, index: number) => (
             <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
               <div className="text-4xl mb-4">{service.icon}</div>
               <h3 className="text-xl font-semibold mb-3 text-gray-800">{service.title}</h3>
@@ -116,7 +147,7 @@ export default function LocationPageContent({ location }: LocationPageContentPro
               What Our Customers Say in {location.name}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {location.testimonials.map((testimonial: any, index: number) => (
+              {location.testimonials.map((testimonial: Testimonial, index: number) => (
                 <div key={index} className="bg-gray-50 rounded-lg p-6">
                   <div className="flex items-center mb-4">
                     <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 text-xl font-bold">
@@ -141,7 +172,7 @@ export default function LocationPageContent({ location }: LocationPageContentPro
             Frequently Asked Questions
           </h2>
           <div className="space-y-6">
-            {location.faqs.map((faq: any, index: number) => (
+            {location.faqs.map((faq: FAQ, index: number) => (
               <div key={index} className="bg-white rounded-lg shadow-md p-6">
                 <h3 className="text-lg font-semibold mb-3 text-gray-800">{faq.question}</h3>
                 <p className="text-gray-600">{faq.answer}</p>

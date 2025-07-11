@@ -24,7 +24,7 @@ export default async function SubdomainsPage() {
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Access any of our service locations directly via subdomain. 
-            Simply add the subdomain to plumpro.com to visit that location's page.
+            Simply add the subdomain to plumpro.com to visit that location&apos;s page.
           </p>
         </div>
 

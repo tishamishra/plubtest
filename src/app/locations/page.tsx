@@ -18,6 +18,12 @@ const cityData: Record<string, string> = {
   // Add more cities as needed
 };
 
+interface Service {
+  icon: string;
+  title: string;
+  description: string;
+}
+
 export default async function LocationPage({ searchParams }: { searchParams: { city?: string } }) {
   const city = searchParams.city?.toLowerCase();
   const cityName = city ? cityData[city] : null;
@@ -27,7 +33,7 @@ export default async function LocationPage({ searchParams }: { searchParams: { c
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-gray-800 mb-4">City not found</h1>
-          <p className="text-gray-600">The requested city "{city}" is not available.</p>
+          <p className="text-gray-600">The requested city &ldquo;{city}&rdquo; is not available.</p>
         </div>
       </div>
     );
@@ -81,7 +87,7 @@ export default async function LocationPage({ searchParams }: { searchParams: { c
         <div className="bg-white rounded-lg shadow-md p-6">
           <h2 className="text-2xl font-semibold mb-4">Our Services in {cityName}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {location.services.slice(0, 6).map((service: any, index: number) => (
+            {location.services.slice(0, 6).map((service: Service, index: number) => (
               <div key={index} className="border border-gray-200 rounded-lg p-4">
                 <div className="text-2xl mb-2">{service.icon}</div>
                 <h3 className="font-semibold text-gray-800">{service.title}</h3>

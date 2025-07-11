@@ -16,7 +16,7 @@ export function getLocationBySubdomain(subdomain: string) {
   );
 }
 
-export function getAllSubdomains() {
+export async function getAllSubdomains() {
   return locationsData.locations.map(loc => ({
     id: loc.id,
     name: loc.name,

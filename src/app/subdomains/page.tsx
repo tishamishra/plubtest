@@ -1,8 +1,8 @@
 import Header from '@/components/Header';
 import { getAllSubdomains } from '@/utils/subdomain';
 
-export default function SubdomainsPage() {
-  const subdomains = getAllSubdomains();
+export default async function SubdomainsPage() {
+  const subdomains = await getAllSubdomains();
   
   // Group by state
   const groupedSubdomains = subdomains.reduce((acc, location) => {
@@ -50,19 +50,27 @@ export default function SubdomainsPage() {
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {locations.map((location) => (
-                  <div key={location.id} className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <h4 className="font-medium text-gray-800">{location.name}</h4>
-                        <p className="text-sm text-gray-500">{location.state}</p>
-                      </div>
-                      <div className="text-right">
-                        <code className="bg-white px-2 py-1 rounded text-sm font-mono text-blue-600 border">
-                          {location.subdomain}
-                        </code>
+                  <a 
+                    key={location.id} 
+                    href={`https://${location.subdomain}.plumpro.com`} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    <div className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition cursor-pointer">
+                      <div className="flex items-center justify-between">
+                        <div>
+                          <h4 className="font-medium text-gray-800">{location.name}</h4>
+                          <p className="text-sm text-gray-500">{location.state}</p>
+                        </div>
+                        <div className="text-right">
+                          <code className="bg-white px-2 py-1 rounded text-sm font-mono text-blue-600 border">
+                            {location.subdomain}
+                          </code>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 ))}
               </div>
             </div>

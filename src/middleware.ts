@@ -1,36 +1,29 @@
-import { NextRequest, NextResponse } from 'next/server';
-import { getLocationBySubdomain } from './utils/subdomain';
+import { NextResponse, NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
-  const url = request.nextUrl.clone();
   const hostname = request.headers.get('host') || '';
-  const pathname = url.pathname;
+  const url = request.nextUrl;
 
-  // Extract subdomain from hostname
-  const subdomain = hostname.split('.')[0];
+  // Remove .affinsight.com from hostname
+  const subdomain = hostname.replace('.affinsight.com', '');
 
-  // Skip if it's localhost or main domain
-  if (
-    hostname.includes('localhost') ||
-    hostname.includes('vercel.app') ||
-    hostname.includes('netlify.app') ||
-    hostname === 'affinsight.com' ||
-    hostname === 'www.affinsight.com'
-  ) {
+  // If it's www or the root domain, let it go normally
+  if (subdomain === 'www' || subdomain === 'affinsight') {
     return NextResponse.next();
   }
 
-  // Check if subdomain matches a location
-  const location = getLocationBySubdomain(subdomain);
+  // Optionally, handle allowed cities only
+  // const allowedCities = ['ny', 'delhi', 'la', 'london'];
+  // if (!allowedCities.includes(subdomain)) {
+  //   url.pathname = '/404';
+  //   return NextResponse.rewrite(url);
+  // }
 
-  // If the request is to / (homepage) on a subdomain, redirect to the location page
-  if (location && pathname === '/') {
-    const locationUrl = new URL(`/locations/${location.id}`, request.url);
-    return NextResponse.redirect(locationUrl);
-  }
+  // Rewrite to /locations with the subdomain as query
+  url.pathname = `/locations`;
+  url.searchParams.set('city', subdomain);
 
-  // For all other requests, keep existing logic (optional: redirect other subdomain routes to location page or 404)
-  return NextResponse.next();
+  return NextResponse.rewrite(url);
 }
 
 export const config = {

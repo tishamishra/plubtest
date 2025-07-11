@@ -27,11 +27,14 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // Rewrite to /locations with the subdomain as query
-  url.pathname = `/locations`;
-  url.searchParams.set('city', subdomain);
+  // Only rewrite the homepage (/) to location page
+  if (url.pathname === '/') {
+    url.pathname = `/locations/${subdomain}`;
+    return NextResponse.rewrite(url);
+  }
 
-  return NextResponse.rewrite(url);
+  // For all other routes, let them go through normally
+  return NextResponse.next();
 }
 
 export const config = {

@@ -1,9 +1,9 @@
 import { MetadataRoute } from 'next';
 import { getAllSubdomains } from '../utils/subdomain';
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://plumpro.com';
-  const locations = getAllSubdomains();
+  const locations = await getAllSubdomains();
   
   const locationUrls = locations.map((location) => ({
     url: `${baseUrl}/locations/${location.id}`,

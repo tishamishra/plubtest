@@ -1,5 +1,4 @@
 import Header from '@/components/Header';
-import SubdomainInfo from '@/components/SubdomainInfo';
 
 interface Service {
   icon: string;
@@ -42,9 +41,6 @@ export default function LocationPageContent({ location }: LocationPageContentPro
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-      <div className="max-w-4xl mx-auto px-4 pt-8">
-        <SubdomainInfo locationName={location.name} />
-      </div>
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-700 to-blue-400 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">

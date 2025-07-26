@@ -5,16 +5,15 @@ export default function Home() {
     <div className="bg-gray-50 min-h-screen flex flex-col font-sans">
       <Header />
       {/* Hero Section */}
-      <section className="relative py-20 px-4 min-h-[600px] flex items-center bg-gradient-to-br from-blue-700 to-blue-400">
-        {/* Background Image with Overlay */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-80"
-          style={{
-            backgroundImage: `url('/hero-bg.png')`,
-          }}
+      <section className="relative py-20 px-4 min-h-[600px] flex items-center">
+        {/* Background Image */}
+        <img 
+          src="/hero-bg.png"
+          alt="Plumbing background"
+          className="absolute inset-0 w-full h-full object-cover"
         />
         {/* Dark Overlay for Better Text Readability */}
-        <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         
         {/* Content */}
         <div className="relative z-10 max-w-4xl mx-auto text-center text-white">

@@ -5,13 +5,26 @@ export default function Home() {
     <div className="bg-gray-50 min-h-screen flex flex-col font-sans">
       <Header />
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-700 to-blue-400 text-white py-20 px-4 flex flex-col items-center">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-center max-w-2xl">Find Trusted Plumbers in Your City</h1>
-        <p className="text-lg sm:text-xl mb-8 text-center max-w-xl">Professional, reliable, and fast plumbing services for homes and businesses. Book a plumber in minutes.</p>
-        <form className="flex flex-col sm:flex-row gap-3 w-full max-w-md">
-          <input type="text" placeholder="Enter your city" className="rounded px-4 py-3 text-gray-800 w-full focus:outline-none" />
-          <button type="submit" className="bg-white text-blue-700 font-semibold px-6 py-3 rounded shadow hover:bg-blue-100 transition">Find Plumber</button>
-        </form>
+      <section className="relative py-20 px-4 min-h-[600px] flex items-center bg-gradient-to-br from-blue-700 to-blue-400">
+        {/* Background Image with Overlay */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-80"
+          style={{
+            backgroundImage: `url('/hero-bg.png')`,
+          }}
+        />
+        {/* Dark Overlay for Better Text Readability */}
+        <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+        
+        {/* Content */}
+        <div className="relative z-10 max-w-4xl mx-auto text-center text-white">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-center max-w-2xl drop-shadow-lg">Find Trusted Plumbers in Your City</h1>
+          <p className="text-lg sm:text-xl lg:text-2xl mb-8 text-center max-w-xl drop-shadow-md">Professional, reliable, and fast plumbing services for homes and businesses. Book a plumber in minutes.</p>
+          <form className="flex flex-col sm:flex-row gap-3 w-full max-w-md mx-auto">
+            <input type="text" placeholder="Enter your city" className="rounded px-4 py-3 text-gray-800 w-full focus:outline-none shadow-lg" />
+            <button type="submit" className="bg-white text-blue-700 font-semibold px-6 py-3 rounded shadow-lg hover:bg-blue-100 transition">Find Plumber</button>
+          </form>
+        </div>
       </section>
       {/* How It Works */}
       <section className="py-16 px-4 max-w-5xl mx-auto">

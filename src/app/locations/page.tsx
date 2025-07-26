@@ -29,10 +29,21 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
         <Header />
         
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-blue-700 to-blue-400 text-white py-20 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4">Plumbing Services by Location</h1>
-            <p className="text-lg sm:text-xl mb-8">Find professional plumbers in your area. We serve multiple cities with fast, reliable service.</p>
+        <section className="relative py-20 px-4 min-h-[600px] flex items-center bg-gradient-to-br from-blue-700 to-blue-400">
+          {/* Background Image with Overlay */}
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-80"
+            style={{
+              backgroundImage: `url('/hero-bg.png')`,
+            }}
+          />
+          {/* Dark Overlay for Better Text Readability */}
+          <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+          
+          {/* Content */}
+          <div className="relative z-10 max-w-4xl mx-auto text-center text-white">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-lg">Plumbing Services by Location</h1>
+            <p className="text-lg sm:text-xl lg:text-2xl mb-8 drop-shadow-md">Find professional plumbers in your area. We serve multiple cities with fast, reliable service.</p>
           </div>
         </section>
 

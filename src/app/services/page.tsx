@@ -26,10 +26,21 @@ export default async function ServicesPage() {
         <Header />
         
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-blue-700 to-blue-400 text-white py-20 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4">Our Plumbing Services</h1>
-            <p className="text-lg sm:text-xl mb-8">Professional, reliable, and comprehensive plumbing solutions for homes and businesses.</p>
+        <section className="relative py-20 px-4 min-h-[600px] flex items-center bg-gradient-to-br from-blue-700 to-blue-400">
+          {/* Background Image with Overlay */}
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-80"
+            style={{
+              backgroundImage: `url('/hero-bg.png')`,
+            }}
+          />
+          {/* Dark Overlay for Better Text Readability */}
+          <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+          
+          {/* Content */}
+          <div className="relative z-10 max-w-4xl mx-auto text-center text-white">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-lg">Our Plumbing Services</h1>
+            <p className="text-lg sm:text-xl lg:text-2xl mb-8 drop-shadow-md">Professional, reliable, and comprehensive plumbing solutions for homes and businesses.</p>
           </div>
         </section>
 
@@ -90,10 +101,21 @@ export default async function ServicesPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-700 to-blue-400 text-white py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4">Plumbing Services in {location.name}</h1>
-          <p className="text-lg sm:text-xl mb-8">Professional, reliable, and comprehensive plumbing solutions for {location.name}, {location.state}.</p>
+      <section className="relative py-20 px-4 min-h-[600px] flex items-center bg-gradient-to-br from-blue-700 to-blue-400">
+        {/* Background Image with Overlay */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-80"
+          style={{
+            backgroundImage: `url('/hero-bg.png')`,
+          }}
+        />
+        {/* Dark Overlay for Better Text Readability */}
+        <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+        
+        {/* Content */}
+        <div className="relative z-10 max-w-4xl mx-auto text-center text-white">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-lg">Plumbing Services in {location.name}</h1>
+          <p className="text-lg sm:text-xl lg:text-2xl mb-8 drop-shadow-md">Professional, reliable, and comprehensive plumbing solutions for {location.name}, {location.state}.</p>
         </div>
       </section>
 

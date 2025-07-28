@@ -12477,66 +12477,6 @@
       ]
     },
     {
-      "id": "fresno",
-      "name": "Fresno",
-      "state": "TX",
-      "fullName": "Fresno, TX",
-      "description": "Professional plumbing services in Fresno, TX. Licensed, experienced, and affordable for repairs, installs, or maintenance!",
-      "phone": "(833) 445-0128",
-      "heroTitle": "Best Licensed & Certified Plumbers in Fresno",
-      "heroSubtitle": "Call Us at (833) 445-0128! Trusted plumbing experts in Fresno, TX. Licensed, experienced, and affordable for repairs, installs, or maintenance!",
-      "services": [
-        {
-          "title": "Water Heaters Repair and Installation",
-          "description": "Expert repair and installation of water heaters for homes and businesses in Fresno, TX, ensuring efficient performance and long-term reliability.",
-          "icon": "🔥"
-        },
-        {
-          "title": "Faucets & Sinks Repair & Replacement",
-          "description": "Installation and repair of faucets and sinks in Fresno, TX, ensuring leak-free performance and enhancing the functionality of your space.",
-          "icon": "🚰"
-        },
-        {
-          "title": "Drain Cleaning",
-          "description": "Drain cleaning services for clogged pipes in Fresno, TX, ensuring smooth water flow and preventing blockages.",
-          "icon": "🧹"
-        },
-        {
-          "title": "Toilet Repair",
-          "description": "Toilet repair and installation services in Fresno, TX, providing quick and reliable solutions for all toilet-related plumbing needs.",
-          "icon": "🚽"
-        }
-      ],
-      "areas": [
-        "Fresno"
-      ],
-      "zipCodes": [
-        "00000"
-      ],
-      "image": "/images/fresno.jpg",
-      "meta": {
-        "title": "Best Licensed & Certified Plumbers in Fresno, TX | PlumPro",
-        "description": "Trusted plumbing experts in Fresno, TX. Licensed, experienced, and affordable for repairs, installs, or maintenance! Call (833) 445-0128"
-      },
-      "faqs": [
-        {
-          "question": "How can I obtain a free quote?",
-          "answer": "You can get a free quote by calling us at (833) 445-0128 or filling out our online contact form. We'll provide you with a detailed estimate for your plumbing needs."
-        },
-        {
-          "question": "Do you offer emergency plumbing services?",
-          "answer": "Yes, we provide 24/7 emergency plumbing services in Fresno. Our team is always ready to respond to urgent plumbing issues."
-        }
-      ],
-      "testimonials": [
-        {
-          "name": "Local Customer",
-          "text": "Great service in Fresno! The team was professional and fixed our plumbing issue efficiently. Highly recommend!",
-          "location": "Fresno"
-        }
-      ]
-    },
-    {
       "id": "fullerton",
       "name": "Fullerton",
       "state": "TX",
@@ -14273,66 +14213,6 @@
           "name": "Local Customer",
           "text": "Great service in Lakewood! The team was professional and fixed our plumbing issue efficiently. Highly recommend!",
           "location": "Lakewood"
-        }
-      ]
-    },
-    {
-      "id": "lancaster",
-      "name": "Lancaster",
-      "state": "TX",
-      "fullName": "Lancaster, TX",
-      "description": "Professional plumbing services in Lancaster, TX. Licensed, experienced, and affordable for repairs, installs, or maintenance!",
-      "phone": "(833) 445-0128",
-      "heroTitle": "Best Licensed & Certified Plumbers in Lancaster",
-      "heroSubtitle": "Call Us at (833) 445-0128! Trusted plumbing experts in Lancaster, TX. Licensed, experienced, and affordable for repairs, installs, or maintenance!",
-      "services": [
-        {
-          "title": "Water Heaters Repair and Installation",
-          "description": "Expert repair and installation of water heaters for homes and businesses in Lancaster, TX, ensuring efficient performance and long-term reliability.",
-          "icon": "🔥"
-        },
-        {
-          "title": "Faucets & Sinks Repair & Replacement",
-          "description": "Installation and repair of faucets and sinks in Lancaster, TX, ensuring leak-free performance and enhancing the functionality of your space.",
-          "icon": "🚰"
-        },
-        {
-          "title": "Drain Cleaning",
-          "description": "Drain cleaning services for clogged pipes in Lancaster, TX, ensuring smooth water flow and preventing blockages.",
-          "icon": "🧹"
-        },
-        {
-          "title": "Toilet Repair",
-          "description": "Toilet repair and installation services in Lancaster, TX, providing quick and reliable solutions for all toilet-related plumbing needs.",
-          "icon": "🚽"
-        }
-      ],
-      "areas": [
-        "Lancaster"
-      ],
-      "zipCodes": [
-        "00000"
-      ],
-      "image": "/images/lancaster.jpg",
-      "meta": {
-        "title": "Best Licensed & Certified Plumbers in Lancaster, TX | PlumPro",
-        "description": "Trusted plumbing experts in Lancaster, TX. Licensed, experienced, and affordable for repairs, installs, or maintenance! Call (833) 445-0128"
-      },
-      "faqs": [
-        {
-          "question": "How can I obtain a free quote?",
-          "answer": "You can get a free quote by calling us at (833) 445-0128 or filling out our online contact form. We'll provide you with a detailed estimate for your plumbing needs."
-        },
-        {
-          "question": "Do you offer emergency plumbing services?",
-          "answer": "Yes, we provide 24/7 emergency plumbing services in Lancaster. Our team is always ready to respond to urgent plumbing issues."
-        }
-      ],
-      "testimonials": [
-        {
-          "name": "Local Customer",
-          "text": "Great service in Lancaster! The team was professional and fixed our plumbing issue efficiently. Highly recommend!",
-          "location": "Lancaster"
         }
       ]
     },
@@ -17037,66 +16917,6 @@
       ]
     },
     {
-      "id": "pasadena",
-      "name": "Pasadena",
-      "state": "TX",
-      "fullName": "Pasadena, TX",
-      "description": "Professional plumbing services in Pasadena, TX. Licensed, experienced, and affordable for repairs, installs, or maintenance!",
-      "phone": "(833) 445-0128",
-      "heroTitle": "Best Licensed & Certified Plumbers in Pasadena",
-      "heroSubtitle": "Call Us at (833) 445-0128! Trusted plumbing experts in Pasadena, TX. Licensed, experienced, and affordable for repairs, installs, or maintenance!",
-      "services": [
-        {
-          "title": "Water Heaters Repair and Installation",
-          "description": "Expert repair and installation of water heaters for homes and businesses in Pasadena, TX, ensuring efficient performance and long-term reliability.",
-          "icon": "🔥"
-        },
-        {
-          "title": "Faucets & Sinks Repair & Replacement",
-          "description": "Installation and repair of faucets and sinks in Pasadena, TX, ensuring leak-free performance and enhancing the functionality of your space.",
-          "icon": "🚰"
-        },
-        {
-          "title": "Drain Cleaning",
-          "description": "Drain cleaning services for clogged pipes in Pasadena, TX, ensuring smooth water flow and preventing blockages.",
-          "icon": "🧹"
-        },
-        {
-          "title": "Toilet Repair",
-          "description": "Toilet repair and installation services in Pasadena, TX, providing quick and reliable solutions for all toilet-related plumbing needs.",
-          "icon": "🚽"
-        }
-      ],
-      "areas": [
-        "Pasadena"
-      ],
-      "zipCodes": [
-        "00000"
-      ],
-      "image": "/images/pasadena.jpg",
-      "meta": {
-        "title": "Best Licensed & Certified Plumbers in Pasadena, TX | PlumPro",
-        "description": "Trusted plumbing experts in Pasadena, TX. Licensed, experienced, and affordable for repairs, installs, or maintenance! Call (833) 445-0128"
-      },
-      "faqs": [
-        {
-          "question": "How can I obtain a free quote?",
-          "answer": "You can get a free quote by calling us at (833) 445-0128 or filling out our online contact form. We'll provide you with a detailed estimate for your plumbing needs."
-        },
-        {
-          "question": "Do you offer emergency plumbing services?",
-          "answer": "Yes, we provide 24/7 emergency plumbing services in Pasadena. Our team is always ready to respond to urgent plumbing issues."
-        }
-      ],
-      "testimonials": [
-        {
-          "name": "Local Customer",
-          "text": "Great service in Pasadena! The team was professional and fixed our plumbing issue efficiently. Highly recommend!",
-          "location": "Pasadena"
-        }
-      ]
-    },
-    {
       "id": "petaluma",
       "name": "Petaluma",
       "state": "TX",
@@ -17993,66 +17813,6 @@
           "name": "Local Customer",
           "text": "Great service in Rialto! The team was professional and fixed our plumbing issue efficiently. Highly recommend!",
           "location": "Rialto"
-        }
-      ]
-    },
-    {
-      "id": "richmond",
-      "name": "Richmond",
-      "state": "TX",
-      "fullName": "Richmond, TX",
-      "description": "Professional plumbing services in Richmond, TX. Licensed, experienced, and affordable for repairs, installs, or maintenance!",
-      "phone": "(833) 445-0128",
-      "heroTitle": "Best Licensed & Certified Plumbers in Richmond",
-      "heroSubtitle": "Call Us at (833) 445-0128! Trusted plumbing experts in Richmond, TX. Licensed, experienced, and affordable for repairs, installs, or maintenance!",
-      "services": [
-        {
-          "title": "Water Heaters Repair and Installation",
-          "description": "Expert repair and installation of water heaters for homes and businesses in Richmond, TX, ensuring efficient performance and long-term reliability.",
-          "icon": "🔥"
-        },
-        {
-          "title": "Faucets & Sinks Repair & Replacement",
-          "description": "Installation and repair of faucets and sinks in Richmond, TX, ensuring leak-free performance and enhancing the functionality of your space.",
-          "icon": "🚰"
-        },
-        {
-          "title": "Drain Cleaning",
-          "description": "Drain cleaning services for clogged pipes in Richmond, TX, ensuring smooth water flow and preventing blockages.",
-          "icon": "🧹"
-        },
-        {
-          "title": "Toilet Repair",
-          "description": "Toilet repair and installation services in Richmond, TX, providing quick and reliable solutions for all toilet-related plumbing needs.",
-          "icon": "🚽"
-        }
-      ],
-      "areas": [
-        "Richmond"
-      ],
-      "zipCodes": [
-        "00000"
-      ],
-      "image": "/images/richmond.jpg",
-      "meta": {
-        "title": "Best Licensed & Certified Plumbers in Richmond, TX | PlumPro",
-        "description": "Trusted plumbing experts in Richmond, TX. Licensed, experienced, and affordable for repairs, installs, or maintenance! Call (833) 445-0128"
-      },
-      "faqs": [
-        {
-          "question": "How can I obtain a free quote?",
-          "answer": "You can get a free quote by calling us at (833) 445-0128 or filling out our online contact form. We'll provide you with a detailed estimate for your plumbing needs."
-        },
-        {
-          "question": "Do you offer emergency plumbing services?",
-          "answer": "Yes, we provide 24/7 emergency plumbing services in Richmond. Our team is always ready to respond to urgent plumbing issues."
-        }
-      ],
-      "testimonials": [
-        {
-          "name": "Local Customer",
-          "text": "Great service in Richmond! The team was professional and fixed our plumbing issue efficiently. Highly recommend!",
-          "location": "Richmond"
         }
       ]
     },

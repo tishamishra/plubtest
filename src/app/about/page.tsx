@@ -25,64 +25,57 @@ export default async function AboutPage() {
       <div className="min-h-screen bg-gray-50">
         <Header />
         
-        {/* Hero Section */}
-        <section className="relative py-20 px-4 min-h-[600px] flex items-center">
-          {/* Background Image */}
-          <img 
-            src="/hero-bg.png"
-            alt="Plumbing background"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-          {/* Dark Overlay for Better Text Readability */}
-          <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-          
-          {/* Content */}
-          <div className="relative z-10 max-w-4xl mx-auto text-center text-white">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-lg">About PlumPro</h1>
-            <p className="text-lg sm:text-xl lg:text-2xl mb-8 drop-shadow-md">Your trusted partner for all plumbing needs across multiple states.</p>
-          </div>
-        </section>
-
         {/* About Content */}
         <section className="py-16 px-4 max-w-4xl mx-auto">
           <div className="bg-white rounded-lg shadow-md p-8">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">Our Story</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-800">About PlumPro</h2>
             <p className="text-lg text-gray-700 mb-6">
-              PlumPro has been serving communities across multiple states with professional plumbing services for over a decade. 
-              We started with a simple mission: to provide reliable, honest, and professional plumbing services to homeowners and businesses.
+              PlumPro is a leading plumbing service provider serving multiple states with professional, reliable, and comprehensive plumbing solutions. 
+              We understand that plumbing issues can be stressful, which is why we're committed to providing fast, efficient, and trustworthy service.
             </p>
             <p className="text-lg text-gray-700 mb-6">
-              Today, we serve hundreds of cities across Texas, California, and New York, with a team of licensed and experienced plumbers 
-              who are committed to delivering exceptional service every time.
+              Our team of licensed and experienced plumbers is available 24/7 to handle all your plumbing needs, from routine maintenance to emergency repairs.
             </p>
             
-            <h3 className="text-2xl font-bold mb-4 text-gray-800 mt-8">Our Mission</h3>
-            <p className="text-lg text-gray-700 mb-6">
-              To provide fast, reliable, and professional plumbing services that exceed customer expectations while maintaining the highest 
-              standards of quality and safety.
-            </p>
-
-            <h3 className="text-2xl font-bold mb-4 text-gray-800 mt-8">Our Values</h3>
+            <h3 className="text-2xl font-bold mb-4 text-gray-800 mt-8">Why Choose PlumPro?</h3>
             <ul className="list-disc list-inside text-lg text-gray-700 space-y-2">
-              <li><strong>Reliability:</strong> We show up on time and get the job done right the first time</li>
-              <li><strong>Honesty:</strong> Transparent pricing and honest communication with every customer</li>
-              <li><strong>Quality:</strong> We use the best materials and techniques for lasting results</li>
-              <li><strong>Safety:</strong> Licensed, bonded, and insured for your protection</li>
+              <li><strong>Licensed & Insured:</strong> All our plumbers are licensed, bonded, and insured for your protection</li>
+              <li><strong>24/7 Emergency Service:</strong> Available round the clock for urgent plumbing emergencies</li>
+              <li><strong>Fast Response:</strong> Quick response times for all your plumbing needs</li>
+              <li><strong>Transparent Pricing:</strong> No hidden fees, upfront pricing before we start any work</li>
+              <li><strong>Professional Service:</strong> Clean, courteous, and professional plumbers</li>
             </ul>
-          </div>
-        </section>
 
-        {/* CTA Section */}
-        <section className="bg-blue-700 text-white py-16 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">Ready to Work With Us?</h2>
-            <p className="text-xl mb-8">Call us today for fast, reliable service.</p>
-            <a 
-              href="tel:+18334450128" 
-              className="bg-white text-blue-700 font-bold px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition inline-block"
-            >
-              Call (833) 445-0128
-            </a>
+            <h3 className="text-2xl font-bold mb-4 text-gray-800 mt-8">Our Services</h3>
+            <p className="text-lg text-gray-700 mb-4">
+              We offer comprehensive plumbing services including:
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+              <div className="flex items-center space-x-3">
+                <span className="text-2xl">🚰</span>
+                <span className="text-gray-700">Leaky Faucet Repair</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <span className="text-2xl">🛠️</span>
+                <span className="text-gray-700">Pipe Installation</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <span className="text-2xl">🧹</span>
+                <span className="text-gray-700">Drain Cleaning</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <span className="text-2xl">🔥</span>
+                <span className="text-gray-700">Water Heater Repair</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <span className="text-2xl">🚽</span>
+                <span className="text-gray-700">Toilet Fixing</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <span className="text-2xl">⚡</span>
+                <span className="text-gray-700">Emergency Plumbing</span>
+              </div>
+            </div>
           </div>
         </section>
       </div>
@@ -107,24 +100,6 @@ export default async function AboutPage() {
     <div className="min-h-screen bg-gray-50">
       <Header />
       
-      {/* Hero Section */}
-      <section className="relative py-20 px-4 min-h-[600px] flex items-center">
-        {/* Background Image */}
-        <img 
-          src="/hero-bg.png"
-          alt="Plumbing background"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        {/* Dark Overlay for Better Text Readability */}
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-        
-        {/* Content */}
-        <div className="relative z-10 max-w-4xl mx-auto text-center text-white">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-lg">About PlumPro in {location.name}</h1>
-          <p className="text-lg sm:text-xl lg:text-2xl mb-8 drop-shadow-md">Your trusted local plumbing partner in {location.name}, {location.state}.</p>
-        </div>
-      </section>
-
       {/* About Content */}
       <section className="py-16 px-4 max-w-4xl mx-auto">
         <div className="bg-white rounded-lg shadow-md p-8">

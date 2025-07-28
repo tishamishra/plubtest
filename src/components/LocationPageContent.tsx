@@ -49,8 +49,8 @@ export default function LocationPageContent({ location }: LocationPageContentPro
           alt="Plumbing background"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        {/* Dark Overlay for Better Text Readability */}
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         
         {/* Content */}
         <div className="relative z-10 max-w-4xl mx-auto text-center text-white">
@@ -80,7 +80,7 @@ export default function LocationPageContent({ location }: LocationPageContentPro
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {location.services.map((service: Service, index: number) => (
-            <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <div key={`service-${location.id}-${index}`} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
               <div className="text-4xl mb-4">{service.icon}</div>
               <h3 className="text-xl font-semibold mb-3 text-gray-800">{service.title}</h3>
               <p className="text-gray-600">
@@ -98,7 +98,7 @@ export default function LocationPageContent({ location }: LocationPageContentPro
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {location.areas.slice(0, 24).map((area: string, index: number) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-4 text-center">
+              <div key={`area-${location.id}-${index}`} className="bg-gray-50 rounded-lg p-4 text-center">
                 <span className="text-gray-800 font-medium text-sm">{area}</span>
               </div>
             ))}
@@ -154,7 +154,7 @@ export default function LocationPageContent({ location }: LocationPageContentPro
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {location.testimonials.map((testimonial: Testimonial, index: number) => (
-                <div key={index} className="bg-gray-50 rounded-lg p-6">
+                <div key={`testimonial-${location.id}-${index}`} className="bg-gray-50 rounded-lg p-6">
                   <div className="flex items-center mb-4">
                     <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 text-xl font-bold">
                       {testimonial.name[0]}
@@ -179,7 +179,7 @@ export default function LocationPageContent({ location }: LocationPageContentPro
           </h2>
           <div className="space-y-6">
             {location.faqs.map((faq: FAQ, index: number) => (
-              <div key={index} className="bg-white rounded-lg shadow-md p-6">
+              <div key={`faq-${location.id}-${index}`} className="bg-white rounded-lg shadow-md p-6">
                 <h3 className="text-lg font-semibold mb-3 text-gray-800">{faq.question}</h3>
                 <p className="text-gray-600">{faq.answer}</p>
               </div>

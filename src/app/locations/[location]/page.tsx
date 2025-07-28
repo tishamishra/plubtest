@@ -20,39 +20,6 @@ export default async function LocationPage({ params }: LocationPageProps) {
     <div className="min-h-screen bg-gray-50">
       <Header />
       
-      {/* Hero Section */}
-      <section className="relative py-20 px-4 min-h-[600px] flex items-center">
-        {/* Background Image */}
-        <img 
-          src="/hero-bg.png"
-          alt="Plumbing background"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        {/* Dark Overlay for Better Text Readability */}
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-        
-        {/* Content */}
-        <div className="relative z-10 max-w-4xl mx-auto text-center text-white">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-lg">
-            {location.heroTitle}
-          </h1>
-          <p className="text-lg sm:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto drop-shadow-md">
-            {location.heroSubtitle}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a 
-              href={`tel:${location.phone.replace(/\D/g, '')}`}
-              className="bg-white text-blue-700 font-bold px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition shadow-lg hover:shadow-xl"
-            >
-              Call {location.phone}
-            </a>
-            <button className="bg-blue-600 text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-blue-700 transition shadow-lg hover:shadow-xl">
-              Get Free Quote
-            </button>
-          </div>
-        </div>
-      </section>
-
       {/* Services Section */}
       <section className="py-16 px-4 max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
@@ -60,7 +27,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {location.services.map((service, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <div key={`service-${location.id}-${index}`} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
               <div className="text-4xl mb-4">{service.icon}</div>
               <h3 className="text-xl font-semibold mb-3 text-gray-800">{service.title}</h3>
               <p className="text-gray-600">
@@ -79,7 +46,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {location.areas.slice(0, 24).map((area, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-4 text-center">
+              <div key={`area-${location.id}-${index}`} className="bg-gray-50 rounded-lg p-4 text-center">
                 <span className="text-gray-800 font-medium text-sm">{area}</span>
               </div>
             ))}
@@ -137,7 +104,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {location.testimonials.map((testimonial, index) => (
-                <div key={index} className="bg-gray-50 rounded-lg p-6">
+                <div key={`testimonial-${location.id}-${index}`} className="bg-gray-50 rounded-lg p-6">
                   <div className="flex items-center mb-4">
                     <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 text-xl font-bold">
                       {testimonial.name[0]}
@@ -163,7 +130,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
           </h2>
           <div className="space-y-6">
             {location.faqs.map((faq, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md p-6">
+              <div key={`faq-${location.id}-${index}`} className="bg-white rounded-lg shadow-md p-6">
                 <h3 className="text-lg font-semibold mb-3 text-gray-800">{faq.question}</h3>
                 <p className="text-gray-600">{faq.answer}</p>
               </div>

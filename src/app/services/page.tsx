@@ -25,40 +25,24 @@ export default async function ServicesPage() {
       <div className="min-h-screen bg-gray-50">
         <Header />
         
-        {/* Hero Section */}
-        <section className="relative py-20 px-4 min-h-[600px] flex items-center">
-          {/* Background Image */}
-          <img 
-            src="/hero-bg.png"
-            alt="Plumbing background"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-          {/* Dark Overlay for Better Text Readability */}
-          <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-          
-          {/* Content */}
-          <div className="relative z-10 max-w-4xl mx-auto text-center text-white">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-lg">Our Plumbing Services</h1>
-            <p className="text-lg sm:text-xl lg:text-2xl mb-8 drop-shadow-md">Professional, reliable, and comprehensive plumbing solutions for homes and businesses.</p>
-          </div>
-        </section>
-
         {/* Services Grid */}
-        <section className="py-16 px-4 bg-white max-w-6xl mx-auto w-full">
-          <h2 className="text-2xl font-bold text-center mb-10 text-gray-800">All Our Services</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <section className="py-16 px-4 max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Our Plumbing Services</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { title: "Leaky Faucet Repair", icon: "🚰", description: "Expert repair of all types of faucets and fixtures." },
-              { title: "Pipe Installation", icon: "🛠️", description: "Professional pipe installation and replacement services." },
-              { title: "Drain Cleaning", icon: "🧹", description: "Thorough drain cleaning and unclogging services." },
-              { title: "Water Heater Repair", icon: "🔥", description: "Repair and installation of water heaters." },
-              { title: "Toilet Fixing", icon: "🚽", description: "Complete toilet repair and installation services." },
-              { title: "Emergency Plumbing", icon: "⚡", description: "24/7 emergency plumbing services available." },
-            ].map((service) => (
-              <div key={service.title} className="bg-gray-100 rounded-lg p-6 flex flex-col items-center shadow hover:shadow-lg transition">
+              { title: "Leaky Faucet Repair", icon: "🚰", description: "Fix dripping faucets and save water with our professional repair services." },
+              { title: "Pipe Installation", icon: "🛠️", description: "Professional pipe installation for new construction and renovations." },
+              { title: "Drain Cleaning", icon: "🧹", description: "Clear clogged drains and restore proper water flow." },
+              { title: "Water Heater Repair", icon: "🔥", description: "Expert water heater repair and maintenance services." },
+              { title: "Toilet Fixing", icon: "🚽", description: "Repair toilet issues and ensure proper functionality." },
+              { title: "Emergency Plumbing", icon: "⚡", description: "24/7 emergency plumbing services when you need them most." },
+            ].map((service, index) => (
+              <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
                 <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="font-semibold text-lg mb-2 text-gray-800">{service.title}</h3>
-                <p className="text-gray-600 text-center">{service.description}</p>
+                <h3 className="text-xl font-semibold mb-3 text-gray-800">{service.title}</h3>
+                <p className="text-gray-600">
+                  {service.description}
+                </p>
               </div>
             ))}
           </div>
@@ -99,24 +83,6 @@ export default async function ServicesPage() {
     <div className="min-h-screen bg-gray-50">
       <Header />
       
-      {/* Hero Section */}
-      <section className="relative py-20 px-4 min-h-[600px] flex items-center">
-        {/* Background Image */}
-        <img 
-          src="/hero-bg.png"
-          alt="Plumbing background"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        {/* Dark Overlay for Better Text Readability */}
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-        
-        {/* Content */}
-        <div className="relative z-10 max-w-4xl mx-auto text-center text-white">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-lg">Plumbing Services in {location.name}</h1>
-          <p className="text-lg sm:text-xl lg:text-2xl mb-8 drop-shadow-md">Professional, reliable, and comprehensive plumbing solutions for {location.name}, {location.state}.</p>
-        </div>
-      </section>
-
       {/* Services Grid */}
       <section className="py-16 px-4 max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">

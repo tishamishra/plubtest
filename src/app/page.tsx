@@ -40,13 +40,13 @@ export default function Home() {
               <h2 className="text-3xl font-bold text-gray-900 mb-8">Trusted Residential & Commercial Plumbing Services Throughout California</h2>
               <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                 <p>
-                  At GD Professional Plumbing, we've been helping Californians keep their pipes in check with real, no-nonsense plumbing services. Whether it's a busted water heater, a stubborn drain, or a full remodel, our team shows up ready to fix it—without the upsell or drama.
+                  At GD Professional Plumbing, we&apos;ve been helping Californians keep their pipes in check with real, no-nonsense plumbing services. Whether it&apos;s a busted water heater, a stubborn drain, or a full remodel, our team shows up ready to fix it—without the upsell or drama.
                 </p>
                 <p>
-                  We're a small crew of licensed and insured professionals who take pride in our work. If we say we'll be there at 9, we show up at 8:55. No shortcuts. No guessing games. Just solid plumbing done right the first time.
+                  We&apos;re a small crew of licensed and insured professionals who take pride in our work. If we say we&apos;ll be there at 9, we show up at 8:55. No shortcuts. No guessing games. Just solid plumbing done right the first time.
                 </p>
                 <p>
-                  Need something fixed or upgraded? Give GD Professional Plumbing a ring. We'll take care of it like pros—because that's exactly what we are.
+                  Need something fixed or upgraded? Give GD Professional Plumbing a ring. We&apos;ll take care of it like pros—because that&apos;s exactly what we are.
                 </p>
               </div>
               <div className="mt-8 space-y-4">
@@ -143,127 +143,151 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Emergency Plumbing */}
-              <div className="group relative h-80 w-full cursor-pointer">
-                <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-500 group-hover:scale-105 overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
-                    alt="Emergency Plumbing"
-                    className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
-                  />
-                  <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
-                  <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Emergency Plumbing</div>
-                </div>
-                <div className="absolute inset-0 h-full w-full rounded-2xl bg-gradient-to-br from-red-600 to-red-700 opacity-0 transition-all duration-500 group-hover:opacity-100">
-                  <div className="flex min-h-full flex-col gap-2 p-6">
-                    <h1 className="text-xl font-bold text-white">Emergency Plumbing</h1>
-                    <p className="mt-1 border-t border-t-gray-200 py-4 text-base font-medium leading-normal text-gray-100">
-                      24/7 emergency plumbing services for urgent repairs and burst pipes. Fast response guaranteed with our experienced team.
-                    </p>
+              <div className="group relative h-80 w-full cursor-pointer perspective-1000">
+                <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+                  {/* Front */}
+                  <div className="absolute inset-0 h-full w-full rounded-2xl backface-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+                      alt="Emergency Plumbing"
+                      className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
+                    />
+                    <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
+                    <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Emergency Plumbing</div>
+                  </div>
+                  {/* Back */}
+                  <div className="absolute inset-0 h-full w-full rounded-2xl bg-gradient-to-br from-red-600 to-red-700 backface-hidden rotate-y-180">
+                    <div className="flex min-h-full flex-col gap-2 p-6">
+                      <h1 className="text-xl font-bold text-white">Emergency Plumbing</h1>
+                      <p className="mt-1 border-t border-t-gray-200 py-4 text-base font-medium leading-normal text-gray-100">
+                        24/7 emergency plumbing services for urgent repairs and burst pipes. Fast response guaranteed with our experienced team.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Water Heater Services */}
-              <div className="group relative h-80 w-full cursor-pointer">
-                <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-500 group-hover:scale-105 overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
-                    alt="Water Heater Services"
-                    className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
-                  />
-                  <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
-                  <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Water Heater Services</div>
-                </div>
-                <div className="absolute inset-0 h-full w-full rounded-2xl bg-gradient-to-br from-orange-600 to-orange-700 opacity-0 transition-all duration-500 group-hover:opacity-100">
-                  <div className="flex min-h-full flex-col gap-2 p-6">
-                    <h1 className="text-xl font-bold text-white">Water Heater Services</h1>
-                    <p className="mt-1 border-t border-t-gray-200 py-4 text-base font-medium leading-normal text-gray-100">
-                      Installation, repair, and maintenance of all types of water heaters for optimal performance and energy efficiency.
-                    </p>
+              <div className="group relative h-80 w-full cursor-pointer perspective-1000">
+                <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+                  {/* Front */}
+                  <div className="absolute inset-0 h-full w-full rounded-2xl backface-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+                      alt="Water Heater Services"
+                      className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
+                    />
+                    <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
+                    <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Water Heater Services</div>
+                  </div>
+                  {/* Back */}
+                  <div className="absolute inset-0 h-full w-full rounded-2xl bg-gradient-to-br from-orange-600 to-orange-700 backface-hidden rotate-y-180">
+                    <div className="flex min-h-full flex-col gap-2 p-6">
+                      <h1 className="text-xl font-bold text-white">Water Heater Services</h1>
+                      <p className="mt-1 border-t border-t-gray-200 py-4 text-base font-medium leading-normal text-gray-100">
+                        Installation, repair, and maintenance of all types of water heaters for optimal performance and energy efficiency.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Drain Cleaning */}
-              <div className="group relative h-80 w-full cursor-pointer">
-                <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-500 group-hover:scale-105 overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
-                    alt="Drain Cleaning"
-                    className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
-                  />
-                  <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
-                  <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Drain Cleaning</div>
-                </div>
-                <div className="absolute inset-0 h-full w-full rounded-2xl bg-gradient-to-br from-green-600 to-green-700 opacity-0 transition-all duration-500 group-hover:opacity-100">
-                  <div className="flex min-h-full flex-col gap-2 p-6">
-                    <h1 className="text-xl font-bold text-white">Drain Cleaning</h1>
-                    <p className="mt-1 border-t border-t-gray-200 py-4 text-base font-medium leading-normal text-gray-100">
-                      Professional drain cleaning and unclogging services using advanced equipment and techniques for lasting results.
-                    </p>
+              <div className="group relative h-80 w-full cursor-pointer perspective-1000">
+                <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+                  {/* Front */}
+                  <div className="absolute inset-0 h-full w-full rounded-2xl backface-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+                      alt="Drain Cleaning"
+                      className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
+                    />
+                    <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
+                    <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Drain Cleaning</div>
+                  </div>
+                  {/* Back */}
+                  <div className="absolute inset-0 h-full w-full rounded-2xl bg-gradient-to-br from-green-600 to-green-700 backface-hidden rotate-y-180">
+                    <div className="flex min-h-full flex-col gap-2 p-6">
+                      <h1 className="text-xl font-bold text-white">Drain Cleaning</h1>
+                      <p className="mt-1 border-t border-t-gray-200 py-4 text-base font-medium leading-normal text-gray-100">
+                        Professional drain cleaning and unclogging services using advanced equipment and techniques for lasting results.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Pipe Installation */}
-              <div className="group relative h-80 w-full cursor-pointer">
-                <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-500 group-hover:scale-105 overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
-                    alt="Pipe Installation"
-                    className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
-                  />
-                  <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
-                  <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Pipe Installation</div>
-                </div>
-                <div className="absolute inset-0 h-full w-full rounded-2xl bg-gradient-to-br from-purple-600 to-purple-700 opacity-0 transition-all duration-500 group-hover:opacity-100">
-                  <div className="flex min-h-full flex-col gap-2 p-6">
-                    <h1 className="text-xl font-bold text-white">Pipe Installation</h1>
-                    <p className="mt-1 border-t border-t-gray-200 py-4 text-base font-medium leading-normal text-gray-100">
-                      Complete pipe installation and replacement services for residential and commercial properties with quality materials.
-                    </p>
+              <div className="group relative h-80 w-full cursor-pointer perspective-1000">
+                <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+                  {/* Front */}
+                  <div className="absolute inset-0 h-full w-full rounded-2xl backface-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+                      alt="Pipe Installation"
+                      className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
+                    />
+                    <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
+                    <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Pipe Installation</div>
+                  </div>
+                  {/* Back */}
+                  <div className="absolute inset-0 h-full w-full rounded-2xl bg-gradient-to-br from-purple-600 to-purple-700 backface-hidden rotate-y-180">
+                    <div className="flex min-h-full flex-col gap-2 p-6">
+                      <h1 className="text-xl font-bold text-white">Pipe Installation</h1>
+                      <p className="mt-1 border-t border-t-gray-200 py-4 text-base font-medium leading-normal text-gray-100">
+                        Complete pipe installation and replacement services for residential and commercial properties with quality materials.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Fixture Installation */}
-              <div className="group relative h-80 w-full cursor-pointer">
-                <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-500 group-hover:scale-105 overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
-                    alt="Fixture Installation"
-                    className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
-                  />
-                  <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
-                  <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Fixture Installation</div>
-                </div>
-                <div className="absolute inset-0 h-full w-full rounded-2xl bg-gradient-to-br from-teal-600 to-teal-700 opacity-0 transition-all duration-500 group-hover:opacity-100">
-                  <div className="flex min-h-full flex-col gap-2 p-6">
-                    <h1 className="text-xl font-bold text-white">Fixture Installation</h1>
-                    <p className="mt-1 border-t border-t-gray-200 py-4 text-base font-medium leading-normal text-gray-100">
-                      Professional installation of sinks, faucets, toilets, and other plumbing fixtures with precision and care.
-                    </p>
+              <div className="group relative h-80 w-full cursor-pointer perspective-1000">
+                <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+                  {/* Front */}
+                  <div className="absolute inset-0 h-full w-full rounded-2xl backface-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+                      alt="Fixture Installation"
+                      className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
+                    />
+                    <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
+                    <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Fixture Installation</div>
+                  </div>
+                  {/* Back */}
+                  <div className="absolute inset-0 h-full w-full rounded-2xl bg-gradient-to-br from-teal-600 to-teal-700 backface-hidden rotate-y-180">
+                    <div className="flex min-h-full flex-col gap-2 p-6">
+                      <h1 className="text-xl font-bold text-white">Fixture Installation</h1>
+                      <p className="mt-1 border-t border-t-gray-200 py-4 text-base font-medium leading-normal text-gray-100">
+                        Professional installation of sinks, faucets, toilets, and other plumbing fixtures with precision and care.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Commercial Plumbing */}
-              <div className="group relative h-80 w-full cursor-pointer">
-                <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-500 group-hover:scale-105 overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
-                    alt="Commercial Plumbing"
-                    className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
-                  />
-                  <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
-                  <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Commercial Plumbing</div>
-                </div>
-                <div className="absolute inset-0 h-full w-full rounded-2xl bg-gradient-to-br from-indigo-600 to-indigo-700 opacity-0 transition-all duration-500 group-hover:opacity-100">
-                  <div className="flex min-h-full flex-col gap-2 p-6">
-                    <h1 className="text-xl font-bold text-white">Commercial Plumbing</h1>
-                    <p className="mt-1 border-t border-t-gray-200 py-4 text-base font-medium leading-normal text-gray-100">
-                      Specialized plumbing services for commercial buildings, offices, and industrial facilities with minimal disruption.
-                    </p>
+              <div className="group relative h-80 w-full cursor-pointer perspective-1000">
+                <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+                  {/* Front */}
+                  <div className="absolute inset-0 h-full w-full rounded-2xl backface-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+                      alt="Commercial Plumbing"
+                      className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
+                    />
+                    <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
+                    <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Commercial Plumbing</div>
+                  </div>
+                  {/* Back */}
+                  <div className="absolute inset-0 h-full w-full rounded-2xl bg-gradient-to-br from-indigo-600 to-indigo-700 backface-hidden rotate-y-180">
+                    <div className="flex min-h-full flex-col gap-2 p-6">
+                      <h1 className="text-xl font-bold text-white">Commercial Plumbing</h1>
+                      <p className="mt-1 border-t border-t-gray-200 py-4 text-base font-medium leading-normal text-gray-100">
+                        Specialized plumbing services for commercial buildings, offices, and industrial facilities with minimal disruption.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -343,7 +367,7 @@ export default function Home() {
                   </svg>
                 </div>
                                  <h3 className="text-black font-semibold text-lg mb-3 text-center">Customer Satisfaction Guaranteed</h3>
-                <p className="text-gray-600 text-center">We're committed to top-notch service and complete customer satisfaction.</p>
+                <p className="text-gray-600 text-center">We&apos;re committed to top-notch service and complete customer satisfaction.</p>
               </div>
             </div>
           </div>

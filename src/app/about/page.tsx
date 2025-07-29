@@ -31,7 +31,7 @@ export default async function AboutPage() {
             <h2 className="text-3xl font-bold mb-6 text-gray-800">About PlumPro</h2>
             <p className="text-lg text-gray-700 mb-6">
               PlumPro is a leading plumbing service provider serving multiple states with professional, reliable, and comprehensive plumbing solutions. 
-              We understand that plumbing issues can be stressful, which is why we're committed to providing fast, efficient, and trustworthy service.
+              We understand that plumbing issues can be stressful, which is why we&apos;re committed to providing fast, efficient, and trustworthy service.
             </p>
             <p className="text-lg text-gray-700 mb-6">
               Our team of licensed and experienced plumbers is available 24/7 to handle all your plumbing needs, from routine maintenance to emergency repairs.

@@ -24,7 +24,24 @@ export default async function ContactPage() {
     return (
       <div className="min-h-screen bg-gray-50">
         <Header />
-        
+        {/* Hero Section */}
+        <section className="relative h-[60vh] overflow-visible">
+          <img 
+            src="/hero-bg.jpg" 
+            alt="Plumbing background"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="relative z-10 h-full flex items-center justify-center">
+            <div className="text-center text-white px-6 max-w-4xl mx-auto">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
+                Contact Us
+              </h1>
+              <p className="text-lg md:text-xl lg:text-2xl opacity-95 max-w-3xl mx-auto leading-relaxed">
+                Get in touch with our team for fast, friendly plumbing help.
+              </p>
+            </div>
+          </div>
+        </section>
         {/* Contact Content */}
         <section className="py-16 px-4 max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

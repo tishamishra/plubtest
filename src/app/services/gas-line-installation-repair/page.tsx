@@ -2,31 +2,33 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Header from "@/components/Header";
 
 export default function GasLineInstallationRepairPage() {
   const [activeTab, setActiveTab] = useState("overview");
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="bg-white min-h-screen flex flex-col font-sans">
+      <Header />
+      
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-[#1c7bc8] to-[#0f4a75] text-white py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center">
-            <h1 className="text-5xl font-bold mb-6">Gas Line Installation & Repair Services</h1>
-            <p className="text-xl mb-8 opacity-90">
+      <section className="relative h-[60vh] overflow-visible">
+        {/* Background Image */}
+        <img 
+          src="/hero-bg.jpg" 
+          alt="Plumbing background"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        
+        {/* Content */}
+        <div className="relative z-10 h-full flex items-center justify-center">
+          <div className="text-center text-white px-6 max-w-4xl mx-auto">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
+              Gas Line Installation & Repair Services
+            </h1>
+            <p className="text-lg md:text-xl lg:text-2xl opacity-95 max-w-3xl mx-auto leading-relaxed">
               Safe and code-compliant gas line installations, repairs, and replacements across the US
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="tel:+18334450128"
-                className="bg-white text-[#1c7bc8] font-bold px-8 py-4 rounded-xl text-lg hover:bg-gray-50 transition shadow-lg"
-              >
-                Call (833) 445-0128
-              </a>
-              <button className="border-2 border-white text-white font-bold px-8 py-4 rounded-xl text-lg hover:bg-white hover:text-[#1c7bc8] transition">
-                Get Free Estimate
-              </button>
-            </div>
           </div>
         </div>
       </section>

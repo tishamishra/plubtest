@@ -24,7 +24,24 @@ export default async function AboutPage() {
     return (
       <div className="min-h-screen bg-gray-50">
         <Header />
-        
+        {/* Hero Section */}
+        <section className="relative h-[60vh] overflow-visible">
+          <img 
+            src="/hero-bg.jpg" 
+            alt="Plumbing background"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="relative z-10 h-full flex items-center justify-center">
+            <div className="text-center text-white px-6 max-w-4xl mx-auto">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
+                About GD Professional Plumbing
+              </h1>
+              <p className="text-lg md:text-xl lg:text-2xl opacity-95 max-w-3xl mx-auto leading-relaxed">
+                Learn more about our team, our values, and why customers trust us.
+              </p>
+            </div>
+          </div>
+        </section>
         {/* About Content */}
         <section className="py-16 px-4 max-w-4xl mx-auto">
           <div className="bg-white rounded-lg shadow-md p-8">

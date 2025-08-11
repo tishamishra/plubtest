@@ -196,24 +196,35 @@ export default async function ContactPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-blue-700 text-white py-16 px-4">
+            {/* Big CTA Banner */}
+      <section className="bg-[#1c7bc8] text-white py-16 px-4 mt-auto">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
-          <p className="text-xl mb-8">Call us now for fast, reliable plumbing services in {location.name}.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
+          <h2 className="text-4xl font-bold mb-8 animate-bounce">Need a Plumber Today? Get a Free Quote Now</h2>
+          <div className="mb-8">
+            <a
               href={`tel:${location.phone.replace(/\D/g, '')}`}
-              className="bg-white text-blue-700 font-bold px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition"
+              className="bg-white text-[#1c7bc8] font-bold px-12 py-6 rounded-xl text-3xl hover:bg-gray-50 transition shadow-lg inline-block animate-pulse"
             >
-              Call {location.phone}
+              {location.phone}
             </a>
-            <button className="bg-blue-600 text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-blue-800 transition">
-              Get Free Quote
-            </button>
           </div>
         </div>
       </section>
-    </div>
+
+        {/* Big CTA Banner */}
+        <section className="bg-[#1c7bc8] text-white py-16 px-4 mt-auto">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl font-bold mb-8 animate-bounce">Need a Plumber Today? Get a Free Quote Now</h2>
+            <div className="mb-8">
+              <a
+                href="tel:+18334450128"
+                className="bg-white text-[#1c7bc8] font-bold px-12 py-6 rounded-xl text-3xl hover:bg-gray-50 transition shadow-lg inline-block animate-pulse"
+              >
+                +1 (833) 445-0128
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
   );
 } 

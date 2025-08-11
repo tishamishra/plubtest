@@ -5,24 +5,44 @@ import locationsData from '@/data/locations.json';
 
 export const dynamic = 'force-dynamic';
 
+type BasicLocation = { id: string; name: string; state: string };
+
 export default async function Page({ searchParams }: { searchParams: Promise<Record<string, string>> }) {
   const params = await searchParams;
   const city = params?.city?.toLowerCase();
   
   // If no city parameter, show locations listing
   if (!city) {
-    const { locations } = locationsData;
+    const typedLocations = (locationsData as any).locations as BasicLocation[];
     
     // Group locations by state
-    const locationsByState = locations.reduce((acc, location) => {
-      if (!acc[location.state]) {
-        acc[location.state] = [];
-      }
-      acc[location.state].push(location);
-      return acc;
-    }, {} as Record<string, typeof locations>);
+    const locationsByState = typedLocations.reduce(
+      (acc: Record<string, BasicLocation[]>, location: BasicLocation) => {
+        if (!acc[location.state]) {
+          acc[location.state] = [];
+        }
+        acc[location.state].push(location);
+        return acc;
+      },
+      {} as Record<string, BasicLocation[]>
+    );
 
-    const states = Object.keys(locationsByState).sort();
+    // Deduplicate by id within each state and sort by name for stable render
+    const dedupedLocationsByState: Record<string, BasicLocation[]> = Object.fromEntries(
+      Object.entries(locationsByState).map(([state, list]) => {
+        const seenIds = new Set<string>();
+        const unique = (list as BasicLocation[])
+          .filter((loc: BasicLocation) => {
+            if (seenIds.has(loc.id)) return false;
+            seenIds.add(loc.id);
+            return true;
+          })
+          .sort((a: BasicLocation, b: BasicLocation) => a.name.localeCompare(b.name));
+        return [state, unique];
+      })
+    ) as Record<string, BasicLocation[]>;
+
+    const states = Object.keys(dedupedLocationsByState).sort();
 
     return (
       <div className="min-h-screen bg-gray-50">
@@ -57,9 +77,9 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
               <div key={state} className="bg-white rounded-lg shadow-md p-6">
                 <h3 className="text-2xl font-bold mb-4 text-gray-800">{state}</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                  {locationsByState[state].map((location) => (
+                  {dedupedLocationsByState[state].map((location: BasicLocation) => (
                     <a
-                      key={location.id}
+                      key={`${location.id}-${location.state}`}
                       href={`/locations/${location.id}`}
                       className="block p-4 bg-gray-50 rounded-lg hover:bg-blue-50 transition text-center"
                     >
@@ -78,7 +98,7 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Our Coverage</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-700">{locations.length}</div>
+              <div className="text-3xl font-bold text-blue-700">{typedLocations.length}</div>
               <div className="text-gray-600">Cities Served</div>
             </div>
             <div className="text-center">

@@ -3,11 +3,11 @@
 import { useState, useEffect } from 'react';
 
 interface LocationTestimonialsProps {
-  cityName: string;
-  stateName: string;
+  cityName?: string;
+  stateName?: string;
 }
 
-export default function LocationTestimonials({ cityName, stateName }: LocationTestimonialsProps) {
+export default function LocationTestimonials({ }: LocationTestimonialsProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   // Auto-slide testimonials

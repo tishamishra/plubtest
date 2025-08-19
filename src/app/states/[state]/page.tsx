@@ -8,11 +8,11 @@ interface StatePageProps {
 
 export default async function StatePage({ params }: StatePageProps) {
   const { state } = await params;
-  const typedLocationsData = locationsData as any;
+  const typedLocationsData = locationsData as { locations: Array<{ id: string; name: string; state: string }> };
   
   // Get all locations for this state
   const stateLocations = typedLocationsData.locations.filter(
-    (loc: any) => loc.state.toLowerCase() === state.toLowerCase()
+    (loc) => loc.state.toLowerCase() === state.toLowerCase()
   );
 
   if (stateLocations.length === 0) {
@@ -66,7 +66,7 @@ export default async function StatePage({ params }: StatePageProps) {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-            {stateLocations.map((location: any) => (
+            {stateLocations.map((location) => (
               <Link
                 key={location.id}
                 href={`/locations/${location.id}`}

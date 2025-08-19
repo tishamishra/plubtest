@@ -732,6 +732,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
   const { location, service } = await params;
   
   // Get location data from local import
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const locationData = (locationsData as any).locations.find((loc: any) => loc.id === location);
   if (!locationData) {
     notFound();

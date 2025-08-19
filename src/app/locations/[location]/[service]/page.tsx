@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Header from '@/components/Header';
+import FloatingCTA from '@/components/FloatingCTA';
 
 interface ServicePageProps {
   params: Promise<{

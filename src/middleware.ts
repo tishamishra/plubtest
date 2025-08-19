@@ -7,8 +7,8 @@ export function middleware(request: NextRequest) {
   // Handle different domain patterns
   let subdomain = '';
   
-  if (hostname.includes('.gdprofessionalplumbing.com')) {
-    subdomain = hostname.replace('.gdprofessionalplumbing.com', '');
+  if (hostname.includes('.affinsight.com')) {
+    subdomain = hostname.replace('.affinsight.com', '');
   } else if (hostname.includes('localhost')) {
     // For local development, extract subdomain from localhost
     const parts = hostname.split('.');
@@ -18,7 +18,7 @@ export function middleware(request: NextRequest) {
   }
 
   // If it's www or the root domain, let it go normally
-  if (subdomain === 'www' || subdomain === 'gdprofessionalplumbing' || subdomain === 'localhost') {
+  if (subdomain === 'www' || subdomain === 'affinsight' || subdomain === 'localhost') {
     return NextResponse.next();
   }
 

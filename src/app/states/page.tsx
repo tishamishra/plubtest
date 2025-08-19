@@ -2,10 +2,10 @@ import Link from 'next/link';
 import locationsData from '@/data/locations.json';
 
 export default function StatesPage() {
-  const typedLocationsData = locationsData as { locations: Array<{ id: string; name: string; state: string }> };
+  const typedLocationsData = locationsData as any;
   
   // Group locations by state
-  const stateGroups = typedLocationsData.locations.reduce((acc: Record<string, Array<{ id: string; name: string; state: string }>>, location) => {
+  const stateGroups = typedLocationsData.locations.reduce((acc: any, location: any) => {
     const state = location.state;
     if (!acc[state]) {
       acc[state] = [];
@@ -16,7 +16,7 @@ export default function StatesPage() {
 
   // Convert to array and sort by number of cities
   const statesArray = Object.entries(stateGroups)
-    .map(([state, locations]) => ({
+    .map(([state, locations]: [string, any]) => ({
       state,
       cityCount: locations.length,
       fullName: getStateFullName(state)

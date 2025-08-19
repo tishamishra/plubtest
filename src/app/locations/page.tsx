@@ -13,7 +13,7 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
   
   // If no city parameter, show locations listing
   if (!city) {
-    const typedLocations = (locationsData as any).locations as BasicLocation[];
+    const typedLocations = (locationsData as { locations: BasicLocation[] }).locations;
     
     // Group locations by state
     const locationsByState = typedLocations.reduce(

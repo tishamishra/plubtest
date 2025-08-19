@@ -3,8 +3,8 @@
 import { useState, useEffect } from 'react';
 
 interface LocationTestimonialsProps {
-  cityName: string;
-  stateName: string;
+  cityName?: string;
+  stateName?: string;
 }
 
 export default function LocationTestimonials({ cityName, stateName }: LocationTestimonialsProps) {

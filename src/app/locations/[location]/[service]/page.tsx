@@ -11,8 +11,8 @@ interface Location {
   areas: string[];
   zipCodes: string[];
   services: string[];
-  testimonials: any[];
-  faqs: any[];
+  testimonials: unknown[];
+  faqs: unknown[];
 }
 
 interface LocationsData {

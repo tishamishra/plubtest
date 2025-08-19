@@ -78,7 +78,7 @@ export default function ServiceAreas({ currentLocation }: ServiceAreasProps) {
                         {displayedCities.map((location) => (
                           <div key={location.id} className="flex flex-col">
                             <Link 
-                              href={`/locations/${location.id}`}
+                              href={`https://${location.id.toLowerCase()}.gdprofessionalplumbing.com`}
                               className={`${buttonColor} rounded-md px-2 py-1.5 text-center hover:opacity-80 transition-all duration-300 cursor-pointer border border-transparent hover:shadow-sm`}
                             >
                               <span className="text-white font-medium text-sm leading-tight block">

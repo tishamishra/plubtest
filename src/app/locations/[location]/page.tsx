@@ -178,7 +178,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Water Heater Repair and Installation */}
-            <Link href={`/locations/${safeLocation.id}/water-heater-repair`} className="block">
+            <Link href={`https://${safeLocation.id.toLowerCase()}.gdprofessionalplumbing.com/water-heater-repair`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
@@ -195,7 +195,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Tankless Water Heater Installation */}
-            <Link href={`/locations/${safeLocation.id}/tankless-water-heater`} className="block">
+            <Link href={`https://${safeLocation.id.toLowerCase()}.gdprofessionalplumbing.com/tankless-water-heater`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
@@ -212,7 +212,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Water Recirculation Pump */}
-            <Link href={`/locations/${safeLocation.id}/water-recirculation-pump`} className="block">
+            <Link href={`https://${safeLocation.id.toLowerCase()}.gdprofessionalplumbing.com/water-recirculation-pump`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
@@ -229,7 +229,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Faucets & Sinks */}
-            <Link href={`/locations/${safeLocation.id}/faucet-sink-repair`} className="block">
+            <Link href={`https://${safeLocation.id.toLowerCase()}.gdprofessionalplumbing.com/faucet-sink-repair`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
@@ -246,7 +246,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Water Conservation Plumbing */}
-            <Link href={`/locations/${safeLocation.id}/water-conservation-plumbing`} className="block">
+            <Link href={`https://${safeLocation.id.toLowerCase()}.gdprofessionalplumbing.com/water-conservation-plumbing`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
@@ -263,7 +263,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Custom Bathroom Renovation */}
-            <Link href={`/locations/${safeLocation.id}/custom-bathroom-renovation`} className="block">
+            <Link href={`https://${safeLocation.id.toLowerCase()}.gdprofessionalplumbing.com/custom-bathroom-renovation`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
@@ -280,7 +280,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Water System Installation & Repair */}
-            <Link href={`/locations/${safeLocation.id}/water-system-installation`} className="block">
+            <Link href={`https://${safeLocation.id.toLowerCase()}.gdprofessionalplumbing.com/water-system-installation`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
@@ -297,7 +297,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Slab Leak Detection & Repair */}
-            <Link href={`/locations/${safeLocation.id}/slab-leak-detection`} className="block">
+            <Link href={`https://${safeLocation.id.toLowerCase()}.gdprofessionalplumbing.com/slab-leak-detection`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
@@ -314,7 +314,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Sump Pump Installation & Repair */}
-            <Link href={`/locations/${safeLocation.id}/sump-pump-installation`} className="block">
+            <Link href={`https://${safeLocation.id.toLowerCase()}.gdprofessionalplumbing.com/sump-pump-installation`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
@@ -331,7 +331,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Professional Drain Cleaning */}
-            <Link href={`/locations/${safeLocation.id}/drain-cleaning`} className="block">
+            <Link href={`https://${safeLocation.id.toLowerCase()}.gdprofessionalplumbing.com/drain-cleaning`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
@@ -348,7 +348,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Expert Drain Repair */}
-            <Link href={`/locations/${safeLocation.id}/expert-drain-repair`} className="block">
+            <Link href={`https://${safeLocation.id.toLowerCase()}.gdprofessionalplumbing.com/expert-drain-repair`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
@@ -365,7 +365,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Sewer Line Inspection & Replacement */}
-            <Link href={`/locations/${safeLocation.id}/sewer-line-inspection`} className="block">
+            <Link href={`https://${safeLocation.id.toLowerCase()}.gdprofessionalplumbing.com/sewer-line-inspection`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
@@ -382,7 +382,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Gas Line Installation & Repair */}
-            <Link href={`/locations/${safeLocation.id}/gas-line-installation`} className="block">
+            <Link href={`https://${safeLocation.id.toLowerCase()}.gdprofessionalplumbing.com/gas-line-installation`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
@@ -399,7 +399,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Leak Detection & Repair */}
-            <Link href={`/locations/${safeLocation.id}/leak-detection-repair`} className="block">
+            <Link href={`https://${safeLocation.id.toLowerCase()}.gdprofessionalplumbing.com/leak-detection-repair`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
@@ -416,7 +416,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Toilet Repair & Installation */}
-            <Link href={`/locations/${safeLocation.id}/toilet-repair-installation`} className="block">
+            <Link href={`https://${safeLocation.id.toLowerCase()}.gdprofessionalplumbing.com/toilet-repair-installation`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"

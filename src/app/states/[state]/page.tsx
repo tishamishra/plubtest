@@ -69,7 +69,7 @@ export default async function StatePage({ params }: StatePageProps) {
             {stateLocations.map((location) => (
               <Link
                 key={location.id}
-                href={`/locations/${location.id}`}
+                                      href={`https://${location.id.toLowerCase()}.gdprofessionalplumbing.com`}
                 className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-4 text-center group"
               >
                 <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">

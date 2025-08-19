@@ -7,7 +7,10 @@ export function middleware(request: NextRequest) {
   // Handle different domain patterns
   let subdomain = '';
   
-  if (hostname.includes('.affinsight.com')) {
+  // Handle gdprofessionalplumbing.com domain
+  if (hostname.includes('.gdprofessionalplumbing.com')) {
+    subdomain = hostname.replace('.gdprofessionalplumbing.com', '');
+  } else if (hostname.includes('.affinsight.com')) {
     subdomain = hostname.replace('.affinsight.com', '');
   } else if (hostname.includes('localhost')) {
     // For local development, extract subdomain from localhost
@@ -18,7 +21,7 @@ export function middleware(request: NextRequest) {
   }
 
   // If it's www or the root domain, let it go normally
-  if (subdomain === 'www' || subdomain === 'affinsight' || subdomain === 'localhost') {
+  if (subdomain === 'www' || subdomain === 'gdprofessionalplumbing' || subdomain === 'affinsight' || subdomain === 'localhost') {
     return NextResponse.next();
   }
 
@@ -27,9 +30,34 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // Only rewrite the homepage (/) to location page
+  // Handle homepage (/) - rewrite to location page
   if (url.pathname === '/') {
     url.pathname = `/locations/${subdomain}`;
+    return NextResponse.rewrite(url);
+  }
+
+  // Handle service pages (e.g., /water-heater-repair) - rewrite to location service page
+  const serviceSlugs = [
+    'water-heater-repair',
+    'tankless-water-heater',
+    'water-recirculation-pump',
+    'faucet-sink-repair',
+    'water-conservation-plumbing',
+    'custom-bathroom-renovation',
+    'water-system-installation',
+    'slab-leak-detection',
+    'sump-pump-installation',
+    'drain-cleaning',
+    'expert-drain-repair',
+    'sewer-line-inspection',
+    'gas-line-installation',
+    'leak-detection-repair',
+    'toilet-repair-installation'
+  ];
+
+  const pathSegments = url.pathname.split('/').filter(Boolean);
+  if (pathSegments.length === 1 && serviceSlugs.includes(pathSegments[0])) {
+    url.pathname = `/locations/${subdomain}/${pathSegments[0]}`;
     return NextResponse.rewrite(url);
   }
 

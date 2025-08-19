@@ -80,7 +80,7 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
                   {dedupedLocationsByState[state].map((location: BasicLocation) => (
                     <a
                       key={`${location.id}-${location.state}`}
-                      href={`/locations/${location.id}`}
+                      href={`https://${location.id.toLowerCase()}.gdprofessionalplumbing.com`}
                       className="block p-4 bg-gray-50 rounded-lg hover:bg-blue-50 transition text-center"
                     >
                       <h4 className="font-semibold text-gray-800 mb-1">{location.name}</h4>

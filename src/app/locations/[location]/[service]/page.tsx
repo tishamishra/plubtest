@@ -873,7 +873,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
               if (serviceSlug === service) return null;
               
               return (
-                <Link key={serviceSlug} href={`/locations/${location}/${serviceSlug}`} className="block">
+                <Link key={serviceSlug} href={`https://${location.toLowerCase()}.gdprofessionalplumbing.com/${serviceSlug}`} className="block">
                   <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer border border-gray-200">
                     <img
                       src={serviceInfo.image}
@@ -911,7 +911,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
               Call {safeLocation.phone}
             </a>
             <Link
-              href={`/locations/${location}`}
+              href={`https://${location.toLowerCase()}.gdprofessionalplumbing.com`}
               className="border-2 border-white text-white font-bold px-8 py-4 rounded-lg text-xl hover:bg-white hover:text-[#1c7bc8] transition-colors duration-300"
             >
               View All Services

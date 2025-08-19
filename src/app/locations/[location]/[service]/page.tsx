@@ -731,7 +731,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
   const { location, service } = await params;
   
   // Get location data
-  const locationsResponse = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/locations/${location}`);
+  const locationsResponse = await fetch(`/api/locations/${location}`);
   if (!locationsResponse.ok) {
     notFound();
   }

@@ -1,6 +1,23 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Header from '@/components/Header';
+import locationsData from '@/data/locations.json';
+
+interface Location {
+  id: string;
+  name: string;
+  state: string;
+  phone: string;
+  areas: string[];
+  zipCodes: string[];
+  services: string[];
+  testimonials: any[];
+  faqs: any[];
+}
+
+interface LocationsData {
+  locations: Location[];
+}
 
 interface ServicePageProps {
   params: Promise<{
@@ -730,14 +747,14 @@ const serviceData = {
 export default async function ServicePage({ params }: ServicePageProps) {
   const { location, service } = await params;
   
-  // Get location data
-  const locationsResponse = await fetch(`/api/locations/${location}`);
-  if (!locationsResponse.ok) {
+  // Get location data from local import
+  const typedLocationsData = locationsData as LocationsData;
+  const locationData = typedLocationsData.locations.find((loc: Location) => loc.id === location);
+  if (!locationData) {
     notFound();
   }
   
-  const locationData = await locationsResponse.json();
-  const safeLocation = locationData.location;
+  const safeLocation = locationData;
   
   // Get service data
   const serviceInfo = serviceData[service as keyof typeof serviceData];

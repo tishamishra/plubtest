@@ -162,450 +162,255 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Water Heater Repair and Installation */}
               <Link href="/services/water-heater" className="block">
-                <div className="group relative h-72 w-full cursor-pointer perspective-1000">
-                  <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-                    {/* Front */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl backface-hidden">
-                      <img
-                        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
-                        alt="Water Heater Repair and Installation"
-                        className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
-                      />
-                      <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
-                      <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Water Heater Repair and Installation</div>
-                    </div>
-                    {/* Back */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl bg-[#1c7bc8] backface-hidden rotate-y-180">
-                      <div className="flex min-h-full flex-col gap-2 p-6">
-                        <h1 className="text-xl font-bold text-white">Water Heater Repair and Installation Services in the US</h1>
-                        <p className="mt-1 border-t border-t-white/20 py-4 text-base font-medium leading-normal text-white/90">
-                          Call GD Professional Plumbing at (833) 445-0128. Affordable water heater repair and professional installation for homes and commercial buildings across the US—fast service, licensed plumbers, and energy-efficient systems.
-                        </p>
-                        <div className="mt-auto pt-4">
-                          <div className="text-white/80 text-sm font-medium">Click to learn more →</div>
-                        </div>
-                      </div>
-                    </div>
+                <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
+                  <img
+                    src="/images/water-heater.jpg"
+                    alt="Water Heater Repair and Installation"
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-4 text-black">Water Heater Repair & Installation</h3>
+                    <p className="text-gray-600">
+                      Affordable water heater repair and professional installation for homes and commercial buildings across the US—fast service, licensed plumbers, and energy-efficient systems.
+                    </p>
                   </div>
                 </div>
               </Link>
 
               {/* Tankless Water Heater Installation */}
               <Link href="/services/tankless-water-heater-installation" className="block">
-                <div className="group relative h-72 w-full cursor-pointer perspective-1000">
-                  <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-                    {/* Front */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl backface-hidden">
-                      <img
-                        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
-                        alt="Tankless Water Heater Installation"
-                        className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
-                      />
-                      <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
-                      <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Tankless Water Heater Installation</div>
-                    </div>
-                    {/* Back */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl bg-[#1c7bc8] backface-hidden rotate-y-180">
-                      <div className="flex min-h-full flex-col gap-2 p-6">
-                        <h1 className="text-xl font-bold text-white">Tankless Water Heater Installation Services in the US</h1>
-                        <p className="mt-1 border-t border-t-white/20 py-4 text-base font-medium leading-normal text-white/90">
-                          Call GD Professional Plumbing at (833) 445-0128. Expert installation of energy-efficient tankless water heaters for homes and businesses—endless hot water, lower utility bills, and space-saving design.
-                        </p>
-                        <div className="mt-auto pt-4">
-                          <div className="text-white/80 text-sm font-medium">Click to learn more →</div>
-                        </div>
-                      </div>
-                    </div>
+                <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
+                  <img
+                    src="/images/tankless-heater.jpg"
+                    alt="Tankless Water Heater Installation"
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-4 text-black">Tankless Water Heater Installation</h3>
+                    <p className="text-gray-600">
+                      Expert installation of energy-efficient tankless water heaters for homes and businesses—endless hot water, lower utility bills, and space-saving design.
+                    </p>
                   </div>
                 </div>
               </Link>
 
               {/* Water Recirculation Pump */}
               <Link href="/services/water-recirculation-pump-repair-installation" className="block">
-                <div className="group relative h-72 w-full cursor-pointer perspective-1000">
-                  <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-                    {/* Front */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl backface-hidden">
-                      <img
-                        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
-                        alt="Water Recirculation Pump"
-                        className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
-                      />
-                      <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
-                      <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Water Recirculation Pump</div>
-                    </div>
-                    {/* Back */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl bg-[#1c7bc8] backface-hidden rotate-y-180">
-                      <div className="flex min-h-full flex-col gap-2 p-6">
-                        <h1 className="text-xl font-bold text-white">Water Recirculation Pump Repair & Installation in the US</h1>
-                        <p className="mt-1 border-t border-t-white/20 py-4 text-base font-medium leading-normal text-white/90">
-                          Call GD Professional Plumbing at (833) 445-0128. Professional repair and installation of hot water recirculation pumps for homes and businesses—get instant hot water, save water, and boost plumbing efficiency.
-                        </p>
-                        <div className="mt-auto pt-4">
-                          <div className="text-white/80 text-sm font-medium">Click to learn more →</div>
-                        </div>
-                      </div>
-                    </div>
+                <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
+                  <img
+                    src="/images/plumber-working.jpg"
+                    alt="Water Recirculation Pump"
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-4 text-black">Water Recirculation Pump</h3>
+                    <p className="text-gray-600">
+                      Professional repair and installation of hot water recirculation pumps for homes and businesses—get instant hot water, save water, and boost plumbing efficiency.
+                    </p>
                   </div>
                 </div>
               </Link>
 
               {/* Faucets & Sinks */}
               <Link href="/services/faucets-sinks-repair-replacement" className="block">
-                <div className="group relative h-72 w-full cursor-pointer perspective-1000">
-                  <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-                    {/* Front */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl backface-hidden">
-                      <img
-                        src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
-                        alt="Faucets & Sinks"
-                        className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
-                      />
-                      <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
-                      <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Faucets & Sinks</div>
-                    </div>
-                    {/* Back */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl bg-[#1c7bc8] backface-hidden rotate-y-180">
-                      <div className="flex min-h-full flex-col gap-2 p-6">
-                        <h1 className="text-xl font-bold text-white">Faucet and Sink Repair & Replacement Services in the US</h1>
-                        <p className="mt-1 border-t border-t-white/20 py-4 text-base font-medium leading-normal text-white/90">
-                          Call GD Professional Plumbing at (833) 445-0128. Expert installation and repair of kitchen and bathroom faucets and sinks—leak-free performance, upgraded fixtures, and improved space functionality.
-                        </p>
-                        <div className="mt-auto pt-4">
-                          <div className="text-white/80 text-sm font-medium">Click to learn more →</div>
-                        </div>
-                      </div>
-                    </div>
+                <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
+                  <img
+                    src="/images/faucet-sink.jpg"
+                    alt="Faucets & Sinks"
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-4 text-black">Faucets & Sinks</h3>
+                    <p className="text-gray-600">
+                      Expert installation and repair of kitchen and bathroom faucets and sinks—leak-free performance, upgraded fixtures, and improved space functionality.
+                    </p>
                   </div>
                 </div>
               </Link>
 
               {/* Water Conservation Plumbing Systems */}
               <Link href="/services/water-conservation-plumbing-systems" className="block">
-                <div className="group relative h-72 w-full cursor-pointer perspective-1000">
-                  <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-                    {/* Front */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl backface-hidden">
-                      <img
-                        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
-                        alt="Water Conservation Plumbing Systems"
-                        className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
-                      />
-                      <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
-                      <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Water Conservation Plumbing</div>
-                    </div>
-                    {/* Back */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl bg-[#1c7bc8] backface-hidden rotate-y-180">
-                      <div className="flex min-h-full flex-col gap-2 p-6">
-                        <h1 className="text-xl font-bold text-white">Water Conservation Plumbing Systems in the US</h1>
-                        <p className="mt-1 border-t border-t-white/20 py-4 text-base font-medium leading-normal text-white/90">
-                          Call GD Professional Plumbing at (833) 445-0128. Eco-friendly water-saving plumbing solutions for homes and businesses—reduce water waste, cut utility bills, and support sustainable living.
-                        </p>
-                        <div className="mt-auto pt-4">
-                          <div className="text-white/80 text-sm font-medium">Click to learn more →</div>
-                        </div>
-                      </div>
-                    </div>
+                <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
+                  <img
+                    src="/images/residential-plumbing.jpg"
+                    alt="Water Conservation Plumbing Systems"
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-4 text-black">Water Conservation Plumbing</h3>
+                    <p className="text-gray-600">
+                      Eco-friendly water-saving plumbing solutions for homes and businesses—reduce water waste, cut utility bills, and support sustainable living.
+                    </p>
                   </div>
                 </div>
               </Link>
 
               {/* Custom Bathroom Renovation */}
               <Link href="/services/custom-bathroom-renovation" className="block">
-                <div className="group relative h-72 w-full cursor-pointer perspective-1000">
-                  <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-                    {/* Front */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl backface-hidden">
-                      <img
-                        src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
-                        alt="Custom Bathroom Renovation"
-                        className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
-                      />
-                      <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
-                      <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Custom Bathroom Renovation</div>
-                    </div>
-                    {/* Back */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl bg-[#1c7bc8] backface-hidden rotate-y-180">
-                      <div className="flex min-h-full flex-col gap-2 p-6">
-                        <h1 className="text-xl font-bold text-white">Custom Bathroom Renovation Services Across the US</h1>
-                        <p className="mt-1 border-t border-t-white/20 py-4 text-base font-medium leading-normal text-white/90">
-                          Call GD Professional Plumbing at (833) 445-0128. From outdated to outstanding—our expert team designs and renovates bathrooms with modern fixtures, efficient layouts, and timeless appeal for residential properties.
-                        </p>
-                        <div className="mt-auto pt-4">
-                          <div className="text-white/80 text-sm font-medium">Click to learn more →</div>
-                        </div>
-                      </div>
-                    </div>
+                <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
+                  <img
+                    src="/images/residential-plumbing.jpg"
+                    alt="Custom Bathroom Renovation"
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-4 text-black">Custom Bathroom Renovation</h3>
+                    <p className="text-gray-600">
+                      From outdated to outstanding—our expert team designs and renovates bathrooms with modern fixtures, efficient layouts, and timeless appeal for residential properties.
+                    </p>
                   </div>
                 </div>
               </Link>
 
               {/* Water System Installation & Repair */}
               <Link href="/services/water-system-installation-repair" className="block">
-                <div className="group relative h-72 w-full cursor-pointer perspective-1000">
-                  <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-                    {/* Front */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl backface-hidden">
-                      <img
-                        src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
-                        alt="Water System Installation & Repair"
-                        className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
-                      />
-                      <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
-                      <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Water System Installation & Repair</div>
-                    </div>
-                    {/* Back */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl bg-[#1c7bc8] backface-hidden rotate-y-180">
-                      <div className="flex min-h-full flex-col gap-2 p-6">
-                        <h1 className="text-xl font-bold text-white">Water System Installation & Repair Services in the US</h1>
-                        <p className="mt-1 border-t border-t-white/20 py-4 text-base font-medium leading-normal text-white/90">
-                          Call GD Professional Plumbing at (833) 445-0128. We install, repair, and maintain residential and commercial water systems—delivering clean, safe, and uninterrupted water flow for your property.
-                        </p>
-                        <div className="mt-auto pt-4">
-                          <div className="text-white/80 text-sm font-medium">Click to learn more →</div>
-                        </div>
-                      </div>
-                    </div>
+                <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
+                  <img
+                    src="/images/residential-plumbing.jpg"
+                    alt="Water System Installation & Repair"
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-4 text-black">Water System Installation & Repair</h3>
+                    <p className="text-gray-600">
+                      We install, repair, and maintain residential and commercial water systems—delivering clean, safe, and uninterrupted water flow for your property.
+                    </p>
                   </div>
                 </div>
               </Link>
 
               {/* Slab Leak Detection & Repair */}
               <Link href="/services/slab-leak-detection-repair" className="block">
-                <div className="group relative h-72 w-full cursor-pointer perspective-1000">
-                  <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-                    {/* Front */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl backface-hidden">
-                      <img
-                        src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
-                        alt="Slab Leak Detection & Repair"
-                        className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
-                      />
-                      <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
-                      <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Slab Leak Detection & Repair</div>
-                    </div>
-                    {/* Back */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl bg-[#1c7bc8] backface-hidden rotate-y-180">
-                      <div className="flex min-h-full flex-col gap-2 p-6">
-                        <h1 className="text-xl font-bold text-white">Slab Leak Detection & Repair Services in the US</h1>
-                        <p className="mt-1 border-t border-t-white/20 py-4 text-base font-medium leading-normal text-white/90">
-                          Call GD Professional Plumbing at (833) 445-0128. Fast and accurate slab leak detection with expert repairs—protect your foundation, prevent costly water damage, and preserve your property's structural integrity.
-                        </p>
-                        <div className="mt-auto pt-4">
-                          <div className="text-white/80 text-sm font-medium">Click to learn more →</div>
-                        </div>
-                      </div>
-                    </div>
+                <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
+                  <img
+                    src="/images/leak-detection.jpg"
+                    alt="Slab Leak Detection & Repair"
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-4 text-black">Slab Leak Detection & Repair</h3>
+                    <p className="text-gray-600">
+                      Fast and accurate slab leak detection with expert repairs—protect your foundation, prevent costly water damage, and preserve your property's structural integrity.
+                    </p>
                   </div>
                 </div>
               </Link>
 
               {/* Sump Pump Installation & Repair */}
               <Link href="/services/sump-pump-installation-repair" className="block">
-                <div className="group relative h-72 w-full cursor-pointer perspective-1000">
-                  <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-                    {/* Front */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl backface-hidden">
-                      <img
-                        src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
-                        alt="Sump Pump Installation & Repair"
-                        className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
-                      />
-                      <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
-                      <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Sump Pump Installation & Repair</div>
-                    </div>
-                    {/* Back */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl bg-[#1c7bc8] backface-hidden rotate-y-180">
-                      <div className="flex min-h-full flex-col gap-2 p-6">
-                        <h1 className="text-xl font-bold text-white">Sump Pump Installation & Repair Services in the US</h1>
-                        <p className="mt-1 border-t border-t-white/20 py-4 text-base font-medium leading-normal text-white/90">
-                          Call GD Professional Plumbing at (833) 445-0128. Keep your basement dry and protected with professional sump pump repair, installation, and maintenance—flood prevention solutions built for long-term reliability.
-                        </p>
-                        <div className="mt-auto pt-4">
-                          <div className="text-white/80 text-sm font-medium">Click to learn more →</div>
-                        </div>
-                      </div>
-                    </div>
+                <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
+                  <img
+                    src="/images/plumber-working.jpg"
+                    alt="Sump Pump Installation & Repair"
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-4 text-black">Sump Pump Installation & Repair</h3>
+                    <p className="text-gray-600">
+                      Keep your basement dry and protected with professional sump pump repair, installation, and maintenance—flood prevention solutions built for long-term reliability.
+                    </p>
                   </div>
                 </div>
               </Link>
 
               {/* Professional Drain Cleaning */}
               <Link href="/services/professional-drain-cleaning" className="block">
-                <div className="group relative h-72 w-full cursor-pointer perspective-1000">
-                  <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-                    {/* Front */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl backface-hidden">
-                      <img
-                        src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
-                        alt="Professional Drain Cleaning"
-                        className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
-                      />
-                      <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
-                      <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Professional Drain Cleaning</div>
-                    </div>
-                    {/* Back */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl bg-[#1c7bc8] backface-hidden rotate-y-180">
-                      <div className="flex min-h-full flex-col gap-2 p-6">
-                        <h1 className="text-xl font-bold text-white">Professional Drain Cleaning Services in the US</h1>
-                        <p className="mt-1 border-t border-t-white/20 py-4 text-base font-medium leading-normal text-white/90">
-                          Call GD Professional Plumbing at (833) 445-0128. Fast and effective drain cleaning for clogged sinks, tubs, and sewer lines—restore smooth drainage, eliminate blockages, and prevent future plumbing issues.
-                        </p>
-                        <div className="mt-auto pt-4">
-                          <div className="text-white/80 text-sm font-medium">Click to learn more →</div>
-                        </div>
-                      </div>
-                    </div>
+                <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
+                  <img
+                    src="/images/drain-cleaning.jpg"
+                    alt="Professional Drain Cleaning"
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-4 text-black">Professional Drain Cleaning</h3>
+                    <p className="text-gray-600">
+                      Fast and effective drain cleaning for clogged sinks, tubs, and sewer lines—restore smooth drainage, eliminate blockages, and prevent future plumbing issues.
+                    </p>
                   </div>
                 </div>
               </Link>
 
               {/* Expert Drain Repair */}
               <Link href="/services/expert-drain-repair" className="block">
-                <div className="group relative h-72 w-full cursor-pointer perspective-1000">
-                  <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-                    {/* Front */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl backface-hidden">
-                      <img
-                        src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
-                        alt="Expert Drain Repair"
-                        className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
-                      />
-                      <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
-                      <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Expert Drain Repair</div>
-                    </div>
-                    {/* Back */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl bg-[#1c7bc8] backface-hidden rotate-y-180">
-                      <div className="flex min-h-full flex-col gap-2 p-6">
-                        <h1 className="text-xl font-bold text-white">Expert Drain Repair Services Across the US</h1>
-                        <p className="mt-1 border-t border-t-white/20 py-4 text-base font-medium leading-normal text-white/90">
-                          Call GD Professional Plumbing at (833) 445-0128. We fix damaged or leaking drains with precision—prevent backups, water damage, and ensure a smooth-flowing, reliable plumbing system in your home or business.
-                        </p>
-                        <div className="mt-auto pt-4">
-                          <div className="text-white/80 text-sm font-medium">Click to learn more →</div>
-                        </div>
-                      </div>
-                    </div>
+                <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
+                  <img
+                    src="/images/drain-cleaning.jpg"
+                    alt="Expert Drain Repair"
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-4 text-black">Expert Drain Repair</h3>
+                    <p className="text-gray-600">
+                      We fix damaged or leaking drains with precision—prevent backups, water damage, and ensure a smooth-flowing, reliable plumbing system in your home or business.
+                    </p>
                   </div>
                 </div>
               </Link>
 
               {/* Sewer Line Inspection & Replacement */}
               <Link href="/services/sewer-line-inspection-replacement" className="block">
-                <div className="group relative h-72 w-full cursor-pointer perspective-1000">
-                  <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-                    {/* Front */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl backface-hidden">
-                      <img
-                        src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
-                        alt="Sewer Line Inspection & Replacement"
-                        className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
-                      />
-                      <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
-                      <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Sewer Line Inspection & Replacement</div>
-                    </div>
-                    {/* Back */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl bg-[#1c7bc8] backface-hidden rotate-y-180">
-                      <div className="flex min-h-full flex-col gap-2 p-6">
-                        <h1 className="text-xl font-bold text-white">Sewer Line Inspection & Replacement Services in the US</h1>
-                        <p className="mt-1 border-t border-t-white/20 py-4 text-base font-medium leading-normal text-white/90">
-                          Call GD Professional Plumbing at (833) 445-0128. Thorough sewer camera inspections, repairs, and full replacements—ensure proper waste flow, avoid costly backups, and keep your sewer system running smoothly.
-                        </p>
-                        <div className="mt-auto pt-4">
-                          <div className="text-white/80 text-sm font-medium">Click to learn more →</div>
-                        </div>
-                      </div>
-                    </div>
+                <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
+                  <img
+                    src="/images/sewer-line.jpg"
+                    alt="Sewer Line Inspection & Replacement"
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-4 text-black">Sewer Line Inspection & Replacement</h3>
+                    <p className="text-gray-600">
+                      Thorough sewer camera inspections, repairs, and full replacements—ensure proper waste flow, avoid costly backups, and keep your sewer system running smoothly.
+                    </p>
                   </div>
                 </div>
               </Link>
 
               {/* Gas Line Installation & Repair */}
               <Link href="/services/gas-line-installation-repair" className="block">
-                <div className="group relative h-72 w-full cursor-pointer perspective-1000">
-                  <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-                    {/* Front */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl backface-hidden">
-                      <img
-                        src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
-                        alt="Gas Line Installation & Repair"
-                        className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
-                      />
-                      <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
-                      <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Gas Line Installation & Repair</div>
-                    </div>
-                    {/* Back */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl bg-[#1c7bc8] backface-hidden rotate-y-180">
-                      <div className="flex min-h-full flex-col gap-2 p-6">
-                        <h1 className="text-xl font-bold text-white">Gas Line Installation & Repair Services in the US</h1>
-                        <p className="mt-1 border-t border-t-white/20 py-4 text-base font-medium leading-normal text-white/90">
-                          Call GD Professional Plumbing at (833) 445-0128. Safe and code-compliant gas line installations, repairs, and replacements—power your appliances with confidence and protect your property from gas hazards.
-                        </p>
-                        <div className="mt-auto pt-4">
-                          <div className="text-white/80 text-sm font-medium">Click to learn more →</div>
-                        </div>
-                      </div>
-                    </div>
+                <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
+                  <img
+                    src="/images/gas-line.jpg"
+                    alt="Gas Line Installation & Repair"
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-4 text-black">Gas Line Installation & Repair</h3>
+                    <p className="text-gray-600">
+                      Safe and code-compliant gas line installations, repairs, and replacements—power your appliances with confidence and protect your property from gas hazards.
+                    </p>
                   </div>
                 </div>
               </Link>
 
               {/* Leak Detection & Repair */}
               <Link href="/services/leak-detection-repair" className="block">
-                <div className="group relative h-72 w-full cursor-pointer perspective-1000">
-                  <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-                    {/* Front */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl backface-hidden">
-                      <img
-                        src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
-                        alt="Leak Detection & Repair"
-                        className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
-                      />
-                      <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
-                      <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Leak Detection & Repair</div>
-                    </div>
-                    {/* Back */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl bg-[#1c7bc8] backface-hidden rotate-y-180">
-                      <div className="flex min-h-full flex-col gap-2 p-6">
-                        <h1 className="text-xl font-bold text-white">Leak Detection & Repair Services in the US</h1>
-                        <p className="mt-1 border-t border-t-white/20 py-4 text-base font-medium leading-normal text-white/90">
-                          Call GD Professional Plumbing at (833) 445-0128. We use advanced leak detection tools to quickly locate and repair hidden water leaks—minimize damage, lower water bills, and keep your plumbing system efficient.
-                        </p>
-                        <div className="mt-auto pt-4">
-                          <div className="text-white/80 text-sm font-medium">Click to learn more →</div>
-                        </div>
-                      </div>
-                    </div>
+                <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
+                  <img
+                    src="/images/leak-detection.jpg"
+                    alt="Leak Detection & Repair"
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-4 text-black">Leak Detection & Repair</h3>
+                    <p className="text-gray-600">
+                      We use advanced leak detection tools to quickly locate and repair hidden water leaks—minimize damage, lower water bills, and keep your plumbing system efficient.
+                    </p>
                   </div>
                 </div>
               </Link>
 
               {/* Toilet Repair & Installation */}
               <Link href="/services/toilet-repair-installation" className="block">
-                <div className="group relative h-72 w-full cursor-pointer perspective-1000">
-                  <div className="absolute inset-0 h-full w-full rounded-2xl transition-all duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-                    {/* Front */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl backface-hidden">
-                      <img
-                        src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
-                        alt="Toilet Repair & Installation"
-                        className="size-full rounded-2xl object-cover shadow-2xl shadow-black/40"
-                      />
-                      <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
-                      <div className="absolute bottom-4 left-4 text-xl font-bold text-white">Toilet Repair & Installation</div>
-                    </div>
-                    {/* Back */}
-                    <div className="absolute inset-0 h-full w-full rounded-2xl bg-[#1c7bc8] backface-hidden rotate-y-180">
-                      <div className="flex min-h-full flex-col gap-2 p-6">
-                        <h1 className="text-xl font-bold text-white">Toilet Repair & Installation Services in the US</h1>
-                        <p className="mt-1 border-t border-t-white/20 py-4 text-base font-medium leading-normal text-white/90">
-                          Call GD Professional Plumbing at (833) 445-0128. Fast and reliable toilet plumbing services for clogs, leaks, and replacements—restore full function, improve efficiency, and prevent costly water waste.
-                        </p>
-                        <div className="mt-auto pt-4">
-                          <div className="text-white/80 text-sm font-medium">Click to learn more →</div>
-                        </div>
-                      </div>
-                    </div>
+                <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
+                  <img
+                    src="/images/toilet-repair.jpg"
+                    alt="Toilet Repair & Installation"
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-4 text-black">Toilet Repair & Installation</h3>
+                    <p className="text-gray-600">
+                      Fast and reliable toilet plumbing services for clogs, leaks, and replacements—restore full function, improve efficiency, and prevent costly water waste.
+                    </p>
                   </div>
                 </div>
               </Link>

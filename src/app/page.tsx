@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import FloatingCTA from "@/components/FloatingCTA";
 
 export default function Home() {
+  // Updated homepage with new service card design
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
 

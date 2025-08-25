@@ -80,12 +80,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
             >
               Call {safeLocation.phone} Now
             </a>
-            <a 
-              href="#contact"
-              className="inline-flex items-center bg-white text-blue-700 font-bold px-8 py-3 rounded-lg text-lg border-2 border-blue-700 hover:bg-blue-50 transition-colors duration-300"
-            >
-              Get Free Estimate
-            </a>
+
             </div>
         </div>
       </section>

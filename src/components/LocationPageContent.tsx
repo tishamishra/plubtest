@@ -60,16 +60,13 @@ export default function LocationPageContent({ location }: LocationPageContentPro
           <p className="text-lg sm:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto drop-shadow-md">
             {location.heroSubtitle}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex justify-center">
             <a 
               href={`tel:${location.phone.replace(/\D/g, '')}`}
               className="bg-white text-blue-700 font-bold px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition shadow-lg hover:shadow-xl"
             >
               Call {location.phone}
             </a>
-            <button className="bg-blue-600 text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-blue-700 transition shadow-lg hover:shadow-xl">
-              Get Free Quote
-            </button>
           </div>
         </div>
       </section>
@@ -192,16 +189,13 @@ export default function LocationPageContent({ location }: LocationPageContentPro
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
           <p className="text-xl mb-8">Call us now for fast, reliable plumbing services in {location.fullName}.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <a 
               href={`tel:${location.phone.replace(/\D/g, '')}`}
               className="bg-white text-blue-700 font-bold px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition"
             >
               Call {location.phone}
             </a>
-            <button className="bg-blue-600 text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-blue-800 transition">
-              Get Free Quote
-            </button>
           </div>
         </div>
       </section>

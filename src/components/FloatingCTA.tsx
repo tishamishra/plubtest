@@ -4,7 +4,7 @@ export default function FloatingCTA({ phone = '8334450128', locationName = '' }:
   return (
     <>
       {/* Desktop Floating CTA - Full Banner */}
-      <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-full max-w-5xl px-4 z-20 hidden md:block">
+      <div className="absolute -bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-5xl px-4 z-20 hidden md:block">
         <div className="bg-red-600 rounded-xl shadow-lg py-4 px-6 flex flex-col sm:flex-row items-center gap-4 text-white">
           {/* Left Column - Icon Only */}
           <div className="flex items-center justify-center sm:justify-start gap-4">

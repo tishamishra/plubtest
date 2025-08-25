@@ -94,19 +94,13 @@ export default async function StatePage({ params }: StatePageProps) {
             Our licensed and experienced plumbers are available 24/7 for emergency services 
             and scheduled appointments throughout {stateFullName}.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <a 
               href="tel:(833) 445-0128" 
               className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors"
             >
               Call (833) 445-0128
             </a>
-            <Link 
-              href="/contact" 
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-600 transition-colors"
-            >
-              Get Free Quote
-            </Link>
           </div>
         </div>
       </section>

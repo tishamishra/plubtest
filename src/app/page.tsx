@@ -26,14 +26,15 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative h-[60vh] overflow-visible">
+      <section className="relative h-[60vh] overflow-hidden">
         {/* Background Image */}
         <img 
           src="/hero-bg.jpg" 
           alt="Plumbing background"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-blue-700/60"></div>
         {/* Content */}
         <div className="relative z-10 h-full flex items-center justify-center">
           <div className="text-center text-white px-6 max-w-4xl mx-auto">

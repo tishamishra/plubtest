@@ -810,7 +810,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
               href={`tel:${safeLocation.phone.replace(/\D/g, '')}`}
               className="bg-[#1c7bc8] hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors duration-300 inline-block"
             >
-              Get Free Estimate
+              Call {safeLocation.phone}
             </a>
           </div>
         </div>

@@ -279,9 +279,7 @@ export default function WaterHeaterServices() {
                     </svg>
                     Call (833) 445-0128
                   </a>
-                  <button className="w-full border-2 border-[#1c7bc8] text-[#1c7bc8] px-6 py-3 rounded-lg font-semibold hover:bg-[#1c7bc8] hover:text-white transition">
-                    Request Estimate
-                  </button>
+
                 </div>
                 
                 <div className="mt-6 pt-6 border-t border-gray-200">
@@ -310,16 +308,13 @@ export default function WaterHeaterServices() {
           <p className="text-xl mb-8 opacity-95">
             Don't wait for water heater problems to get worse. Contact GD Professional Plumbing for fast, reliable service.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <a
               href="tel:+18334450128"
               className="bg-white text-[#1c7bc8] font-bold px-8 py-4 rounded-xl text-lg hover:bg-gray-50 transition shadow-lg"
             >
               Call (833) 445-0128
             </a>
-            <button className="border-2 border-white text-white font-bold px-8 py-4 rounded-xl text-lg hover:bg-white hover:text-[#1c7bc8] transition">
-              Get Free Estimate
-            </button>
           </div>
         </div>
       </section>

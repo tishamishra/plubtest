@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import locationsData from '@/data/locations.json';
 import FloatingCTA from '@/components/FloatingCTA';
-import ServiceAreas from '@/components/ServiceAreas';
+
 import LocationTestimonials from '@/components/LocationTestimonials';
 import LocationFAQ from '@/components/LocationFAQ';
 
@@ -670,7 +670,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
 
 
 
-      <ServiceAreas currentLocation={safeLocation} />
+
 
       {/* Dynamic Testimonials */}
       <LocationTestimonials 

@@ -35,7 +35,7 @@ export default function TanklessWaterHeaterInstallationPage() {
         </div>
         <FloatingCTA phone="8334450128" locationName="Your Area" />
       </section>
-      
+
       {/* SEO Intro Section */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
@@ -60,7 +60,7 @@ export default function TanklessWaterHeaterInstallationPage() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+              <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
                 Are you searching for expert tankless water heater installation?
               </h2>
@@ -109,12 +109,12 @@ export default function TanklessWaterHeaterInstallationPage() {
               <div className="text-4xl font-bold text-blue-600 mb-2">24/7</div>
               <div className="text-gray-600">Emergency Service</div>
             </div>
-            <div>
+              <div>
               <div className="text-4xl font-bold text-blue-600 mb-2">100%</div>
               <div className="text-gray-600">Satisfaction Guaranteed</div>
             </div>
-          </div>
-        </div>
+                      </div>
+                    </div>
       </section>
 
       {/* Services Grid */}
@@ -141,7 +141,7 @@ export default function TanklessWaterHeaterInstallationPage() {
                   Call GD Professional Plumbing at (833) 445-0128. Expert installation of energy-efficient tankless water heaters for homes and businesses—endless hot water, lower utility bills, and space-saving design.
                 </p>
               </div>
-            </div>
+                  </div>
 
             {/* Service 2 */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
@@ -155,8 +155,8 @@ export default function TanklessWaterHeaterInstallationPage() {
                 <p className="text-gray-600 leading-relaxed">
                   Call GD Professional Plumbing at (833) 445-0128. Fast and reliable repair services for tankless water heaters—diagnose issues, fix problems, and restore optimal performance quickly.
                 </p>
-              </div>
-            </div>
+                      </div>
+                    </div>
 
             {/* Service 3 */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
@@ -171,7 +171,7 @@ export default function TanklessWaterHeaterInstallationPage() {
                   Call GD Professional Plumbing at (833) 445-0128. Preventive maintenance services to keep your tankless water heater running efficiently—extend lifespan and prevent costly breakdowns.
                 </p>
               </div>
-            </div>
+                  </div>
 
             {/* Service 4 */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
@@ -185,8 +185,8 @@ export default function TanklessWaterHeaterInstallationPage() {
                 <p className="text-gray-600 leading-relaxed">
                   Call GD Professional Plumbing at (833) 445-0128. Professional replacement services for old or failing tankless water heaters—upgrade to newer, more efficient models with expert installation.
                 </p>
-              </div>
-            </div>
+                      </div>
+                    </div>
 
             {/* Service 5 */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
@@ -199,9 +199,9 @@ export default function TanklessWaterHeaterInstallationPage() {
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Tankless Water Heater Sizing</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Call GD Professional Plumbing at (833) 445-0128. Professional sizing and consultation services—ensure your tankless water heater meets your hot water demands efficiently.
-                </p>
-              </div>
-            </div>
+                    </p>
+                  </div>
+                      </div>
 
             {/* Service 6 */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
@@ -214,10 +214,10 @@ export default function TanklessWaterHeaterInstallationPage() {
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Emergency Tankless Water Heater Service</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Call GD Professional Plumbing at (833) 445-0128. 24/7 emergency services for tankless water heater issues—rapid response and quick solutions when you need them most.
-                </p>
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -236,8 +236,8 @@ export default function TanklessWaterHeaterInstallationPage() {
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
+                        </svg>
+                      </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Experienced Professionals</h3>
               <p className="text-gray-600">We have decades of experience installing and maintaining tankless water heaters with precision and expertise.</p>
             </div>
@@ -247,40 +247,40 @@ export default function TanklessWaterHeaterInstallationPage() {
                 <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-              </div>
+                    </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">24/7 Emergency Services</h3>
               <p className="text-gray-600">Available round the clock for emergency tankless water heater issues and urgent installations.</p>
-            </div>
-            
+                  </div>
+
             <div className="text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
+                        </svg>
+                      </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Licensed and Insured</h3>
               <p className="text-gray-600">Our dedicated team of plumbers are fully licensed and insured for your peace of mind.</p>
-            </div>
-            
+                  </div>
+
             <div className="text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-              </div>
+                        </svg>
+                      </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Reliable and Trustworthy</h3>
               <p className="text-gray-600">We pride ourselves on honest, dependable service you can rely on every time.</p>
-            </div>
-            
+                  </div>
+
             <div className="text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                </svg>
-              </div>
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                        </svg>
+                      </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Affordable Pricing</h3>
               <p className="text-gray-600">Our quality tankless water heater solutions are fairly priced to give you the best value.</p>
-            </div>
+                    </div>
             
             <div className="text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -330,8 +330,8 @@ export default function TanklessWaterHeaterInstallationPage() {
               >
                 Call for Residential Service
               </a>
-            </div>
-            
+          </div>
+
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
                 Commercial Tankless Water Heater Installation
@@ -388,9 +388,9 @@ export default function TanklessWaterHeaterInstallationPage() {
                   <div className="text-sm opacity-90 mb-1">CALL TODAY</div>
                   <div className="text-2xl md:text-3xl font-bold">(833) 445-0128</div>
                 </div>
+                </div>
               </div>
-            </div>
-            
+
             {/* Right Side - Van Image */}
             <div className="flex-1 flex justify-center lg:justify-end items-end">
               <img 

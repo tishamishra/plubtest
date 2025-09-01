@@ -1,319 +1,417 @@
 "use client";
-import { useState } from "react";
-import Link from "next/link";
-import Header from "@/components/Header";
+import Link from 'next/link';
+import Header from '@/components/Header';
+import FloatingCTA from '@/components/FloatingCTA';
 
-export default function WaterHeaterServices() {
-  const [activeTab, setActiveTab] = useState("overview");
-
+export default function WaterHeatersRepairAndInstallationPage() {
   return (
-    <div className="bg-white min-h-screen flex flex-col font-sans">
+    <div className="min-h-screen bg-white">
       <Header />
       
-      {/* Hero Section */}
-      <section className="relative h-[60vh] overflow-visible">
-        {/* Background Image */}
-        <img 
-          src="/hero-bg.jpg" 
-          alt="Plumbing background"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        
-        {/* Content */}
+      {/* Enhanced Hero Section */}
+      <section className="relative h-[80vh] overflow-visible">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-700/90">
+          <img 
+            src="https://ik.imagekit.io/nang9yead/water-heater.jpg" 
+            alt="Water heaters repair and installation services"
+            className="w-full h-full object-cover mix-blend-multiply"
+          />
+        </div>
         <div className="relative z-10 h-full flex items-center justify-center">
-          <div className="text-center text-white px-6 max-w-4xl mx-auto">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-              Water Heater Repair & Installation Services
+          <div className="text-center text-white px-6 max-w-6xl mx-auto">
+            <div className="mb-6">
+              <span className="bg-red-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                Licensed & Insured
+              </span>
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+              Expert Water Heaters Repair & Installation Services
             </h1>
-            <p className="text-lg md:text-xl lg:text-2xl opacity-95 max-w-3xl mx-auto leading-relaxed">
-              Professional water heater services across California - Fast, reliable, and affordable solutions for homes and businesses
+            <p className="text-xl md:text-2xl lg:text-3xl opacity-95 max-w-5xl mx-auto leading-relaxed mb-8">
+              Professional water heater repair and installation for all types. Reliable hot water solutions for your home or business!
             </p>
           </div>
         </div>
+        <FloatingCTA phone="8334450128" locationName="Your Area" />
       </section>
-
-      {/* Breadcrumb */}
-      <section className="py-4 px-4 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <nav className="flex items-center space-x-2 text-sm text-gray-600">
-            <Link href="/" className="hover:text-[#1c7bc8] transition">Home</Link>
-            <span>/</span>
-            <Link href="/services" className="hover:text-[#1c7bc8] transition">Services</Link>
-            <span>/</span>
-            <span className="text-gray-900">Water Heater Services</span>
-          </nav>
+      
+      {/* SEO Intro Section */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
+            Find the Best Water Heaters Repair & Installation Services
+          </h2>
+          <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            Looking for reliable water heater services? Our team of licensed and certified plumbers provides exceptional service at competitive prices. Whether you need repairs, new installation, or maintenance, we're your trusted plumbing experts. Serving residential and commercial properties with 24/7 availability and guaranteed satisfaction.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a 
+              href="tel:8334450128"
+              className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-3 rounded-lg text-lg transition-colors duration-300"
+            >
+              Call (833) 445-0128 Now
+            </a>
+          </div>
         </div>
       </section>
 
-      {/* Main Content */}
-      <section className="py-16 px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            {/* Main Content */}
-            <div className="lg:col-span-2">
-              {/* Tab Navigation */}
-              <div className="flex flex-wrap border-b border-gray-200 mb-8">
-                <button
-                  onClick={() => setActiveTab("overview")}
-                  className={`px-6 py-3 font-semibold transition ${
-                    activeTab === "overview"
-                      ? "text-[#1c7bc8] border-b-2 border-[#1c7bc8]"
-                      : "text-gray-600 hover:text-[#1c7bc8]"
-                  }`}
-                >
-                  Overview
-                </button>
-                <button
-                  onClick={() => setActiveTab("services")}
-                  className={`px-6 py-3 font-semibold transition ${
-                    activeTab === "services"
-                      ? "text-[#1c7bc8] border-b-2 border-[#1c7bc8]"
-                      : "text-gray-600 hover:text-[#1c7bc8]"
-                  }`}
-                >
-                  Our Services
-                </button>
-                <button
-                  onClick={() => setActiveTab("why-choose")}
-                  className={`px-6 py-3 font-semibold transition ${
-                    activeTab === "why-choose"
-                      ? "text-[#1c7bc8] border-b-2 border-[#1c7bc8]"
-                      : "text-gray-600 hover:text-[#1c7bc8]"
-                  }`}
-                >
-                  Why Choose Us
-                </button>
+      {/* Search Block */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
+                Are you searching for expert water heater services?
+              </h2>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                Look no further! GD Professional Plumbing is your trusted plumbing expert. We provide comprehensive water heater solutions for both residential and commercial properties, with 24/7 emergency service availability.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">Residential Services</h3>
+                  <p className="text-gray-600 text-sm">
+                    Professional water heater services for homes with proper sizing and efficiency.
+                  </p>
+                </div>
+                <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">Commercial Services</h3>
+                  <p className="text-gray-600 text-sm">
+                    Large-scale water heater systems for businesses with minimal downtime.
+                  </p>
+                </div>
               </div>
+            </div>
+            <div className="flex justify-center">
+              <img 
+                src="https://ik.imagekit.io/nang9yead/Smiling%20Plumber%20Holding%20Wrench%20in%20Kitchen.png?updatedAt=1756066963942" 
+                alt="Professional plumber working"
+                className="w-full h-96 object-cover rounded-2xl shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-              {/* Tab Content */}
-              <div className="space-y-8">
-                {activeTab === "overview" && (
-                  <div>
-                    <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                      Professional Water Heater Services in California
-                    </h2>
-                    <div className="prose prose-lg max-w-none">
-                      <p className="text-gray-600 mb-6">
-                        GD Professional Plumbing provides comprehensive water heater repair and installation services throughout California. 
-                        With over 50 years of experience, our licensed plumbers deliver reliable, energy-efficient solutions for both 
-                        residential and commercial properties.
-                      </p>
-                      <p className="text-gray-600 mb-6">
-                        Whether you need emergency repairs, routine maintenance, or a complete water heater replacement, our team 
-                        ensures fast service, transparent pricing, and lasting results. We work with all major brands and types of 
-                        water heaters, including tankless, traditional tank, and hybrid models.
-                      </p>
-                      <div className="bg-blue-50 border-l-4 border-[#1c7bc8] p-6 my-8">
-                        <h3 className="text-xl font-bold text-gray-900 mb-3">Call Now for Immediate Service</h3>
-                        <p className="text-gray-700 mb-4">
-                          Don't wait for water heater problems to get worse. Contact GD Professional Plumbing at 
-                          <strong className="text-[#1c7bc8]"> (833) 445-0128</strong> for fast, reliable service.
-                        </p>
-                        <a
-                          href="tel:+18334450128"
-                          className="inline-flex items-center bg-[#1c7bc8] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#0f5a9e] transition"
-                        >
-                          Call Now
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                )}
+      {/* Stats Section */}
+      <section className="py-16 px-4 bg-blue-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">15+</div>
+              <div className="text-gray-600">Years Experience</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">1000+</div>
+              <div className="text-gray-600">Happy Customers</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">24/7</div>
+              <div className="text-gray-600">Emergency Service</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">100%</div>
+              <div className="text-gray-600">Satisfaction Guaranteed</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                {activeTab === "services" && (
-                  <div>
-                    <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                      Water Heater Services We Offer
-                    </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div className="bg-white p-6 rounded-lg shadow-md border">
-                        <div className="flex items-center mb-4">
-                          <div className="bg-[#1c7bc8] text-white rounded-full p-3 mr-4">
-                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                            </svg>
-                          </div>
-                          <h3 className="text-xl font-bold text-gray-900">Water Heater Repair</h3>
-                        </div>
-                        <p className="text-gray-600">
-                          Fast diagnosis and repair of all water heater issues including leaks, no hot water, 
-                          temperature problems, and unusual noises. Same-day service available.
-                        </p>
-                      </div>
-
-                      <div className="bg-white p-6 rounded-lg shadow-md border">
-                        <div className="flex items-center mb-4">
-                          <div className="bg-[#1c7bc8] text-white rounded-full p-3 mr-4">
-                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                            </svg>
-                          </div>
-                          <h3 className="text-xl font-bold text-gray-900">Water Heater Installation</h3>
-                        </div>
-                        <p className="text-gray-600">
-                          Professional installation of new water heaters including tankless, traditional tank, 
-                          and hybrid models. Proper sizing and energy-efficient options available.
-                        </p>
-                      </div>
-
-                      <div className="bg-white p-6 rounded-lg shadow-md border">
-                        <div className="flex items-center mb-4">
-                          <div className="bg-[#1c7bc8] text-white rounded-full p-3 mr-4">
-                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                          </div>
-                          <h3 className="text-xl font-bold text-gray-900">Maintenance Services</h3>
-                        </div>
-                        <p className="text-gray-600">
-                          Regular maintenance to extend water heater lifespan and prevent costly repairs. 
-                          Includes inspection, cleaning, and efficiency optimization.
-                        </p>
-                      </div>
-
-                      <div className="bg-white p-6 rounded-lg shadow-md border">
-                        <div className="flex items-center mb-4">
-                          <div className="bg-[#1c7bc8] text-white rounded-full p-3 mr-4">
-                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                          </div>
-                          <h3 className="text-xl font-bold text-gray-900">Emergency Services</h3>
-                        </div>
-                        <p className="text-gray-600">
-                          24/7 emergency water heater services for urgent issues like leaks, no hot water, 
-                          or complete failures. Fast response guaranteed.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                )}
-
-                {activeTab === "why-choose" && (
-                  <div>
-                    <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                      Why Choose GD Professional Plumbing for Water Heater Services?
-                    </h2>
-                    <div className="space-y-6">
-                      <div className="flex items-start space-x-4">
-                        <div className="bg-[#1c7bc8] text-white rounded-full p-3 mt-1">
-                          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div>
-                          <h3 className="text-xl font-bold text-gray-900 mb-2">50+ Years of Experience</h3>
-                          <p className="text-gray-600">
-                            Established in 1973, we have decades of experience with all types of water heaters 
-                            and brands. Our expertise ensures the right solution for your specific needs.
-                          </p>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start space-x-4">
-                        <div className="bg-[#1c7bc8] text-white rounded-full p-3 mt-1">
-                          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div>
-                          <h3 className="text-xl font-bold text-gray-900 mb-2">Fast Response Time</h3>
-                          <p className="text-gray-600">
-                            We understand water heater issues can't wait. Our team provides same-day service 
-                            for most repairs and quick response for emergency situations.
-                          </p>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start space-x-4">
-                        <div className="bg-[#1c7bc8] text-white rounded-full p-3 mt-1">
-                          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                          </svg>
-                        </div>
-                        <div>
-                          <h3 className="text-xl font-bold text-gray-900 mb-2">Licensed & Insured</h3>
-                          <p className="text-gray-600">
-                            All our plumbers are fully licensed, bonded, and insured. We follow all local 
-                            codes and regulations for safe, compliant water heater installations.
-                          </p>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start space-x-4">
-                        <div className="bg-[#1c7bc8] text-white rounded-full p-3 mt-1">
-                          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                          </svg>
-                        </div>
-                        <div>
-                          <h3 className="text-xl font-bold text-gray-900 mb-2">Transparent Pricing</h3>
-                          <p className="text-gray-600">
-                            No hidden fees or surprise charges. We provide clear, upfront pricing for all 
-                            water heater services with no-pressure estimates.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
+      {/* Services Grid */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+            Water Heater Services We Offer
+          </h2>
+          <p className="text-lg text-gray-600 text-center mb-12 max-w-4xl mx-auto">
+            GD Professional Plumbing Helps You with All Your Water Heater Projects including:
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Service 1 */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="https://ik.imagekit.io/nang9yead/water-heater.jpg"
+                alt="Water Heater Repair"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-blue-700 mb-3">» Water Heater Repair</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Call GD Professional Plumbing at (833) 445-0128. Fast and reliable repair services for all types of water heaters—diagnose issues and restore hot water quickly.
+                </p>
               </div>
             </div>
 
-            {/* Sidebar */}
-            <div className="lg:col-span-1">
-              <div className="bg-gray-50 p-6 rounded-lg sticky top-24">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Get Your Free Estimate</h3>
-                <p className="text-gray-600 mb-6">
-                  Contact us today for a free, no-obligation estimate on your water heater service needs.
+            {/* Service 2 */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="https://ik.imagekit.io/nang9yead/Plumber%20Fixing%20Leaking%20Sink%20Pipe%20with%20Wrench.png?updatedAt=1756066955385"
+                alt="Water Heater Installation"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-blue-700 mb-3">» Water Heater Installation</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Call GD Professional Plumbing at (833) 445-0128. Professional installation of new water heaters with proper sizing and modern efficiency.
                 </p>
-                <div className="space-y-4">
-                  <a
-                    href="tel:+18334450128"
-                    className="w-full bg-[#1c7bc8] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#0f5a9e] transition flex items-center justify-center"
-                  >
-                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    Call (833) 445-0128
-                  </a>
+              </div>
+            </div>
 
-                </div>
-                
-                <div className="mt-6 pt-6 border-t border-gray-200">
-                  <h4 className="font-semibold text-gray-900 mb-3">Service Areas</h4>
-                  <p className="text-gray-600 text-sm">
-                    We provide water heater services throughout California including:
-                  </p>
-                  <ul className="text-gray-600 text-sm mt-2 space-y-1">
-                    <li>• Los Angeles</li>
-                    <li>• San Francisco</li>
-                    <li>• San Diego</li>
-                    <li>• Sacramento</li>
-                    <li>• And surrounding areas</li>
-                  </ul>
-                </div>
+            {/* Service 3 */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="https://ik.imagekit.io/nang9yead/Maintenance%20Worker%20Adjusting%20Copper%20Plumbing%20Pipes.png?updatedAt=1756066948233"
+                alt="Water Heater Replacement"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-blue-700 mb-3">» Water Heater Replacement</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Call GD Professional Plumbing at (833) 445-0128. Complete water heater replacement services—upgrade to newer, more efficient models.
+                </p>
+              </div>
+            </div>
+
+            {/* Service 4 */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="https://ik.imagekit.io/nang9yead/Smiling%20Plumber%20Repairing%20Bathroom%20Sink%20Pipe.png?updatedAt=1756066965094"
+                alt="Water Heater Maintenance"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-blue-700 mb-3">» Water Heater Maintenance</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Call GD Professional Plumbing at (833) 445-0128. Preventive maintenance services to keep your water heater running efficiently.
+                </p>
+              </div>
+            </div>
+
+            {/* Service 5 */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="https://ik.imagekit.io/nang9yead/Plumbers%20Installing%20Wall-Mounted%20Water%20Tap?updatedAt=1756066963229"
+                alt="Water Heater Sizing"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-blue-700 mb-3">» Water Heater Sizing</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Call GD Professional Plumbing at (833) 445-0128. Professional sizing and consultation services—ensure your water heater meets your needs.
+                </p>
+              </div>
+            </div>
+
+            {/* Service 6 */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="https://ik.imagekit.io/nang9yead/young%20female%20plumber%20fixing%20?updatedAt=1756066968835"
+                alt="Emergency Water Heater Service"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-blue-700 mb-3">» Emergency Water Heater Service</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Call GD Professional Plumbing at (833) 445-0128. 24/7 emergency services for water heater issues—rapid response when you need it most.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 px-4 bg-[#1c7bc8] text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Need Water Heater Service Today?</h2>
-          <p className="text-xl mb-8 opacity-95">
-            Don't wait for water heater problems to get worse. Contact GD Professional Plumbing for fast, reliable service.
+      {/* Why Choose Us Section */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+            Why Choose GD Professional Plumbing for Water Heater Services?
+          </h2>
+          <p className="text-lg text-gray-600 text-center mb-12 max-w-4xl mx-auto">
+            50+ years of trusted service with licensed professionals and guaranteed workmanship
           </p>
-          <div className="flex justify-center">
-            <a
-              href="tel:+18334450128"
-              className="bg-white text-[#1c7bc8] font-bold px-8 py-4 rounded-xl text-lg hover:bg-gray-50 transition shadow-lg"
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">Experienced Professionals</h3>
+              <p className="text-gray-600">We have decades of experience with water heaters with precision and expertise.</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">24/7 Emergency Services</h3>
+              <p className="text-gray-600">Available round the clock for emergency water heater issues and urgent repairs.</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">Licensed and Insured</h3>
+              <p className="text-gray-600">Our dedicated team of plumbers are fully licensed and insured for your peace of mind.</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">Reliable and Trustworthy</h3>
+              <p className="text-gray-600">We pride ourselves on honest, dependable service you can rely on every time.</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">Affordable Pricing</h3>
+              <p className="text-gray-600">Our quality water heater solutions are fairly priced to give you the best value.</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">Customer Satisfaction Guaranteed</h3>
+              <p className="text-gray-600">We're committed to top-notch service and complete customer satisfaction.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Residential vs Commercial Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
+                Residential Water Heater Services
+              </h2>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                From single-family homes to multi-unit properties, our residential water heater services cover all your home hot water needs. We understand that hot water is essential for daily living, which is why we provide prompt, professional service with clear communication throughout the process.
+              </p>
+              <ul className="space-y-3 text-gray-600 mb-8">
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  Single-family home installations
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  Multi-unit property solutions
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  Energy efficiency optimization
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  Emergency repair services
+                </li>
+              </ul>
+              <a 
+                href="tel:8334450128"
+                className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg transition-colors duration-300"
+              >
+                Call for Residential Service
+              </a>
+            </div>
+            
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
+                Commercial Water Heater Services
+              </h2>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                Keep your business running smoothly with our comprehensive commercial water heater services. We understand that downtime costs money, so we provide fast, reliable service to minimize disruption to your operations.
+              </p>
+              <ul className="space-y-3 text-gray-600 mb-8">
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  Large-scale commercial installations
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  Industrial water heater systems
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  Preventive maintenance programs
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">•</span>
+                  Emergency repair services
+                </li>
+              </ul>
+              <a 
+                href="tel:8334450128"
+                className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg transition-colors duration-300"
+              >
+                Call for Commercial Service
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 24/7 CTA Banner */}
+      <section className="py-4 px-4 bg-[#1c7bc8] text-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+            {/* Left Side - Text Content */}
+            <div className="text-center lg:text-left flex-1">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
+                We&apos;re Available 24*7 Hrs At<br />
+                Your Service. Reach Us Today!
+              </h2>
+              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                <div className="bg-white/20 rounded-lg p-3">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </div>
+                <div>
+                  <div className="text-sm opacity-90 mb-1">CALL TODAY</div>
+                  <div className="text-2xl md:text-3xl font-bold">(833) 445-0128</div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Right Side - Van Image */}
+            <div className="flex-1 flex justify-center lg:justify-end items-end">
+              <img 
+                src="/van.png" 
+                alt="Plumbing service van"
+                className="w-80 h-80 object-contain scale-150 -mb-4"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Big CTA Banner */}
+      <section className="bg-[#1c7bc8] text-white py-16 px-4 mt-auto">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-8 animate-bounce">Need Water Heater Services Today? Get a Free Quote Now</h2>
+          <div className="mb-8">
+            <a 
+              href="tel:8334450128"
+              className="bg-white text-[#1c7bc8] font-bold px-12 py-6 rounded-xl text-3xl hover:bg-gray-50 transition shadow-lg inline-block animate-pulse"
             >
-              Call (833) 445-0128
+              (833) 445-0128
             </a>
           </div>
         </div>

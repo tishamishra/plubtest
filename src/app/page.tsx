@@ -708,7 +708,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* FAQ Section - Expandable and Optimized */}
+        {/* FAQ Section - Expandable and Optimized - Build Fix */}
         <section className="py-12 px-4 bg-white">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">

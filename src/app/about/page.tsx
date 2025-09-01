@@ -52,7 +52,7 @@ export default function AboutPage() {
       <section className="relative h-[80vh] overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/images/plumber-hero.jpg" 
+            src="https://ik.imagekit.io/nang9yead/Smiling%20Plumber%20Holding%20Wrench%20in%20Kitchen.png?updatedAt=1756066963942"
             alt="Professional plumber working"
             className="w-full h-full object-cover"
           />
@@ -178,7 +178,7 @@ export default function AboutPage() {
                   </div>
                   <div className="relative">
                     <img 
-                      src="/images/plumber-working.jpg" 
+                      src="https://ik.imagekit.io/nang9yead/Plumber%20Fixing%20Leaking%20Sink%20Pipe%20with%20Wrench.png?updatedAt=1756066955385"
                       alt="Plumber working professionally"
                       className="rounded-2xl shadow-xl w-full h-96 object-cover"
                     />

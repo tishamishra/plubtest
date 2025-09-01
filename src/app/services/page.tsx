@@ -51,7 +51,7 @@ export default function ServicesPage() {
       <section className="relative h-[80vh] overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/images/plumber-working.jpg" 
+            src="https://ik.imagekit.io/nang9yead/Plumber%20Fixing%20Leaking%20Sink%20Pipe%20with%20Wrench.png?updatedAt=1756066955385"
             alt="Professional plumber working"
             className="w-full h-full object-cover"
           />
@@ -127,11 +127,11 @@ export default function ServicesPage() {
             {/* Water Heater Repair and Installation */}
             <Link href="/services/water-heater" className="block">
               <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
-                <img
-                  src="/images/water-heater.jpg"
-                  alt="Water Heater Repair and Installation"
-                  className="w-full h-48 object-cover"
-                />
+                                  <img
+                    src="https://ik.imagekit.io/nang9yead/Plumber%20Fixing%20Leaking%20Sink%20Pipe%20with%20Wrench.png?updatedAt=1756066955385"
+                    alt="Water Heater Repair and Installation"
+                    className="w-full h-48 object-cover"
+                  />
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-4 text-black">Water Heater Repair & Installation</h3>
                   <p className="text-gray-600">
@@ -144,11 +144,11 @@ export default function ServicesPage() {
             {/* Tankless Water Heater Installation */}
             <Link href="/services/tankless-water-heater-installation" className="block">
               <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
-                <img
-                  src="/images/tankless-heater.jpg"
-                  alt="Tankless Water Heater Installation"
-                  className="w-full h-48 object-cover"
-                />
+                                  <img
+                    src="https://ik.imagekit.io/nang9yead/Worker%20Adjusting%20Water%20Filtration%20System%20Valves?updatedAt=1756066968225"
+                    alt="Tankless Water Heater Installation"
+                    className="w-full h-48 object-cover"
+                  />
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-4 text-black">Tankless Water Heater Installation</h3>
                   <p className="text-gray-600">
@@ -162,7 +162,7 @@ export default function ServicesPage() {
             <Link href="/services/water-recirculation-pump-repair-installation" className="block">
               <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
                 <img
-                  src="/images/plumber-working.jpg"
+                  src="https://ik.imagekit.io/nang9yead/Maintenance%20Worker%20Adjusting%20Copper%20Plumbing%20Pipes.png?updatedAt=1756066948233"
                   alt="Water Recirculation Pump"
                   className="w-full h-48 object-cover"
                 />
@@ -179,7 +179,7 @@ export default function ServicesPage() {
             <Link href="/services/faucets-sinks-repair-replacement" className="block">
               <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
                 <img
-                  src="/images/faucet-sink.jpg"
+                  src="https://ik.imagekit.io/nang9yead/Smiling%20Plumber%20Repairing%20Bathroom%20Sink%20Pipe.png?updatedAt=1756066965094"
                   alt="Faucets & Sinks"
                   className="w-full h-48 object-cover"
                 />
@@ -196,7 +196,7 @@ export default function ServicesPage() {
             <Link href="/services/water-conservation-plumbing-systems" className="block">
               <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
                 <img
-                  src="/images/residential-plumbing.jpg"
+                  src="https://ik.imagekit.io/nang9yead/Plumbers%20Installing%20Wall-Mounted%20Water%20Tap?updatedAt=1756066963229"
                   alt="Water Conservation Plumbing Systems"
                   className="w-full h-48 object-cover"
                 />
@@ -213,7 +213,7 @@ export default function ServicesPage() {
             <Link href="/services/custom-bathroom-renovation" className="block">
               <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
                 <img
-                  src="/images/residential-plumbing.jpg"
+                  src="https://ik.imagekit.io/nang9yead/young%20female%20plumber%20fixing%20?updatedAt=1756066968835"
                   alt="Custom Bathroom Renovation"
                   className="w-full h-48 object-cover"
                 />
@@ -230,7 +230,7 @@ export default function ServicesPage() {
             <Link href="/services/water-system-installation-repair" className="block">
               <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
                 <img
-                  src="/images/residential-plumbing.jpg"
+                  src="https://ik.imagekit.io/nang9yead/Industrial%20HVAC%20Technician%20Inspection.png?updatedAt=1756066941834"
                   alt="Water System Installation & Repair"
                   className="w-full h-48 object-cover"
                 />
@@ -247,7 +247,7 @@ export default function ServicesPage() {
             <Link href="/services/slab-leak-detection-repair" className="block">
               <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
                 <img
-                  src="/images/leak-detection.jpg"
+                  src="https://ik.imagekit.io/nang9yead/Old%20Rusty%20Pipe%20Dripping%20Water.png?updatedAt=1756066951741"
                   alt="Slab Leak Detection & Repair"
                   className="w-full h-48 object-cover"
                 />
@@ -264,7 +264,7 @@ export default function ServicesPage() {
             <Link href="/services/sump-pump-installation-repair" className="block">
               <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
                 <img
-                  src="/images/plumber-working.jpg"
+                  src="https://ik.imagekit.io/nang9yead/Electrician%20Working%20on%20Outdoor%20Wiring%20in%20Lawn.png?updatedAt=1756066952425"
                   alt="Sump Pump Installation & Repair"
                   className="w-full h-48 object-cover"
                 />
@@ -281,7 +281,7 @@ export default function ServicesPage() {
             <Link href="/services/professional-drain-cleaning" className="block">
               <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
                 <img
-                  src="/images/drain-cleaning.jpg"
+                  src="https://ik.imagekit.io/nang9yead/plumber%20clearing%20blocked%20sink%20with%20water?updatedAt=1756066954284"
                   alt="Professional Drain Cleaning"
                   className="w-full h-48 object-cover"
                 />
@@ -298,7 +298,7 @@ export default function ServicesPage() {
             <Link href="/services/expert-drain-repair" className="block">
               <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
                 <img
-                  src="/images/drain-cleaning.jpg"
+                  src="https://ik.imagekit.io/nang9yead/Plumber%20Repairing%20Kitchen%20Sink%20Drainage%20Pipes?updatedAt=1756066959177"
                   alt="Expert Drain Repair"
                   className="w-full h-48 object-cover"
                 />
@@ -315,7 +315,7 @@ export default function ServicesPage() {
             <Link href="/services/sewer-line-inspection-replacement" className="block">
               <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
                 <img
-                  src="/images/sewer-line.jpg"
+                  src="https://ik.imagekit.io/nang9yead/Old%20Rusty%20Underground%20Pipeline.png?updatedAt=1756066953091"
                   alt="Sewer Line Inspection & Replacement"
                   className="w-full h-48 object-cover"
                 />
@@ -332,7 +332,7 @@ export default function ServicesPage() {
             <Link href="/services/gas-line-installation-repair" className="block">
               <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
                 <img
-                  src="/images/gas-line.jpg"
+                  src="https://ik.imagekit.io/nang9yead/Industrial%20Green%20and%20Orange%20Water%20Pipelines?updatedAt=1756066950649"
                   alt="Gas Line Installation & Repair"
                   className="w-full h-48 object-cover"
                 />
@@ -349,7 +349,7 @@ export default function ServicesPage() {
             <Link href="/services/leak-detection-repair" className="block">
               <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
                 <img
-                  src="/images/leak-detection.jpg"
+                  src="https://ik.imagekit.io/nang9yead/PVC%20Pipe%20Installation%20in%20Soil.png?updatedAt=1756066962271"
                   alt="Leak Detection & Repair"
                   className="w-full h-48 object-cover"
                 />
@@ -366,7 +366,7 @@ export default function ServicesPage() {
             <Link href="/services/toilet-repair-installation" className="block">
               <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
                 <img
-                  src="/images/toilet-repair.jpg"
+                  src="https://ik.imagekit.io/nang9yead/Plumber%20Using%20Plunger%20on%20Toilet%20Bowl%20worker%20in%20orange%20uniform%20unclogging%20toilet?updatedAt=1756066962119"
                   alt="Toilet Repair & Installation"
                   className="w-full h-48 object-cover"
                 />

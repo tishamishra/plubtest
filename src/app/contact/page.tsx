@@ -101,7 +101,7 @@ export default function ContactPage() {
       <section className="relative h-[80vh] overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/images/plumber-hero.jpg" 
+            src="https://ik.imagekit.io/nang9yead/Smiling%20Plumber%20Holding%20Wrench%20in%20Kitchen.png?updatedAt=1756066963942"
             alt="Professional plumber working"
             className="w-full h-full object-cover"
           />

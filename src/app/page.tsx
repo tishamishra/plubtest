@@ -702,7 +702,7 @@ export default function Home() {
                   src="IMAGE_17_URL_HERE" 
                   alt="Professional Plumber at Work" 
                   className="w-full h-full object-cover shadow-lg"
-                />}
+                />
               </div>
             </div>
           </div>

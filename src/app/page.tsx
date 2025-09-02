@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
 import FloatingCTA from "@/components/FloatingCTA";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   // Updated homepage with new service card design
@@ -974,20 +975,7 @@ export default function Home() {
 
 
 
-      {/* Big CTA Banner */}
-      <section className="bg-[#1c7bc8] text-white py-16 px-4 mt-auto">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8 animate-bounce">Need a Plumber Today? Get a Free Quote Now</h2>
-          <div className="mb-8">
-            <a
-              href="tel:+18334450128"
-              className="bg-white text-[#1c7bc8] font-bold px-12 py-6 rounded-xl text-3xl hover:bg-gray-50 transition shadow-lg inline-block animate-pulse"
-            >
-              +1 (833) 445-0128
-            </a>
-          </div>
-        </div>
-      </section>
+      <Footer />
     </div>
   );
 }

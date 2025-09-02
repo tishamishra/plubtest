@@ -40,10 +40,10 @@ export default function Home() {
         <div className="relative z-10 h-full flex items-center justify-center">
           <div className="text-center text-white px-6 max-w-4xl mx-auto">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-              Top-Rated Plumbing Services in Your Area
+              Top-Rated Plumbing Services Across the United States
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl opacity-95 max-w-3xl mx-auto leading-relaxed">
-              Fast, Reliable, and Affordable Plumbing Solutions for Your Home and Business
+              Fast, Reliable, and Affordable Plumbing Solutions for Your Home and Business Nationwide
             </p>
           </div>
         </div>
@@ -58,10 +58,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">Trusted Residential & Commercial Plumbing Services Throughout California</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-8">Trusted Residential & Commercial Plumbing Services Across the United States</h2>
               <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                 <p>
-                  At GD Professional Plumbing, we&apos;ve been helping Californians keep their pipes in check with real, no-nonsense plumbing services. Whether it&apos;s a busted water heater, a stubborn drain, or a full remodel, our team shows up ready to fix it—without the upsell or drama.
+                  At GD Professional Plumbing, we&apos;ve been helping Americans keep their pipes in check with real, no-nonsense plumbing services. Whether it&apos;s a busted water heater, a stubborn drain, or a full remodel, our team shows up ready to fix it—without the upsell or drama.
                 </p>
                 <p>
                   We&apos;re a small crew of licensed and insured professionals who take pride in our work. If we say we&apos;ll be there at 9, we show up at 8:55. No shortcuts. No guessing games. Just solid plumbing done right the first time.
@@ -159,7 +159,7 @@ export default function Home() {
         <section className="pt-2 pb-12 px-4 bg-gray-50">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Types of Plumbing Services We Offer in California</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Types of Plumbing Services We Offer Across the United States</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">GD Professional Plumbing Helps You with All Your Plumbing Projects including:</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -721,7 +721,7 @@ export default function Home() {
               {[
                 {
                   question: "What areas do you serve?",
-                  answer: "We provide comprehensive plumbing services throughout California, including residential and commercial properties. Our team is available for emergency calls and scheduled appointments across the state."
+                  answer: "We provide comprehensive plumbing services across the United States, including residential and commercial properties. Our team is available for emergency calls and scheduled appointments nationwide."
                 },
                 {
                   question: "Do you offer emergency plumbing services?",
@@ -729,7 +729,7 @@ export default function Home() {
                 },
                 {
                   question: "Are your plumbers licensed and insured?",
-                  answer: "Absolutely. All our plumbers are fully licensed, bonded, and insured. We maintain the highest standards of professionalism and safety. You can trust that our work meets all local building codes and regulations."
+                  answer: "Absolutely. All our plumbers are fully licensed, bonded, and insured. We maintain the highest standards of professionalism and safety. You can trust that our work meets all national and local building codes and regulations."
                 },
                 {
                   question: "What types of plumbing services do you offer?",

@@ -941,22 +941,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Google Maps Section */}
-      <section className="py-8 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-            <iframe 
-              title="Google Map" 
-              height="350" 
-              width="100%" 
-              src="https://maps.google.com/maps?q=+usa&amp;t=&amp;z=4&amp;ie=UTF8&amp;iwloc=&amp;output=embed" 
-              loading="lazy"
-              className="w-full"
-              style={{ border: 0 }}
-            ></iframe>
-          </div>
-        </div>
-      </section>
+
 
 
 

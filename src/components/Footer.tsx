@@ -49,7 +49,7 @@ export default function Footer() {
               title="Google Map" 
               height="350" 
               width="100%" 
-              src="https://maps.google.com/maps?q=California&t=&z=6&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=United+States&t=&z=4&ie=UTF8&iwloc=&output=embed"
               loading="lazy" 
               className="w-full" 
               style={{border:0}}

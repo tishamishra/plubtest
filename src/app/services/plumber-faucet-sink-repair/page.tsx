@@ -26,10 +26,10 @@ export default function FaucetsSinksRepairReplacementPage() {
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-              Expert Faucet & Sink Repair & Replacement Services
+              Expert Faucet & Sink Repair & Replacement Services in the US
             </h1>
             <p className="text-xl md:text-2xl lg:text-3xl opacity-95 max-w-5xl mx-auto leading-relaxed mb-8">
-              Expert installation and repair of kitchen and bathroom faucets and sinks. Leak-free performance and upgraded fixtures!
+              Expert installation and repair of kitchen and bathroom faucets and sinks in the US. Leak-free performance and upgraded fixtures!
             </p>
           </div>
         </div>
@@ -40,10 +40,10 @@ export default function FaucetsSinksRepairReplacementPage() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
-            Find the Best Faucet & Sink Repair & Replacement Services
+            Find the Best Faucet & Sink Repair & Replacement Services in the USA
           </h2>
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            Looking for reliable faucet and sink services? Our team of licensed and certified plumbers provides exceptional service at competitive prices. Whether you need repairs, new installation, or upgrades, we're your trusted plumbing experts. Serving residential and commercial properties with 24/7 availability and guaranteed satisfaction.
+            Looking for reliable faucet and sink services in the US? Our team of licensed and certified plumbers provides exceptional service at competitive prices. Whether you need repairs, new installation, or upgrades, we're your trusted plumbing experts. Serving residential and commercial properties throughout the USA with 24/7 availability and guaranteed satisfaction.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
@@ -62,10 +62,10 @@ export default function FaucetsSinksRepairReplacementPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
-                Are you searching for expert faucet and sink services?
+                Are you searching for expert faucet and sink services in the US?
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Look no further! GD Professional Plumbing is your trusted plumbing expert. We provide comprehensive faucet and sink solutions for both residential and commercial properties, with 24/7 emergency service availability.
+                Look no further! GD Professional Plumbing is your trusted plumbing expert in the USA. We provide comprehensive faucet and sink solutions for both residential and commercial properties throughout the US, with 24/7 emergency service availability.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">

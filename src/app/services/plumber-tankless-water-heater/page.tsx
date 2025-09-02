@@ -26,7 +26,7 @@ export default function TanklessWaterHeaterInstallationPage() {
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-              Expert Tankless Water Heater Installation Services
+              Expert Tankless Water Heater Installation Services in the US
             </h1>
             <p className="text-xl md:text-2xl lg:text-3xl opacity-95 max-w-5xl mx-auto leading-relaxed mb-8">
               Professional installation of energy-efficient tankless water heaters. Endless hot water, lower utility bills, and space-saving design!

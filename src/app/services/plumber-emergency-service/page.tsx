@@ -25,10 +25,10 @@ export default function EmergencyServicePage() {
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-              Emergency Plumbing Services
+              Emergency Plumbing Services in the US
             </h1>
             <p className="text-xl md:text-2xl lg:text-3xl opacity-95 max-w-5xl mx-auto leading-relaxed mb-8">
-              Available 24/7 for urgent plumbing emergencies. Fast response times, expert repairs, and peace of mind when you need it most!
+              Available 24/7 for urgent plumbing emergencies throughout the USA. Fast response times, expert repairs, and peace of mind when you need it most!
             </p>
           </div>
         </div>

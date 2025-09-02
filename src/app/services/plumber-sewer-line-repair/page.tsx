@@ -26,7 +26,7 @@ export default function SewerLineInspectionReplacementPage() {
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-              Expert Sewer Line Inspection & Replacement Services
+              Expert Sewer Line Inspection & Replacement Services in the US
             </h1>
             <p className="text-xl md:text-2xl lg:text-3xl opacity-95 max-w-5xl mx-auto leading-relaxed mb-8">
               Professional sewer line inspection and replacement services. Keep your sewer system flowing properly!

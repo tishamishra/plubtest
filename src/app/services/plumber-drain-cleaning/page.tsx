@@ -26,10 +26,10 @@ export default function ProfessionalDrainCleaningPage() {
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-              Professional Drain Cleaning Services
+              Professional Drain Cleaning Services in the US
             </h1>
             <p className="text-xl md:text-2xl lg:text-3xl opacity-95 max-w-5xl mx-auto leading-relaxed mb-8">
-              Fast and effective drain cleaning for clogged sinks, tubs, and sewer lines. Restore smooth drainage and prevent future plumbing issues!
+              Fast and effective drain cleaning for clogged sinks, tubs, and sewer lines in the US. Restore smooth drainage and prevent future plumbing issues!
             </p>
           </div>
         </div>
@@ -40,10 +40,10 @@ export default function ProfessionalDrainCleaningPage() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
-            Find the Best Professional Drain Cleaning Services
+            Find the Best Professional Drain Cleaning Services in the USA
           </h2>
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            Looking for reliable drain cleaning services? Our team of licensed and certified plumbers provides exceptional service at competitive prices. Whether you need emergency drain cleaning, preventive maintenance, or sewer line services, we're your trusted plumbing experts. Serving residential and commercial properties with 24/7 availability and guaranteed satisfaction.
+            Looking for reliable drain cleaning services in the US? Our team of licensed and certified plumbers provides exceptional service at competitive prices. Whether you need emergency drain cleaning, preventive maintenance, or sewer line services, we're your trusted plumbing experts. Serving residential and commercial properties throughout the USA with 24/7 availability and guaranteed satisfaction.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
@@ -62,10 +62,10 @@ export default function ProfessionalDrainCleaningPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
-                Are you searching for expert drain cleaning services?
+                Are you searching for expert drain cleaning services in the US?
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Look no further! GD Professional Plumbing is your trusted plumbing expert. We provide comprehensive drain cleaning solutions for both residential and commercial properties, with 24/7 emergency service availability.
+                Look no further! GD Professional Plumbing is your trusted plumbing expert in the USA. We provide comprehensive drain cleaning solutions for both residential and commercial properties throughout the US, with 24/7 emergency service availability.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">

@@ -2,6 +2,7 @@
 
 import Header from '@/components/Header';
 import FloatingCTA from '@/components/FloatingCTA';
+import Footer from '@/components/Footer';
 
 export default function SlabLeakDetectionRepairPage() {
   return (

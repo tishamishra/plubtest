@@ -1,6 +1,7 @@
 "use client";
 import Header from '@/components/Header';
 import FloatingCTA from '@/components/FloatingCTA';
+import Footer from '@/components/Footer';
 
 export default function EmergencyServicePage() {
   return (
@@ -253,29 +254,7 @@ export default function EmergencyServicePage() {
         </div>
       </section>
 
-      {/* CTA Banner */}
-      <section className="py-16 bg-red-600 text-white">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Don't Wait - Call Now for Emergency Plumbing!
-          </h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Every minute counts in a plumbing emergency. Our expert team is ready to help 
-            you 24/7 with fast, reliable emergency plumbing services.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a 
-              href="tel:8334450128" 
-              className="bg-white text-red-600 hover:bg-gray-100 px-8 py-4 rounded-lg text-xl font-semibold transition-colors"
-            >
-              Emergency Hotline: (833) 445-0128
-            </a>
-            <span className="text-lg opacity-90">
-              Available 24/7 • No Extra Fees
-            </span>
-          </div>
-        </div>
-      </section>
+      <Footer />
     </div>
   );
 }

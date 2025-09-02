@@ -40,7 +40,7 @@ export default function Home() {
         <div className="relative z-10 h-full flex items-center justify-center">
           <div className="text-center text-white px-6 max-w-4xl mx-auto">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-              Top-Rated Plumbing Services Across the United States
+              Top-Rated Plumbing Services Nationwide
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl opacity-95 max-w-3xl mx-auto leading-relaxed">
               Fast, Reliable, and Affordable Plumbing Solutions for Your Home and Business Nationwide
@@ -58,7 +58,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">Trusted Residential & Commercial Plumbing Services Across the United States</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-8">Trusted Residential & Commercial Plumbing Services Nationwide</h2>
               <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                 <p>
                   At GD Professional Plumbing, we&apos;ve been helping Americans keep their pipes in check with real, no-nonsense plumbing services. Whether it&apos;s a busted water heater, a stubborn drain, or a full remodel, our team shows up ready to fix it—without the upsell or drama.
@@ -159,7 +159,7 @@ export default function Home() {
         <section className="pt-2 pb-12 px-4 bg-gray-50">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Types of Plumbing Services We Offer Across the United States</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Types of Plumbing Services We Offer Nationwide</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">GD Professional Plumbing Helps You with All Your Plumbing Projects including:</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -721,7 +721,7 @@ export default function Home() {
               {[
                 {
                   question: "What areas do you serve?",
-                  answer: "We provide comprehensive plumbing services across the United States, including residential and commercial properties. Our team is available for emergency calls and scheduled appointments nationwide."
+                  answer: "We provide comprehensive plumbing services throughout the United States, including residential and commercial properties. Our team is available for emergency calls and scheduled appointments nationwide."
                 },
                 {
                   question: "Do you offer emergency plumbing services?",

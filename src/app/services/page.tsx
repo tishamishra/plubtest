@@ -67,10 +67,10 @@ export default function ServicesPage() {
                 </span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-                Professional Plumbing Services
+                Professional Plumbing Services in the US
               </h1>
               <p className="text-xl md:text-2xl lg:text-3xl opacity-95 max-w-4xl mx-auto leading-relaxed mb-8">
-                Comprehensive plumbing solutions for residential, commercial, and emergency needs
+                Comprehensive plumbing solutions for residential, commercial, and emergency needs throughout the USA
               </p>
               <div className="flex justify-center">
                 <a 
@@ -121,8 +121,8 @@ export default function ServicesPage() {
       <section id="services" className="pt-2 pb-12 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Types of Plumbing Services We Offer in California</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">GD Professional Plumbing Helps You with All Your Plumbing Projects including:</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Types of Plumbing Services We Offer in the US</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">GD Professional Plumbing Helps You with All Your Plumbing Projects throughout the USA including:</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Water Heater Repair and Installation */}
@@ -516,7 +516,7 @@ export default function ServicesPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-8">Ready to Get Started?</h2>
           <p className="text-xl mb-12 opacity-95 max-w-3xl mx-auto">
-            Whether you need routine maintenance, emergency repairs, or a complete plumbing overhaul, we're here to help. Get in touch today for a free consultation and estimate.
+            Whether you need routine maintenance, emergency repairs, or a complete plumbing overhaul in the US, we're here to help. Get in touch today for a free consultation and estimate.
           </p>
           <div className="flex justify-center">
             <a

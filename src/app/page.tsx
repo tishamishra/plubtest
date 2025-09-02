@@ -652,7 +652,7 @@ export default function Home() {
               {/* Right Column - Plumber Image */}
               <div className="relative h-full">
                 <img 
-                  src="IMAGE_17_URL_HERE" 
+                  src="https://ik.imagekit.io/nang9yead/Female%20Carpenter%20or%20Technician%20in%20Workshop.png?updatedAt=1756066944879" 
                   alt="Professional Plumber at Work" 
                   className="w-full h-full object-cover shadow-lg"
                 />

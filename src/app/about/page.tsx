@@ -68,10 +68,10 @@ export default function AboutPage() {
                 </span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-                About GD Professional Plumbing
+                About GD Professional Plumbing in the US
               </h1>
               <p className="text-xl md:text-2xl lg:text-3xl opacity-95 max-w-4xl mx-auto leading-relaxed mb-8">
-                Five decades of trusted service, innovation, and unwavering commitment to excellence
+                Five decades of trusted service across the USA, innovation, and unwavering commitment to excellence
               </p>
               <div className="flex justify-center">
                 <a 
@@ -140,7 +140,6 @@ export default function AboutPage() {
               { id: 'story', label: 'Our Story', icon: '📖' },
               { id: 'mission', label: 'Mission & Vision', icon: '🎯' },
               { id: 'values', label: 'Core Values', icon: '💎' },
-              { id: 'team', label: 'Our Team', icon: '👥' },
               { id: 'timeline', label: 'Timeline', icon: '📅' }
             ].map((tab) => (
               <button
@@ -164,16 +163,16 @@ export default function AboutPage() {
               <div className="p-8 md:p-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                   <div>
-                    <h3 className="text-3xl font-bold text-gray-900 mb-6">A Legacy of Excellence Since 1973</h3>
+                    <h3 className="text-3xl font-bold text-gray-900 mb-6">A Legacy of Excellence Across the USA Since 1973</h3>
                     <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                       <p>
-                        Founded in 1973 by George Davidson, GD Professional Plumbing began as a small family business with a simple mission: to provide honest, reliable plumbing services to our community. What started as a one-man operation has grown into one of the most trusted names in professional plumbing services across multiple states.
+                        Founded in 1973 by George Davidson, GD Professional Plumbing began as a small family business with a simple mission: to provide honest, reliable plumbing services throughout the United States. What started as a one-man operation has grown into one of the most trusted names in professional plumbing services across the entire USA.
                       </p>
                       <p>
-                        Over the past five decades, we've witnessed the evolution of plumbing technology, from basic pipe systems to sophisticated smart home solutions. Through it all, we've maintained our commitment to quality, integrity, and customer satisfaction.
+                        Over the past five decades, we've witnessed the evolution of plumbing technology, from basic pipe systems to sophisticated smart home solutions. Through it all, we've maintained our commitment to quality, integrity, and customer satisfaction while expanding our reach to serve communities nationwide.
                       </p>
                       <p>
-                        Today, GD Professional Plumbing serves thousands of residential and commercial customers with a team of over 50 licensed professionals, state-of-the-art equipment, and unwavering dedication to excellence.
+                        Today, GD Professional Plumbing serves thousands of residential and commercial customers across the US with a team of over 50 licensed professionals, state-of-the-art equipment, and unwavering dedication to excellence in every state we operate.
                       </p>
                     </div>
                   </div>
@@ -195,13 +194,13 @@ export default function AboutPage() {
                   <div className="bg-gradient-to-br from-[#1c7bc8] to-[#0f5a9e] text-white p-8 rounded-2xl">
                     <h3 className="text-3xl font-bold mb-6">Our Mission</h3>
                     <p className="text-lg leading-relaxed">
-                      To provide exceptional plumbing services that exceed customer expectations through innovation, reliability, and unwavering commitment to quality. We strive to be the most trusted name in professional plumbing, building lasting relationships with our customers and communities.
+                      To provide exceptional plumbing services across the United States that exceed customer expectations through innovation, reliability, and unwavering commitment to quality. We strive to be the most trusted name in professional plumbing throughout the USA, building lasting relationships with our customers and communities nationwide.
                     </p>
                   </div>
                   <div className="bg-gradient-to-br from-gray-800 to-gray-900 text-white p-8 rounded-2xl">
                     <h3 className="text-3xl font-bold mb-6">Our Vision</h3>
                     <p className="text-lg leading-relaxed">
-                      To lead the plumbing industry through technological advancement, sustainable practices, and exceptional service delivery. We envision a future where every home and business has access to reliable, efficient, and environmentally conscious plumbing solutions.
+                      To lead the plumbing industry across the United States through technological advancement, sustainable practices, and exceptional service delivery. We envision a future where every home and business throughout the USA has access to reliable, efficient, and environmentally conscious plumbing solutions.
                     </p>
                   </div>
                 </div>
@@ -253,60 +252,7 @@ export default function AboutPage() {
               </div>
             )}
 
-            {activeTab === 'team' && (
-              <div className="p-8 md:p-12">
-                <div className="text-center mb-12">
-                  <h3 className="text-3xl font-bold text-gray-900 mb-6">Meet Our Leadership Team</h3>
-                  <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                    Our experienced leadership team brings decades of combined expertise to ensure GD Professional Plumbing continues to deliver exceptional service.
-                  </p>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {[
-                    {
-                      name: 'Michael Davidson',
-                      position: 'CEO & Founder',
-                      experience: '50+ Years',
-                      image: '/images/plumber-hero.jpg',
-                      bio: 'Son of the founder, Michael has led the company\'s expansion while maintaining the family values of quality and integrity.'
-                    },
-                    {
-                      name: 'Sarah Rodriguez',
-                      position: 'Operations Director',
-                      experience: '25+ Years',
-                      image: '/images/plumber-working.jpg',
-                      bio: 'Sarah oversees all daily operations, ensuring smooth service delivery and customer satisfaction.'
-                    },
-                    {
-                      name: 'David Chen',
-                      position: 'Technical Director',
-                      experience: '30+ Years',
-                      image: '/images/commercial-plumbing.jpg',
-                      bio: 'David leads our technical team, implementing the latest plumbing technologies and best practices.'
-                    }
-                  ].map((member, index) => (
-                    <div key={index} className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                      <div className="relative h-64 overflow-hidden">
-                        <img 
-                          src={member.image} 
-                          alt={member.name}
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <div className="absolute bottom-4 left-4 text-white">
-                          <div className="text-sm opacity-90">{member.experience} Experience</div>
-                        </div>
-                      </div>
-                      <div className="p-6">
-                        <h4 className="text-xl font-bold text-gray-900 mb-2">{member.name}</h4>
-                        <p className="text-[#1c7bc8] font-semibold mb-3">{member.position}</p>
-                        <p className="text-gray-600 text-sm leading-relaxed">{member.bio}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
+
 
             {activeTab === 'timeline' && (
               <div className="p-8 md:p-12">
@@ -442,9 +388,9 @@ export default function AboutPage() {
       <section className="py-20 px-4 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Serving Communities Across Multiple States</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Serving Communities Across the United States</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From residential repairs to commercial installations, we're your trusted plumbing partner
+              From residential repairs to commercial installations throughout the USA, we're your trusted plumbing partner
             </p>
           </div>
           
@@ -453,7 +399,11 @@ export default function AboutPage() {
               { state: 'California', cities: 'Los Angeles, San Francisco, San Diego' },
               { state: 'New York', cities: 'New York City, Buffalo, Rochester' },
               { state: 'Texas', cities: 'Houston, Dallas, Austin' },
-              { state: 'Florida', cities: 'Miami, Orlando, Tampa' }
+              { state: 'Florida', cities: 'Miami, Orlando, Tampa' },
+              { state: 'Illinois', cities: 'Chicago, Springfield, Peoria' },
+              { state: 'Ohio', cities: 'Columbus, Cleveland, Cincinnati' },
+              { state: 'Pennsylvania', cities: 'Philadelphia, Pittsburgh, Harrisburg' },
+              { state: 'Michigan', cities: 'Detroit, Grand Rapids, Lansing' }
             ].map((area, index) => (
               <div key={index} className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
                 <div className="text-3xl mb-4">📍</div>

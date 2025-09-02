@@ -601,48 +601,7 @@ const serviceData = {
       }
     ]
   },
-  'plumber-bathroom-renovation': {
-    title: 'Bathroom Remodeling Services',
-    shortTitle: 'Bathroom Remodeling',
-    description: 'Complete bathroom remodeling and renovation services',
-    heroTitle: 'Bathroom Remodeling & Renovation',
-    heroSubtitle: 'Transform your bathroom with expert design and installation',
-    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
-    services: [
-      'Complete Bathroom Remodeling',
-      'Shower & Tub Installation',
-      'Vanity & Fixture Installation',
-      'Plumbing System Upgrades',
-      'Accessibility Modifications',
-      'Design Consultation'
-    ],
-    benefits: [
-      'Expert Design',
-      'Quality Materials',
-      'Licensed Contractors',
-      'Timeline Guarantee',
-      'Warranty Coverage',
-      'Project Management'
-    ],
-    content: [
-      {
-        title: 'Complete Bathroom Remodeling',
-        description: 'We handle complete bathroom renovations from design to completion. Our services include plumbing upgrades, fixture installation, tile work, and all necessary modifications to create your dream bathroom.'
-      },
-      {
-        title: 'Professional Design & Planning',
-        description: 'Our team works with you to design a functional and beautiful bathroom that meets your needs and budget. We handle all permits, inspections, and ensure compliance with building codes.'
-      },
-      {
-        title: 'Quality Fixture Installation',
-        description: 'We install high-quality fixtures including showers, tubs, vanities, toilets, and faucets. Our installation ensures proper function, water efficiency, and long-term durability.'
-      },
-      {
-        title: 'Accessibility & Safety Features',
-        description: 'We can incorporate accessibility features such as grab bars, walk-in tubs, and barrier-free showers. Our modifications improve safety and accessibility for all family members.'
-      }
-    ]
-  },
+
   'plumber-emergency-service': {
     title: 'Emergency Plumbing Services',
     shortTitle: 'Emergency Plumbing',

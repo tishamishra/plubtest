@@ -12,7 +12,7 @@ interface ServicePageProps {
 
 // Service data with detailed information for all 15 services
 const serviceData = {
-  'water-heater-repair': {
+  'plumber-water-heater-repair': {
     title: 'Water Heater Repair and Installation',
     shortTitle: 'Water Heater Services',
     description: 'Professional water heater repair and installation services',
@@ -54,7 +54,7 @@ const serviceData = {
       }
     ]
   },
-  'tankless-water-heater': {
+  'plumber-tankless-water-heater': {
     title: 'Tankless Water Heater Installation',
     shortTitle: 'Tankless Water Heaters',
     description: 'Energy-efficient tankless water heater installation and repair',
@@ -96,7 +96,7 @@ const serviceData = {
       }
     ]
   },
-  'water-recirculation-pump': {
+  'plumber-water-recirculation-pump': {
     title: 'Water Recirculation Pump Repair & Installation',
     shortTitle: 'Water Recirculation Pumps',
     description: 'Professional repair and installation of hot water recirculation pumps',
@@ -138,7 +138,7 @@ const serviceData = {
       }
     ]
   },
-  'faucet-sink-repair': {
+  'plumber-faucet-sink-repair': {
     title: 'Faucet and Sink Repair & Replacement',
     shortTitle: 'Faucet & Sink Services',
     description: 'Expert installation and repair of kitchen and bathroom faucets and sinks',
@@ -180,7 +180,7 @@ const serviceData = {
       }
     ]
   },
-  'water-conservation-plumbing': {
+  'plumber-water-conservation': {
     title: 'Water Conservation Plumbing Systems',
     shortTitle: 'Water Conservation',
     description: 'Eco-friendly water-saving plumbing solutions for homes and businesses',
@@ -222,7 +222,7 @@ const serviceData = {
       }
     ]
   },
-  'custom-bathroom-renovation': {
+  'plumber-bathroom-renovation': {
     title: 'Custom Bathroom Renovation',
     shortTitle: 'Bathroom Renovation',
     description: 'From outdated to outstanding—expert bathroom design and renovation services',
@@ -264,7 +264,7 @@ const serviceData = {
       }
     ]
   },
-  'water-system-installation': {
+  'plumber-water-system-repair': {
     title: 'Water System Installation & Repair',
     shortTitle: 'Water Systems',
     description: 'We install, repair, and maintain residential and commercial water systems',
@@ -306,7 +306,7 @@ const serviceData = {
       }
     ]
   },
-  'slab-leak-detection': {
+  'plumber-slab-leak-repair': {
     title: 'Slab Leak Detection & Repair',
     shortTitle: 'Slab Leak Services',
     description: 'Fast and accurate slab leak detection with expert repairs',
@@ -348,7 +348,7 @@ const serviceData = {
       }
     ]
   },
-  'sump-pump-installation': {
+  'plumber-sump-pump-repair': {
     title: 'Sump Pump Installation & Repair',
     shortTitle: 'Sump Pump Services',
     description: 'Keep your basement dry and protected with professional sump pump services',
@@ -390,7 +390,7 @@ const serviceData = {
       }
     ]
   },
-  'drain-cleaning': {
+  'plumber-drain-cleaning': {
     title: 'Professional Drain Cleaning',
     shortTitle: 'Drain Cleaning',
     description: 'Fast and effective drain cleaning for clogged sinks, tubs, and sewer lines',
@@ -432,7 +432,7 @@ const serviceData = {
       }
     ]
   },
-  'expert-drain-repair': {
+  'plumber-drain-cleaning': {
     title: 'Expert Drain Repair',
     shortTitle: 'Drain Repair',
     description: 'We fix damaged or leaking drains with precision',
@@ -474,7 +474,7 @@ const serviceData = {
       }
     ]
   },
-  'sewer-line-inspection': {
+  'plumber-sewer-line-repair': {
     title: 'Sewer Line Inspection & Replacement',
     shortTitle: 'Sewer Line Services',
     description: 'Thorough sewer camera inspections, repairs, and full replacements',
@@ -516,7 +516,7 @@ const serviceData = {
       }
     ]
   },
-  'gas-line-installation': {
+  'plumber-gas-line-repair': {
     title: 'Gas Line Installation & Repair',
     shortTitle: 'Gas Line Services',
     description: 'Safe and code-compliant gas line installations, repairs, and replacements',
@@ -558,7 +558,7 @@ const serviceData = {
       }
     ]
   },
-  'leak-detection-repair': {
+  'plumber-leak-detection': {
     title: 'Leak Detection & Repair',
     shortTitle: 'Leak Detection',
     description: 'Advanced leak detection tools to quickly locate and repair hidden water leaks',
@@ -600,7 +600,7 @@ const serviceData = {
       }
     ]
   },
-  'toilet-repair-installation': {
+  'plumber-toilet-repair': {
     title: 'Toilet Repair & Installation',
     shortTitle: 'Toilet Services',
     description: 'Fast and reliable toilet plumbing services for clogs, leaks, and replacements',
@@ -642,7 +642,7 @@ const serviceData = {
       }
     ]
   },
-  'bathroom-remodeling': {
+  'plumber-bathroom-renovation': {
     title: 'Bathroom Remodeling Services',
     shortTitle: 'Bathroom Remodeling',
     description: 'Complete bathroom remodeling and renovation services',
@@ -684,7 +684,7 @@ const serviceData = {
       }
     ]
   },
-  'emergency-plumbing': {
+  'plumber-emergency-service': {
     title: 'Emergency Plumbing Services',
     shortTitle: 'Emergency Plumbing',
     description: '24/7 emergency plumbing repair and services',

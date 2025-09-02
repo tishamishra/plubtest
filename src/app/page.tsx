@@ -333,22 +333,7 @@ export default function Home() {
                 </div>
               </Link>
 
-              {/* Expert Drain Repair */}
-              <Link href="/services/plumber-drain-cleaning" className="block">
-                <div className="bg-white rounded-xl shadow-lg border hover:shadow-xl transition-shadow overflow-hidden">
-                  <img
-                    src="https://ik.imagekit.io/nang9yead/Plumber%20Repairing%20Kitchen%20Sink%20Drainage%20Pipes?updatedAt=1756066959177"
-                    alt="Expert Drain Repair"
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-4 text-black">Expert Drain Repair in the US</h3>
-                    <p className="text-gray-600">
-                      We fix damaged or leaking drains with precision in the US—prevent backups, water damage, and ensure a smooth-flowing, reliable plumbing system in your home or business.
-                    </p>
-                  </div>
-                </div>
-              </Link>
+
 
               {/* Sewer Line Inspection & Replacement */}
               <Link href="/services/plumber-sewer-line-repair" className="block">

@@ -134,9 +134,9 @@ export default function ServicesPage() {
                     className="w-full h-48 object-cover"
                   />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-4 text-black">Water Heater Repair & Installation</h3>
+                  <h3 className="text-xl font-bold mb-4 text-black">Water Heater Repair & Installation in the US</h3>
                   <p className="text-gray-600">
-                    Affordable water heater repair and professional installation for homes and commercial buildings across the US—fast service, licensed plumbers, and energy-efficient systems.
+                    Affordable water heater repair and professional installation for homes and commercial buildings in the US—fast service, licensed plumbers, and energy-efficient systems.
                   </p>
                 </div>
               </div>
@@ -151,9 +151,9 @@ export default function ServicesPage() {
                     className="w-full h-48 object-cover"
                   />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-4 text-black">Tankless Water Heater Installation</h3>
+                  <h3 className="text-xl font-bold mb-4 text-black">Tankless Water Heater Installation in the US</h3>
                   <p className="text-gray-600">
-                    Expert installation of energy-efficient tankless water heaters for homes and businesses—endless hot water, lower utility bills, and space-saving design.
+                    Expert installation of energy-efficient tankless water heaters for homes and businesses in the US—endless hot water, lower utility bills, and space-saving design.
                   </p>
                 </div>
               </div>
@@ -168,9 +168,9 @@ export default function ServicesPage() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-4 text-black">Water Recirculation Pump</h3>
+                  <h3 className="text-xl font-bold mb-4 text-black">Water Recirculation Pump in the US</h3>
                   <p className="text-gray-600">
-                    Professional repair and installation of hot water recirculation pumps for homes and businesses—get instant hot water, save water, and boost plumbing efficiency.
+                    Professional repair and installation of hot water recirculation pumps for homes and businesses in the US—get instant hot water, save water, and boost plumbing efficiency.
                   </p>
                 </div>
               </div>
@@ -185,9 +185,9 @@ export default function ServicesPage() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-4 text-black">Faucets & Sinks</h3>
+                  <h3 className="text-xl font-bold mb-4 text-black">Faucets & Sinks in the US</h3>
                   <p className="text-gray-600">
-                    Expert installation and repair of kitchen and bathroom faucets and sinks—leak-free performance, upgraded fixtures, and improved space functionality.
+                    Expert installation and repair of kitchen and bathroom faucets and sinks in the US—leak-free performance, upgraded fixtures, and improved space functionality.
                   </p>
                 </div>
               </div>
@@ -202,9 +202,9 @@ export default function ServicesPage() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-4 text-black">Water Conservation Plumbing</h3>
+                  <h3 className="text-xl font-bold mb-4 text-black">Water Conservation Plumbing in the US</h3>
                   <p className="text-gray-600">
-                    Eco-friendly water-saving plumbing solutions for homes and businesses—reduce water waste, cut utility bills, and support sustainable living.
+                    Eco-friendly water-saving plumbing solutions for homes and businesses in the US—reduce water waste, cut utility bills, and support sustainable living.
                   </p>
                 </div>
               </div>
@@ -219,9 +219,9 @@ export default function ServicesPage() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-4 text-black">Custom Bathroom Renovation</h3>
+                  <h3 className="text-xl font-bold mb-4 text-black">Custom Bathroom Renovation in the US</h3>
                   <p className="text-gray-600">
-                    From outdated to outstanding—our expert team designs and renovates bathrooms with modern fixtures, efficient layouts, and timeless appeal for residential properties.
+                    From outdated to outstanding—our expert team designs and renovates bathrooms with modern fixtures, efficient layouts, and timeless appeal for residential properties in the US.
                   </p>
                 </div>
               </div>
@@ -236,9 +236,9 @@ export default function ServicesPage() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-4 text-black">Water System Installation & Repair</h3>
+                  <h3 className="text-xl font-bold mb-4 text-black">Water System Installation & Repair in the US</h3>
                   <p className="text-gray-600">
-                    We install, repair, and maintain residential and commercial water systems—delivering clean, safe, and uninterrupted water flow for your property.
+                    We install, repair, and maintain residential and commercial water systems in the US—delivering clean, safe, and uninterrupted water flow for your property.
                   </p>
                 </div>
               </div>
@@ -253,9 +253,9 @@ export default function ServicesPage() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-4 text-black">Slab Leak Detection & Repair</h3>
+                  <h3 className="text-xl font-bold mb-4 text-black">Slab Leak Detection & Repair in the US</h3>
                   <p className="text-gray-600">
-                    Fast and accurate slab leak detection with expert repairs—protect your foundation, prevent costly water damage, and preserve your property's structural integrity.
+                    Fast and accurate slab leak detection with expert repairs in the US—protect your foundation, prevent costly water damage, and preserve your property's structural integrity.
                   </p>
                 </div>
               </div>
@@ -270,9 +270,9 @@ export default function ServicesPage() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-4 text-black">Sump Pump Installation & Repair</h3>
+                  <h3 className="text-xl font-bold mb-4 text-black">Sump Pump Installation & Repair in the US</h3>
                   <p className="text-gray-600">
-                    Keep your basement dry and protected with professional sump pump repair, installation, and maintenance—flood prevention solutions built for long-term reliability.
+                    Keep your basement dry and protected with professional sump pump repair, installation, and maintenance in the US—flood prevention solutions built for long-term reliability.
                   </p>
                 </div>
               </div>
@@ -287,9 +287,9 @@ export default function ServicesPage() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-4 text-black">Professional Drain Cleaning</h3>
+                  <h3 className="text-xl font-bold mb-4 text-black">Professional Drain Cleaning in the US</h3>
                   <p className="text-gray-600">
-                    Fast and effective drain cleaning for clogged sinks, tubs, and sewer lines—restore smooth drainage, eliminate blockages, and prevent future plumbing issues.
+                    Fast and effective drain cleaning for clogged sinks, tubs, and sewer lines in the US—restore smooth drainage, eliminate blockages, and prevent future plumbing issues.
                   </p>
                 </div>
               </div>
@@ -304,9 +304,9 @@ export default function ServicesPage() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-4 text-black">Expert Drain Repair</h3>
+                  <h3 className="text-xl font-bold mb-4 text-black">Expert Drain Repair in the US</h3>
                   <p className="text-gray-600">
-                    We fix damaged or leaking drains with precision—prevent backups, water damage, and ensure a smooth-flowing, reliable plumbing system in your home or business.
+                    We fix damaged or leaking drains with precision in the US—prevent backups, water damage, and ensure a smooth-flowing, reliable plumbing system in your home or business.
                   </p>
                 </div>
               </div>
@@ -321,9 +321,9 @@ export default function ServicesPage() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-4 text-black">Sewer Line Inspection & Replacement</h3>
+                  <h3 className="text-xl font-bold mb-4 text-black">Sewer Line Inspection & Replacement in the US</h3>
                   <p className="text-gray-600">
-                    Thorough sewer camera inspections, repairs, and full replacements—ensure proper waste flow, avoid costly backups, and keep your sewer system running smoothly.
+                    Thorough sewer camera inspections, repairs, and full replacements in the US—ensure proper waste flow, avoid costly backups, and keep your sewer system running smoothly.
                   </p>
                 </div>
               </div>
@@ -338,9 +338,9 @@ export default function ServicesPage() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-4 text-black">Gas Line Installation & Repair</h3>
+                  <h3 className="text-xl font-bold mb-4 text-black">Gas Line Installation & Repair in the US</h3>
                   <p className="text-gray-600">
-                    Safe and code-compliant gas line installations, repairs, and replacements—power your appliances with confidence and protect your property from gas hazards.
+                    Safe and code-compliant gas line installations, repairs, and replacements in the US—power your appliances with confidence and protect your property from gas hazards.
                   </p>
                 </div>
               </div>
@@ -355,9 +355,9 @@ export default function ServicesPage() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-4 text-black">Leak Detection & Repair</h3>
+                  <h3 className="text-xl font-bold mb-4 text-black">Leak Detection & Repair in the US</h3>
                   <p className="text-gray-600">
-                    We use advanced leak detection tools to quickly locate and repair hidden water leaks—minimize damage, lower water bills, and keep your plumbing system efficient.
+                    We use advanced leak detection tools to quickly locate and repair hidden water leaks in the US—minimize damage, lower water bills, and keep your plumbing system efficient.
                   </p>
                 </div>
               </div>
@@ -372,9 +372,9 @@ export default function ServicesPage() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-4 text-black">Toilet Repair & Installation</h3>
+                  <h3 className="text-xl font-bold mb-4 text-black">Toilet Repair & Installation in the US</h3>
                   <p className="text-gray-600">
-                    Fast and reliable toilet plumbing services for clogs, leaks, and replacements—restore full function, improve efficiency, and prevent costly water waste.
+                    Fast and reliable toilet plumbing services for clogs, leaks, and replacements in the US—restore full function, improve efficiency, and prevent costly water waste.
                   </p>
                 </div>
               </div>

@@ -432,48 +432,7 @@ const serviceData = {
       }
     ]
   },
-  'plumber-drain-cleaning': {
-    title: 'Expert Drain Repair',
-    shortTitle: 'Drain Repair',
-    description: 'We fix damaged or leaking drains with precision',
-    heroTitle: 'Expert Drain Repair Services',
-    heroSubtitle: 'Prevent backups, water damage, and ensure smooth-flowing plumbing',
-    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
-    services: [
-      'Drain Pipe Repair',
-      'Leaking Drain Repair',
-      'Trenchless Drain Repair',
-      'Drain Line Replacement',
-      'Emergency Drain Repair',
-      'Drain System Diagnostics'
-    ],
-    benefits: [
-      'Prevent Backups',
-      'Stop Water Damage',
-      'Smooth Flow',
-      'Reliable System',
-      'Trenchless Options',
-      'Expert Precision'
-    ],
-    content: [
-      {
-        title: 'Drain Pipe Repair',
-        description: 'We repair damaged, cracked, or broken drain pipes using advanced techniques. Our repairs restore proper drainage and prevent water damage to your property.'
-      },
-      {
-        title: 'Trenchless Drain Repair',
-        description: 'When possible, we use trenchless repair methods that minimize disruption to your property. These techniques repair drains without extensive excavation.'
-      },
-      {
-        title: 'Leak Detection & Repair',
-        description: 'We quickly identify and repair leaking drains to prevent water damage and mold growth. Our diagnostic tools locate hidden leaks with precision.'
-      },
-      {
-        title: 'Drain System Diagnostics',
-        description: 'Our comprehensive diagnostics identify the root cause of drain problems. This allows us to provide targeted repairs that solve the problem permanently.'
-      }
-    ]
-  },
+
   'plumber-sewer-line-repair': {
     title: 'Sewer Line Inspection & Replacement',
     shortTitle: 'Sewer Line Services',

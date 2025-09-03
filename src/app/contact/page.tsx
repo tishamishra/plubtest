@@ -67,33 +67,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Methods Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-[#1c7bc8] to-[#0f5a9e] text-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
-            <p className="text-xl opacity-95 max-w-3xl mx-auto">
-              Call us directly for all your plumbing needs in the US
-            </p>
-          </div>
-          
-          <div className="flex justify-center">
-            <div className="group">
-              <a 
-                href="tel:8334450128"
-                className="block bg-white/20 backdrop-blur-sm rounded-2xl p-12 hover:bg-white/30 transition-all duration-300 transform hover:scale-105 text-center"
-              >
-                <div className="bg-green-500 text-white rounded-full w-24 h-24 flex items-center justify-center mb-6 mx-auto text-4xl group-hover:scale-110 transition-transform duration-300">
-                  📞
-                </div>
-                <h3 className="text-3xl font-bold mb-4">Phone</h3>
-                <p className="text-2xl font-semibold mb-4">(833) 445-0128</p>
-                <p className="text-lg opacity-90">Call us 24/7 for emergency services</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Call to Action Section */}
       <section className="py-20 px-4 bg-gray-50">

@@ -1,8 +1,51 @@
+import type { Metadata } from 'next';
 import { getLocationBySubdomain } from '@/utils/subdomain';
 import LocationPageContent from '@/components/LocationPageContent';
 import Header from '@/components/Header';
-
 import locationsData from '@/data/locations.json';
+
+export const metadata: Metadata = {
+  title: 'Plumbing Services by Location | Find Local Plumbers Across the US',
+  description: 'Find professional plumbers in your area. GD Professional Plumbing serves multiple cities across the USA with fast, reliable 24/7 emergency plumbing services. Call (833) 445-0128.',
+  keywords: [
+    'plumbing services by location',
+    'local plumber',
+    'plumber near me',
+    'plumbing services by city',
+    'plumbing services by state',
+    'find plumber',
+    'local plumbing company',
+    'plumbing contractor near me',
+    'emergency plumber near me',
+    'residential plumber near me',
+    'commercial plumber near me',
+    'water heater repair near me',
+    'drain cleaning near me',
+    'leak detection near me',
+    'sewer line repair near me',
+    'toilet repair near me',
+    'faucet repair near me',
+    'plumbing services USA',
+    'plumbing company locations',
+    'plumbing service areas'
+  ],
+  openGraph: {
+    title: 'Plumbing Services by Location | Find Local Plumbers Across the US',
+    description: 'Find professional plumbers in your area. GD Professional Plumbing serves multiple cities across the USA with fast, reliable 24/7 emergency plumbing services.',
+    url: 'https://gdprofessionalplumbing.com/locations',
+    siteName: 'GD Professional Plumbing',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Plumbing Services by Location | Find Local Plumbers Across the US',
+    description: 'Find professional plumbers in your area. GD Professional Plumbing serves multiple cities across the USA with fast, reliable 24/7 emergency plumbing services.',
+  },
+  alternates: {
+    canonical: 'https://gdprofessionalplumbing.com/locations',
+  },
+};
 
 export const dynamic = 'force-dynamic';
 

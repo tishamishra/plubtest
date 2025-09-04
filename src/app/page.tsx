@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Head from "next/head";
 import Header from "@/components/Header";
 import FloatingCTA from "@/components/FloatingCTA";
 import Footer from "@/components/Footer";
@@ -25,57 +24,34 @@ export default function Home() {
   }, []);
 
   return (
-    <>
-      <Head>
-        <title>24/7 Emergency Plumbing & Repairs Services | GD Professional Plumbing</title>
-        <meta name="description" content="Professional 24/7 emergency plumbing services across the USA. Water heater repair, drain cleaning, leak detection, and more. Licensed, insured, and trusted since 1973. Call (833) 445-0128 for immediate service." />
-        <meta name="keywords" content="24/7 emergency plumbing, emergency plumber, plumbing services, water heater repair, drain cleaning, leak detection, plumber near me, 24/7 plumbing, licensed plumber, residential plumbing, commercial plumbing, plumbing repair, plumbing installation, sewer line repair, gas line repair, toilet repair, faucet repair, sink repair, pipe repair, plumbing maintenance" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="24/7 Emergency Plumbing & Repairs Services | GD Professional Plumbing" />
-        <meta property="og:description" content="Professional 24/7 emergency plumbing services across the USA. Water heater repair, drain cleaning, leak detection, and more. Licensed, insured, and trusted since 1973." />
-        <meta property="og:url" content="https://gdprofessionalplumbing.com" />
-        <meta property="og:site_name" content="GD Professional Plumbing" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
-        
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="24/7 Emergency Plumbing & Repairs Services | GD Professional Plumbing" />
-        <meta name="twitter:description" content="Professional 24/7 emergency plumbing services across the USA. Water heater repair, drain cleaning, leak detection, and more." />
-        
-        {/* Canonical */}
-        <link rel="canonical" href="https://gdprofessionalplumbing.com" />
-      </Head>
+    <div className="bg-white min-h-screen flex flex-col font-sans">
+      <Header />
       
-      <div className="bg-white min-h-screen flex flex-col font-sans">
-        <Header />
-        
-        {/* Hero Section */}
-        <section className="relative h-[60vh] overflow-hidden">
-          {/* Background Image */}
-          <img 
-            src="/hero-bg.jpg" 
-            alt="Plumbing background"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-          {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-blue-700/60"></div>
-          {/* Content */}
-          <div className="relative z-10 h-full flex items-center justify-center">
-            <div className="text-center text-white px-6 max-w-4xl mx-auto">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-                Top-Rated Plumbing Services in the US
-              </h1>
-              <p className="text-lg md:text-xl lg:text-2xl opacity-95 max-w-3xl mx-auto leading-relaxed">
-                Fast, Reliable, and Affordable Plumbing Solutions for Your Home and Business Nationwide
-              </p>
-            </div>
+      {/* Hero Section */}
+      <section className="relative h-[60vh] overflow-hidden">
+        {/* Background Image */}
+        <img 
+          src="/hero-bg.jpg" 
+          alt="Plumbing background"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-blue-700/60"></div>
+        {/* Content */}
+        <div className="relative z-10 h-full flex items-center justify-center">
+          <div className="text-center text-white px-6 max-w-4xl mx-auto">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
+              Top-Rated Plumbing Services in the US
+            </h1>
+            <p className="text-lg md:text-xl lg:text-2xl opacity-95 max-w-3xl mx-auto leading-relaxed">
+              Fast, Reliable, and Affordable Plumbing Solutions for Your Home and Business Nationwide
+            </p>
           </div>
-          
-          <FloatingCTA />
-        </section>
-      
+        </div>
+        
+        <FloatingCTA />
+      </section>
+
 
       
       {/* About Company Section - SEO Optimized */}
@@ -938,7 +914,6 @@ export default function Home() {
 
 
       <Footer />
-      </div>
-    </>
+    </div>
   );
 }

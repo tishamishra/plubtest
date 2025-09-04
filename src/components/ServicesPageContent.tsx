@@ -255,7 +255,7 @@ export default function ServicesPageContent() {
           <p className="text-xl mb-12 opacity-95">
             Contact us today for reliable, professional plumbing services. We're available 24/7 for emergency calls and scheduled appointments.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <a
               href="tel:+18334450128"
               className="inline-flex items-center bg-white text-[#1c7bc8] font-bold px-8 py-4 rounded-xl text-lg hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 shadow-lg"
@@ -265,12 +265,6 @@ export default function ServicesPageContent() {
               </svg>
               Call (833) 445-0128
             </a>
-            <Link
-              href="/contact"
-              className="inline-flex items-center bg-transparent border-2 border-white text-white font-bold px-8 py-4 rounded-xl text-lg hover:bg-white hover:text-[#1c7bc8] transition-all duration-300 transform hover:scale-105"
-            >
-              Get Free Quote
-            </Link>
           </div>
         </div>
       </section>

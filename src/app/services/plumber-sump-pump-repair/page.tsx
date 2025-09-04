@@ -1,10 +1,52 @@
-"use client";
-
+import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import FloatingCTA from '@/components/FloatingCTA';
 import Footer from '@/components/Footer';
 
-export default function SumpPumpInstallationRepairPage() {
+export const metadata: Metadata = {
+  title: 'Sump Pump Installation & Repair Services in the US | GD Professional Plumbing',
+  description: 'Professional sump pump installation, repair, and maintenance services across the USA. Keep your basement dry and protected with flood prevention solutions built for long-term reliability. Licensed, insured, and trusted since 1973. Call (833) 445-0128.',
+  keywords: [
+    'sump pump installation',
+    'sump pump repair',
+    'sump pump maintenance',
+    'sump pump replacement',
+    'sump pump service',
+    'basement flood prevention',
+    'sump pump installation near me',
+    'sump pump repair near me',
+    'sump pump installation cost',
+    'sump pump repair cost',
+    'sump pump installation company',
+    'sump pump repair company',
+    'sump pump installation expert',
+    'sump pump repair expert',
+    'sump pump emergency service',
+    'sump pump 24/7',
+    'residential sump pump',
+    'commercial sump pump',
+    'plumbing services USA',
+    'licensed plumber'
+  ],
+  openGraph: {
+    title: 'Sump Pump Installation & Repair Services in the US | GD Professional Plumbing',
+    description: 'Professional sump pump installation, repair, and maintenance services across the USA. Keep your basement dry and protected with flood prevention solutions built for long-term reliability.',
+    url: 'https://gdprofessionalplumbing.com/services/plumber-sump-pump-repair',
+    siteName: 'GD Professional Plumbing',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sump Pump Installation & Repair Services in the US | GD Professional Plumbing',
+    description: 'Professional sump pump installation, repair, and maintenance services across the USA. Keep your basement dry and protected with flood prevention solutions built for long-term reliability.',
+  },
+  alternates: {
+    canonical: 'https://gdprofessionalplumbing.com/services/plumber-sump-pump-repair',
+  },
+};
+
+export default function SumpPumpRepairPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -13,8 +55,8 @@ export default function SumpPumpInstallationRepairPage() {
       <section className="relative h-[80vh] overflow-visible">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-700/90">
           <img 
-            src="https://ik.imagekit.io/nang9yead/Electrician%20Working%20on%20Outdoor%20Wiring%20in%20Lawn.png?updatedAt=1756066952425" 
-            alt="Sump pump installation and repair services"
+            src="https://ik.imagekit.io/nang9yead/Industrial%20Green%20and%20Orange%20Water%20Pipelines?updatedAt=1756066950649" 
+            alt="Sump pump installation and repair"
             className="w-full h-full object-cover mix-blend-multiply"
           />
         </div>
@@ -26,24 +68,24 @@ export default function SumpPumpInstallationRepairPage() {
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-              Expert Sump Pump Installation & Repair Services in the US
+              Sump Pump Installation & Repair Services in the US
             </h1>
             <p className="text-xl md:text-2xl lg:text-3xl opacity-95 max-w-5xl mx-auto leading-relaxed mb-8">
-              Professional sump pump installation and repair services. Protect your basement from flooding!
+              Keep your basement dry and protected with flood prevention solutions built for long-term reliability!
             </p>
           </div>
         </div>
         <FloatingCTA phone="8334450128" locationName="Your Area" />
       </section>
-      
+
       {/* SEO Intro Section */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
-            Find the Best Sump Pump Installation & Repair Services
+            Find the Best Sump Pump Services
           </h2>
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            Looking for reliable sump pump installation and repair services? Our team of licensed and certified plumbers provides exceptional service at competitive prices. Whether you need installation, repair, or maintenance, we're your trusted plumbing experts. Serving residential and commercial properties with 24/7 availability and guaranteed satisfaction.
+            Looking for reliable sump pump installation and repair? Our team of licensed and certified plumbers provides exceptional service at competitive prices. Whether you need new installation, pump repair, or maintenance, we're your trusted plumbing experts. Serving residential and commercial properties with 24/7 availability and guaranteed satisfaction.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
@@ -65,19 +107,19 @@ export default function SumpPumpInstallationRepairPage() {
                 Are you searching for expert sump pump services?
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Look no further! GD Professional Plumbing is your trusted plumbing expert. We provide comprehensive sump pump installation and repair solutions for both residential and commercial properties, with 24/7 emergency service availability.
+                Look no further! GD Professional Plumbing is your trusted plumbing expert. We provide comprehensive sump pump solutions for both residential and commercial properties, with 24/7 emergency service availability.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                  <h3 className="text-xl font-bold text-blue-700 mb-3">Residential Services</h3>
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">Residential Installation</h3>
                   <p className="text-gray-600 text-sm">
-                    Professional sump pump services for homes with basement protection.
+                    Professional sump pump installation for homes with reliable flood protection.
                   </p>
                 </div>
                 <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                  <h3 className="text-xl font-bold text-blue-700 mb-3">Commercial Services</h3>
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">Commercial Installation</h3>
                   <p className="text-gray-600 text-sm">
-                    Large-scale sump pump solutions for businesses with flood prevention.
+                    Large-scale sump pump systems for businesses with maximum protection and efficiency.
                   </p>
                 </div>
               </div>
@@ -98,20 +140,20 @@ export default function SumpPumpInstallationRepairPage() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold text-blue-600 mb-2">15+</div>
-              <div className="text-gray-600">Years Experience</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">50+</div>
+              <div className="text-sm text-gray-600">Years Combined Experience</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-blue-600 mb-2">1000+</div>
-              <div className="text-gray-600">Happy Customers</div>
+              <div className="text-4xl font-bold text-green-600 mb-2">1000+</div>
+              <div className="text-sm text-gray-600">Happy Customers</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-blue-600 mb-2">24/7</div>
-              <div className="text-gray-600">Emergency Service</div>
+              <div className="text-4xl font-bold text-orange-600 mb-2">24/7</div>
+              <div className="text-sm text-gray-600">Emergency Service</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-blue-600 mb-2">100%</div>
-              <div className="text-gray-600">Satisfaction Guaranteed</div>
+              <div className="text-4xl font-bold text-purple-600 mb-2">100%</div>
+              <div className="text-sm text-gray-600">Licensed & Insured</div>
             </div>
           </div>
         </div>
@@ -119,251 +161,137 @@ export default function SumpPumpInstallationRepairPage() {
 
       {/* Services Grid */}
       <section className="py-16 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
-            Sump Pump Services We Offer
+            Sump Pump Services We Provide
           </h2>
-          <p className="text-lg text-gray-600 text-center mb-12 max-w-4xl mx-auto">
-            GD Professional Plumbing Helps You with All Your Sump Pump Projects including:
-          </p>
-          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Service 1 */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="https://ik.imagekit.io/nang9yead/Electrician%20Working%20on%20Outdoor%20Wiring%20in%20Lawn.png?updatedAt=1756066952425"
-                alt="Sump Pump Installation"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-blue-700 mb-3">» Sump Pump Installation</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Professional installation of sump pumps for basement protection.
-                </p>
-              </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+              <div className="text-blue-600 text-4xl mb-4">🚰</div>
+              <h3 className="text-xl font-bold mb-3">Pump Installation</h3>
+              <p className="text-gray-600">
+                Professional sump pump installation with proper sizing and configuration.
+              </p>
             </div>
-
-            {/* Service 2 */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="https://ik.imagekit.io/nang9yead/Plumber%20Fixing%20Leaking%20Sink%20Pipe%20with%20Wrench.png?updatedAt=1756066955385"
-                alt="Sump Pump Repair"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-blue-700 mb-3">» Sump Pump Repair</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Fast and reliable repair services for sump pump issues.
-                </p>
-              </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+              <div className="text-green-600 text-4xl mb-4">🔧</div>
+              <h3 className="text-xl font-bold mb-3">Pump Repair</h3>
+              <p className="text-gray-600">
+                Expert repair services for all types of sump pump issues and failures.
+              </p>
             </div>
-
-            {/* Service 3 */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="https://ik.imagekit.io/nang9yead/Maintenance%20Worker%20Adjusting%20Copper%20Plumbing%20Pipes.png?updatedAt=1756066948233"
-                alt="Sump Pump Maintenance"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-blue-700 mb-3">» Sump Pump Maintenance</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Regular maintenance to keep your sump pump running efficiently.
-                </p>
-              </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+              <div className="text-orange-600 text-4xl mb-4">⚡</div>
+              <h3 className="text-xl font-bold mb-3">Maintenance</h3>
+              <p className="text-gray-600">
+                Regular maintenance to ensure optimal performance and prevent breakdowns.
+              </p>
             </div>
-
-            {/* Service 4 */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="https://ik.imagekit.io/nang9yead/Smiling%20Plumber%20Repairing%20Bathroom%20Sink%20Pipe.png?updatedAt=1756066965094"
-                alt="Sump Pump Replacement"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-blue-700 mb-3">» Sump Pump Replacement</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Complete replacement services for old or failing sump pumps.
-                </p>
-              </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+              <div className="text-purple-600 text-4xl mb-4">🔄</div>
+              <h3 className="text-xl font-bold mb-3">Pump Replacement</h3>
+              <p className="text-gray-600">
+                Complete pump replacement with modern, efficient sump pump technology.
+              </p>
             </div>
-
-            {/* Service 5 */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="https://ik.imagekit.io/nang9yead/Plumbers%20Installing%20Wall-Mounted%20Water%20Tap?updatedAt=1756066963229"
-                alt="Backup Sump Pump Installation"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-blue-700 mb-3">» Backup Sump Pump Installation</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Install backup systems for added protection.
-                </p>
-              </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+              <div className="text-red-600 text-4xl mb-4">📊</div>
+              <h3 className="text-xl font-bold mb-3">System Design</h3>
+              <p className="text-gray-600">
+                Custom sump pump system design for optimal flood protection and efficiency.
+              </p>
             </div>
-
-            {/* Service 6 */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="https://ik.imagekit.io/nang9yead/young%20female%20plumber%20fixing%20?updatedAt=1756066968835"
-                alt="Emergency Sump Pump Service"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-blue-700 mb-3">» Emergency Sump Pump Service</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. 24/7 emergency services for urgent sump pump issues.
-                </p>
-              </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+              <div className="text-indigo-600 text-4xl mb-4">🔍</div>
+              <h3 className="text-xl font-bold mb-3">Troubleshooting</h3>
+              <p className="text-gray-600">
+                Expert diagnosis and troubleshooting of sump pump system issues.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
+      {/* Why Choose Us */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
-            Why Choose GD Professional Plumbing for Sump Pump Services?
+            Why Choose GD Professional Plumbing?
           </h2>
-          <p className="text-lg text-gray-600 text-center mb-12 max-w-4xl mx-auto">
-            50+ years of trusted service with licensed professionals and guaranteed workmanship
-          </p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="flex items-start space-x-4">
+              <div className="bg-blue-100 p-3 rounded-full">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">Expert Installation</h3>
-              <p className="text-gray-600">We ensure proper sump pump installation for maximum effectiveness and longevity.</p>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Licensed & Insured</h3>
+                <p className="text-gray-600">
+                  All our technicians are fully licensed, bonded, and insured for your protection.
+                </p>
+              </div>
             </div>
-            
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="flex items-start space-x-4">
+              <div className="bg-green-100 p-3 rounded-full">
+                <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">24/7 Emergency Services</h3>
-              <p className="text-gray-600">Available round the clock for emergency sump pump installation and repair.</p>
+              <div>
+                <h3 className="text-xl font-bold mb-2">24/7 Emergency Service</h3>
+                <p className="text-gray-600">
+                  Available around the clock for urgent plumbing emergencies and repairs.
+                </p>
+              </div>
             </div>
-            
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            <div className="flex items-start space-x-4">
+              <div className="bg-purple-100 p-3 rounded-full">
+                <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">Licensed and Insured</h3>
-              <p className="text-gray-600">Our dedicated team of plumbers are fully licensed and insured for your peace of mind.</p>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Advanced Technology</h3>
+                <p className="text-gray-600">
+                  Using the latest tools and technology for precise diagnostics and repairs.
+                </p>
+              </div>
             </div>
-            
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="flex items-start space-x-4">
+              <div className="bg-orange-100 p-3 rounded-full">
+                <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">Quality Equipment</h3>
-              <p className="text-gray-600">We use only high-quality sump pumps and components for reliable performance.</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                </svg>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Customer Satisfaction</h3>
+                <p className="text-gray-600">
+                  Committed to providing exceptional service and customer satisfaction.
+                </p>
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">Affordable Pricing</h3>
-              <p className="text-gray-600">Our quality sump pump solutions are fairly priced to give you the best value.</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">Customer Satisfaction Guaranteed</h3>
-              <p className="text-gray-600">We're committed to top-notch service and complete customer satisfaction.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Residential vs Commercial Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
-                Residential Sump Pump Services
-              </h2>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Protect your home's basement from flooding with our comprehensive residential sump pump installation and repair services. We understand that water damage can be costly, which is why we provide prompt, professional service with quality equipment.
-              </p>
-              <ul className="space-y-3 text-gray-600 mb-8">
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  Single-family home installation
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  Basement flood protection
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  Backup pump systems
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  Emergency repair services
-                </li>
-              </ul>
-              <a 
-                href="tel:8334450128"
-                className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg transition-colors duration-300"
-              >
-                Call for Residential Service
-              </a>
-            </div>
-            
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
-                Commercial Sump Pump Services
-              </h2>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Keep your business protected from water damage with our comprehensive commercial sump pump installation and repair services. We understand that downtime costs money, so we provide fast, reliable service to minimize disruption to your operations.
-              </p>
-              <ul className="space-y-3 text-gray-600 mb-8">
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  Large-scale commercial installation
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  Industrial sump pump solutions
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  Preventive maintenance programs
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  Emergency repair services
-                </li>
-              </ul>
-              <a 
-                href="tel:8334450128"
-                className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg transition-colors duration-300"
-              >
-                Call for Commercial Service
-              </a>
-            </div>
+      {/* CTA Section */}
+      <section className="py-16 px-4 bg-blue-900 text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Ready for Professional Sump Pump Services?
+          </h2>
+          <p className="text-xl mb-8">
+            Contact us today for expert installation, repair, and maintenance services. 
+            Keep your basement dry and protected from flooding!
+          </p>
+          <div className="flex justify-center">
+            <a 
+              href="tel:8334450128"
+              className="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors duration-300"
+            >
+              Call (833) 445-0128 Now
+            </a>
           </div>
         </div>
       </section>

@@ -1,8 +1,50 @@
-"use client";
-
+import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import FloatingCTA from '@/components/FloatingCTA';
 import Footer from '@/components/Footer';
+
+export const metadata: Metadata = {
+  title: 'Professional Drain Cleaning Services in the US | GD Professional Plumbing',
+  description: 'Professional drain cleaning services across the USA. Fast and effective cleaning for clogged sinks, tubs, and sewer lines. Licensed, insured, and trusted since 1973. Call (833) 445-0128.',
+  keywords: [
+    'drain cleaning',
+    'drain cleaning services',
+    'clogged drain',
+    'drain cleaning near me',
+    'professional drain cleaning',
+    'sewer line cleaning',
+    'kitchen drain cleaning',
+    'bathroom drain cleaning',
+    'emergency drain cleaning',
+    'drain cleaning company',
+    'drain cleaning contractor',
+    'drain cleaning expert',
+    'drain cleaning professional',
+    'drain cleaning residential',
+    'drain cleaning commercial',
+    'drain cleaning 24/7',
+    'drain cleaning emergency',
+    'drain cleaning cost',
+    'drain cleaning price',
+    'drain cleaning service'
+  ],
+  openGraph: {
+    title: 'Professional Drain Cleaning Services in the US | GD Professional Plumbing',
+    description: 'Professional drain cleaning services across the USA. Fast and effective cleaning for clogged sinks, tubs, and sewer lines. Licensed, insured, and trusted since 1973.',
+    url: 'https://gdprofessionalplumbing.com/services/plumber-drain-cleaning',
+    siteName: 'GD Professional Plumbing',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Professional Drain Cleaning Services in the US | GD Professional Plumbing',
+    description: 'Professional drain cleaning services across the USA. Fast and effective cleaning for clogged sinks, tubs, and sewer lines. Licensed, insured, and trusted since 1973.',
+  },
+  alternates: {
+    canonical: 'https://gdprofessionalplumbing.com/services/plumber-drain-cleaning',
+  },
+};
 
 export default function ProfessionalDrainCleaningPage() {
   return (

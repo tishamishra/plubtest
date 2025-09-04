@@ -1,10 +1,52 @@
-"use client";
-
+import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import FloatingCTA from '@/components/FloatingCTA';
 import Footer from '@/components/Footer';
 
-export default function GasLineInstallationRepairPage() {
+export const metadata: Metadata = {
+  title: 'Gas Line Installation & Repair Services in the US | GD Professional Plumbing',
+  description: 'Professional gas line installation, repair, and replacement services across the USA. Safe and code-compliant gas line solutions to power your appliances with confidence and protect your property from gas hazards. Licensed, insured, and trusted since 1973. Call (833) 445-0128.',
+  keywords: [
+    'gas line installation',
+    'gas line repair',
+    'gas line replacement',
+    'gas line service',
+    'gas line maintenance',
+    'gas line inspection',
+    'gas line installation near me',
+    'gas line repair near me',
+    'gas line installation cost',
+    'gas line repair cost',
+    'gas line installation company',
+    'gas line repair company',
+    'gas line installation expert',
+    'gas line repair expert',
+    'gas line emergency service',
+    'gas line 24/7',
+    'residential gas line',
+    'commercial gas line',
+    'plumbing services USA',
+    'licensed plumber'
+  ],
+  openGraph: {
+    title: 'Gas Line Installation & Repair Services in the US | GD Professional Plumbing',
+    description: 'Professional gas line installation, repair, and replacement services across the USA. Safe and code-compliant gas line solutions to power your appliances with confidence and protect your property from gas hazards.',
+    url: 'https://gdprofessionalplumbing.com/services/plumber-gas-line-repair',
+    siteName: 'GD Professional Plumbing',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Gas Line Installation & Repair Services in the US | GD Professional Plumbing',
+    description: 'Professional gas line installation, repair, and replacement services across the USA. Safe and code-compliant gas line solutions to power your appliances with confidence and protect your property from gas hazards.',
+  },
+  alternates: {
+    canonical: 'https://gdprofessionalplumbing.com/services/plumber-gas-line-repair',
+  },
+};
+
+export default function GasLineRepairPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -14,7 +56,7 @@ export default function GasLineInstallationRepairPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-700/90">
           <img 
             src="https://ik.imagekit.io/nang9yead/Industrial%20Green%20and%20Orange%20Water%20Pipelines?updatedAt=1756066950649" 
-            alt="Gas line installation and repair services"
+            alt="Gas line installation and repair"
             className="w-full h-full object-cover mix-blend-multiply"
           />
         </div>
@@ -26,24 +68,24 @@ export default function GasLineInstallationRepairPage() {
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-              Expert Gas Line Installation & Repair Services in the US
+              Gas Line Installation & Repair Services in the US
             </h1>
             <p className="text-xl md:text-2xl lg:text-3xl opacity-95 max-w-5xl mx-auto leading-relaxed mb-8">
-              Safe and code-compliant gas line installations, repairs, and replacements. Power your appliances with confidence!
+              Safe and code-compliant gas line solutions to power your appliances with confidence and protect your property from gas hazards!
             </p>
           </div>
         </div>
         <FloatingCTA phone="8334450128" locationName="Your Area" />
       </section>
-      
+
       {/* SEO Intro Section */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
-            Find the Best Gas Line Installation & Repair Services
+            Find the Best Gas Line Services
           </h2>
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            Looking for reliable gas line services? Our team of licensed and certified plumbers provides exceptional service at competitive prices. Whether you need new installation, repair, or maintenance, we're your trusted plumbing experts. Serving residential and commercial properties with 24/7 availability and guaranteed satisfaction.
+            Looking for reliable gas line installation and repair? Our team of licensed and certified plumbers provides exceptional service at competitive prices. Whether you need new installation, line repair, or maintenance, we're your trusted plumbing experts. Serving residential and commercial properties with 24/7 availability and guaranteed satisfaction.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
@@ -69,15 +111,15 @@ export default function GasLineInstallationRepairPage() {
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                  <h3 className="text-xl font-bold text-blue-700 mb-3">Residential Services</h3>
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">Residential Installation</h3>
                   <p className="text-gray-600 text-sm">
-                    Professional gas line services for homes with safety and code compliance.
+                    Professional gas line installation for homes with safety and code compliance.
                   </p>
                 </div>
                 <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                  <h3 className="text-xl font-bold text-blue-700 mb-3">Commercial Services</h3>
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">Commercial Installation</h3>
                   <p className="text-gray-600 text-sm">
-                    Large-scale gas line systems for businesses with safety and efficiency.
+                    Large-scale gas line systems for businesses with maximum safety and efficiency.
                   </p>
                 </div>
               </div>
@@ -98,20 +140,20 @@ export default function GasLineInstallationRepairPage() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold text-blue-600 mb-2">15+</div>
-              <div className="text-gray-600">Years Experience</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">50+</div>
+              <div className="text-sm text-gray-600">Years Combined Experience</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-blue-600 mb-2">1000+</div>
-              <div className="text-gray-600">Happy Customers</div>
+              <div className="text-4xl font-bold text-green-600 mb-2">1000+</div>
+              <div className="text-sm text-gray-600">Happy Customers</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-blue-600 mb-2">24/7</div>
-              <div className="text-gray-600">Emergency Service</div>
+              <div className="text-4xl font-bold text-orange-600 mb-2">24/7</div>
+              <div className="text-sm text-gray-600">Emergency Service</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-blue-600 mb-2">100%</div>
-              <div className="text-gray-600">Satisfaction Guaranteed</div>
+              <div className="text-4xl font-bold text-purple-600 mb-2">100%</div>
+              <div className="text-sm text-gray-600">Licensed & Insured</div>
             </div>
           </div>
         </div>
@@ -119,251 +161,137 @@ export default function GasLineInstallationRepairPage() {
 
       {/* Services Grid */}
       <section className="py-16 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
-            Gas Line Services We Offer
+            Gas Line Services We Provide
           </h2>
-          <p className="text-lg text-gray-600 text-center mb-12 max-w-4xl mx-auto">
-            GD Professional Plumbing Helps You with All Your Gas Line Projects including:
-          </p>
-          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Service 1 */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="https://ik.imagekit.io/nang9yead/Industrial%20Green%20and%20Orange%20Water%20Pipelines?updatedAt=1756066950649"
-                alt="Gas Line Installation"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-blue-700 mb-3">» Gas Line Installation</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Safe and code-compliant gas line installations for homes and businesses—power your appliances with confidence.
-                </p>
-              </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+              <div className="text-blue-600 text-4xl mb-4">🚰</div>
+              <h3 className="text-xl font-bold mb-3">Line Installation</h3>
+              <p className="text-gray-600">
+                Professional gas line installation with proper safety measures and code compliance.
+              </p>
             </div>
-
-            {/* Service 2 */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="https://ik.imagekit.io/nang9yead/Plumber%20Fixing%20Leaking%20Sink%20Pipe%20with%20Wrench.png?updatedAt=1756066955385"
-                alt="Gas Line Repair"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-blue-700 mb-3">» Gas Line Repair</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Fast and reliable repair services for gas line issues—ensure safety and restore functionality quickly.
-                </p>
-              </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+              <div className="text-green-600 text-4xl mb-4">🔧</div>
+              <h3 className="text-xl font-bold mb-3">Line Repair</h3>
+              <p className="text-gray-600">
+                Expert repair services for all types of gas line issues and safety concerns.
+              </p>
             </div>
-
-            {/* Service 3 */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="https://ik.imagekit.io/nang9yead/Maintenance%20Worker%20Adjusting%20Copper%20Plumbing%20Pipes.png?updatedAt=1756066948233"
-                alt="Gas Line Replacement"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-blue-700 mb-3">» Gas Line Replacement</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Complete gas line replacement services—upgrade to newer, safer systems.
-                </p>
-              </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+              <div className="text-orange-600 text-4xl mb-4">⚡</div>
+              <h3 className="text-xl font-bold mb-3">Maintenance</h3>
+              <p className="text-gray-600">
+                Regular maintenance to ensure optimal safety and prevent gas hazards.
+              </p>
             </div>
-
-            {/* Service 4 */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="https://ik.imagekit.io/nang9yead/Smiling%20Plumber%20Repairing%20Bathroom%20Sink%20Pipe.png?updatedAt=1756066965094"
-                alt="Gas Line Inspection"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-blue-700 mb-3">» Gas Line Inspection</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Professional gas line inspection services—identify issues before they become problems.
-                </p>
-              </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+              <div className="text-purple-600 text-4xl mb-4">🔄</div>
+              <h3 className="text-xl font-bold mb-3">Line Replacement</h3>
+              <p className="text-gray-600">
+                Complete gas line replacement with modern, safe gas line technology.
+              </p>
             </div>
-
-            {/* Service 5 */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="https://ik.imagekit.io/nang9yead/Plumbers%20Installing%20Wall-Mounted%20Water%20Tap?updatedAt=1756066963229"
-                alt="Gas Appliance Hookup"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-blue-700 mb-3">» Gas Appliance Hookup</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Professional gas appliance connection services—stoves, water heaters, and more.
-                </p>
-              </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+              <div className="text-red-600 text-4xl mb-4">📊</div>
+              <h3 className="text-xl font-bold mb-3">Safety Inspection</h3>
+              <p className="text-gray-600">
+                Comprehensive gas line safety inspection and compliance verification.
+              </p>
             </div>
-
-            {/* Service 6 */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="https://ik.imagekit.io/nang9yead/young%20female%20plumber%20fixing%20?updatedAt=1756066968835"
-                alt="Emergency Gas Line Service"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-blue-700 mb-3">» Emergency Gas Line Service</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. 24/7 emergency gas line services—rapid response for urgent safety issues.
-                </p>
-              </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+              <div className="text-indigo-600 text-4xl mb-4">🔍</div>
+              <h3 className="text-xl font-bold mb-3">Troubleshooting</h3>
+              <p className="text-gray-600">
+                Expert diagnosis and troubleshooting of gas line system issues.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
+      {/* Why Choose Us */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
-            Why Choose GD Professional Plumbing for Gas Line Services?
+            Why Choose GD Professional Plumbing?
           </h2>
-          <p className="text-lg text-gray-600 text-center mb-12 max-w-4xl mx-auto">
-            50+ years of trusted service with licensed professionals and guaranteed workmanship
-          </p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="flex items-start space-x-4">
+              <div className="bg-blue-100 p-3 rounded-full">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">Experienced Professionals</h3>
-              <p className="text-gray-600">We have decades of experience with gas lines with precision and safety expertise.</p>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Licensed & Insured</h3>
+                <p className="text-gray-600">
+                  All our technicians are fully licensed, bonded, and insured for your protection.
+                </p>
+              </div>
             </div>
-            
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="flex items-start space-x-4">
+              <div className="bg-green-100 p-3 rounded-full">
+                <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">24/7 Emergency Services</h3>
-              <p className="text-gray-600">Available round the clock for emergency gas line issues and urgent repairs.</p>
+              <div>
+                <h3 className="text-xl font-bold mb-2">24/7 Emergency Service</h3>
+                <p className="text-gray-600">
+                  Available around the clock for urgent plumbing emergencies and repairs.
+                </p>
+              </div>
             </div>
-            
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            <div className="flex items-start space-x-4">
+              <div className="bg-purple-100 p-3 rounded-full">
+                <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">Licensed and Insured</h3>
-              <p className="text-gray-600">Our dedicated team of plumbers are fully licensed and insured for your peace of mind.</p>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Advanced Technology</h3>
+                <p className="text-gray-600">
+                  Using the latest tools and technology for precise diagnostics and repairs.
+                </p>
+              </div>
             </div>
-            
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="flex items-start space-x-4">
+              <div className="bg-orange-100 p-3 rounded-full">
+                <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">Reliable and Trustworthy</h3>
-              <p className="text-gray-600">We pride ourselves on honest, dependable service you can rely on every time.</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                </svg>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Customer Satisfaction</h3>
+                <p className="text-gray-600">
+                  Committed to providing exceptional service and customer satisfaction.
+                </p>
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">Affordable Pricing</h3>
-              <p className="text-gray-600">Our quality gas line solutions are fairly priced to give you the best value.</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">Customer Satisfaction Guaranteed</h3>
-              <p className="text-gray-600">We're committed to top-notch service and complete customer satisfaction.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Residential vs Commercial Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
-                Residential Gas Line Services
-              </h2>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                From single-family homes to multi-unit properties, our residential gas line services cover all your home gas needs. We understand that safe gas lines are essential for daily living, which is why we provide prompt, professional service with clear communication throughout the process.
-              </p>
-              <ul className="space-y-3 text-gray-600 mb-8">
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  Single-family home gas lines
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  Multi-unit property solutions
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  Gas appliance connections
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  Emergency gas line services
-                </li>
-              </ul>
-              <a 
-                href="tel:8334450128"
-                className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg transition-colors duration-300"
-              >
-                Call for Residential Service
-              </a>
-            </div>
-            
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
-                Commercial Gas Line Services
-              </h2>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Keep your business running smoothly with our comprehensive commercial gas line services. We understand that downtime costs money, so we provide fast, reliable service to minimize disruption to your operations.
-              </p>
-              <ul className="space-y-3 text-gray-600 mb-8">
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  Large-scale commercial installations
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  Industrial gas line systems
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  Preventive maintenance programs
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  Emergency repair services
-                </li>
-              </ul>
-              <a 
-                href="tel:8334450128"
-                className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg transition-colors duration-300"
-              >
-                Call for Commercial Service
-              </a>
-            </div>
+      {/* CTA Section */}
+      <section className="py-16 px-4 bg-blue-900 text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Ready for Professional Gas Line Services?
+          </h2>
+          <p className="text-xl mb-8">
+            Contact us today for expert installation, repair, and maintenance services. 
+            Get safe and reliable gas line solutions for your property!
+          </p>
+          <div className="flex justify-center">
+            <a 
+              href="tel:8334450128"
+              className="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors duration-300"
+            >
+              Call (833) 445-0128 Now
+            </a>
           </div>
         </div>
       </section>

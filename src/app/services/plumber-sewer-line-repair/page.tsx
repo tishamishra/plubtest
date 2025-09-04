@@ -1,8 +1,50 @@
-"use client";
-
+import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import FloatingCTA from '@/components/FloatingCTA';
 import Footer from '@/components/Footer';
+
+export const metadata: Metadata = {
+  title: 'Expert Sewer Line Inspection & Replacement Services in the US | GD Professional Plumbing',
+  description: 'Professional sewer line inspection and replacement services across the USA. Complete sewer line services with camera technology. Licensed, insured, and trusted since 1973. Call (833) 445-0128.',
+  keywords: [
+    'sewer line repair',
+    'sewer line inspection',
+    'sewer line replacement',
+    'sewer line services',
+    'sewer line repair near me',
+    'professional sewer line repair',
+    'camera inspection',
+    'sewer line camera',
+    'sewer line backup',
+    'sewer line company',
+    'sewer line contractor',
+    'sewer line expert',
+    'sewer line professional',
+    'sewer line residential',
+    'sewer line commercial',
+    'sewer line 24/7',
+    'sewer line emergency',
+    'sewer line cost',
+    'sewer line price',
+    'sewer line service'
+  ],
+  openGraph: {
+    title: 'Expert Sewer Line Inspection & Replacement Services in the US | GD Professional Plumbing',
+    description: 'Professional sewer line inspection and replacement services across the USA. Complete sewer line services with camera technology. Licensed, insured, and trusted since 1973.',
+    url: 'https://gdprofessionalplumbing.com/services/plumber-sewer-line-repair',
+    siteName: 'GD Professional Plumbing',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Expert Sewer Line Inspection & Replacement Services in the US | GD Professional Plumbing',
+    description: 'Professional sewer line inspection and replacement services across the USA. Complete sewer line services with camera technology. Licensed, insured, and trusted since 1973.',
+  },
+  alternates: {
+    canonical: 'https://gdprofessionalplumbing.com/services/plumber-sewer-line-repair',
+  },
+};
 
 export default function SewerLineInspectionReplacementPage() {
   return (

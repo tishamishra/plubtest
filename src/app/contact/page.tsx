@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import ContactPageContent from '@/components/ContactPageContent';
 
 export const metadata: Metadata = {
-  title: 'Contact GD Professional Plumbing | 24/7 Emergency Service Across the US',
+  title: 'Contact Us Today | GD Professional Plumbing',
   description: 'Contact GD Professional Plumbing for 24/7 emergency plumbing services across the USA. Call (833) 445-0128 for immediate assistance with water heater repair, drain cleaning, leak detection, and more.',
   keywords: [
     'contact plumber',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     'commercial plumbing contact'
   ],
   openGraph: {
-    title: 'Contact GD Professional Plumbing | 24/7 Emergency Service Across the US',
+    title: 'Contact Us Today | GD Professional Plumbing',
     description: 'Contact GD Professional Plumbing for 24/7 emergency plumbing services across the USA. Call (833) 445-0128 for immediate assistance with water heater repair, drain cleaning, leak detection, and more.',
     url: 'https://gdprofessionalplumbing.com/contact',
     siteName: 'GD Professional Plumbing',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact GD Professional Plumbing | 24/7 Emergency Service Across the US',
+    title: 'Contact Us Today | GD Professional Plumbing',
     description: 'Contact GD Professional Plumbing for 24/7 emergency plumbing services across the USA. Call (833) 445-0128 for immediate assistance with water heater repair, drain cleaning, leak detection, and more.',
   },
   alternates: {

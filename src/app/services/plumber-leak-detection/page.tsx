@@ -1,8 +1,50 @@
-"use client";
-
+import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import FloatingCTA from '@/components/FloatingCTA';
 import Footer from '@/components/Footer';
+
+export const metadata: Metadata = {
+  title: 'Expert Leak Detection & Repair Services in the US | GD Professional Plumbing',
+  description: 'Professional leak detection and repair services across the USA. Advanced technology to quickly locate and repair hidden water leaks. Licensed, insured, and trusted since 1973. Call (833) 445-0128.',
+  keywords: [
+    'leak detection',
+    'leak detection services',
+    'water leak detection',
+    'leak detection near me',
+    'professional leak detection',
+    'pipe leak detection',
+    'hidden leak detection',
+    'emergency leak detection',
+    'leak detection company',
+    'leak detection contractor',
+    'leak detection expert',
+    'leak detection professional',
+    'leak detection residential',
+    'leak detection commercial',
+    'leak detection 24/7',
+    'leak detection emergency',
+    'leak detection cost',
+    'leak detection price',
+    'leak detection service',
+    'leak repair'
+  ],
+  openGraph: {
+    title: 'Expert Leak Detection & Repair Services in the US | GD Professional Plumbing',
+    description: 'Professional leak detection and repair services across the USA. Advanced technology to quickly locate and repair hidden water leaks. Licensed, insured, and trusted since 1973.',
+    url: 'https://gdprofessionalplumbing.com/services/plumber-leak-detection',
+    siteName: 'GD Professional Plumbing',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Expert Leak Detection & Repair Services in the US | GD Professional Plumbing',
+    description: 'Professional leak detection and repair services across the USA. Advanced technology to quickly locate and repair hidden water leaks. Licensed, insured, and trusted since 1973.',
+  },
+  alternates: {
+    canonical: 'https://gdprofessionalplumbing.com/services/plumber-leak-detection',
+  },
+};
 
 export default function LeakDetectionRepairPage() {
   return (

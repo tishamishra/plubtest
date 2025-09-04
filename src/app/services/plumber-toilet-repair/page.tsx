@@ -1,8 +1,50 @@
-"use client";
-
+import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import FloatingCTA from '@/components/FloatingCTA';
 import Footer from '@/components/Footer';
+
+export const metadata: Metadata = {
+  title: 'Expert Toilet Repair & Installation Services in the US | GD Professional Plumbing',
+  description: 'Fast and reliable toilet repair and installation services across the USA. Professional toilet services for clogs, leaks, and replacements. Licensed, insured, and trusted since 1973. Call (833) 445-0128.',
+  keywords: [
+    'toilet repair',
+    'toilet installation',
+    'toilet replacement',
+    'toilet repair near me',
+    'toilet installation near me',
+    'professional toilet repair',
+    'toilet unclogging',
+    'toilet maintenance',
+    'toilet repair company',
+    'toilet repair contractor',
+    'toilet repair expert',
+    'toilet repair professional',
+    'toilet repair residential',
+    'toilet repair commercial',
+    'toilet repair 24/7',
+    'toilet repair emergency',
+    'toilet repair cost',
+    'toilet repair price',
+    'toilet repair service',
+    'toilet installation cost'
+  ],
+  openGraph: {
+    title: 'Expert Toilet Repair & Installation Services in the US | GD Professional Plumbing',
+    description: 'Fast and reliable toilet repair and installation services across the USA. Professional toilet services for clogs, leaks, and replacements. Licensed, insured, and trusted since 1973.',
+    url: 'https://gdprofessionalplumbing.com/services/plumber-toilet-repair',
+    siteName: 'GD Professional Plumbing',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Expert Toilet Repair & Installation Services in the US | GD Professional Plumbing',
+    description: 'Fast and reliable toilet repair and installation services across the USA. Professional toilet services for clogs, leaks, and replacements. Licensed, insured, and trusted since 1973.',
+  },
+  alternates: {
+    canonical: 'https://gdprofessionalplumbing.com/services/plumber-toilet-repair',
+  },
+};
 
 export default function ToiletRepairInstallationPage() {
   return (

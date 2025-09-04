@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 import locationsData from '@/data/locations.json';
 
 export const metadata: Metadata = {
-  title: 'Plumbing Services by Location | Find Local Plumbers Across the US',
+  title: 'Plumbing Services by Location | GD Professional Plumbing',
   description: 'Find professional plumbers in your area. GD Professional Plumbing serves multiple cities across the USA with fast, reliable 24/7 emergency plumbing services. Call (833) 445-0128.',
   keywords: [
     'plumbing services by location',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     'plumbing service areas'
   ],
   openGraph: {
-    title: 'Plumbing Services by Location | Find Local Plumbers Across the US',
+    title: 'Plumbing Services by Location | GD Professional Plumbing',
     description: 'Find professional plumbers in your area. GD Professional Plumbing serves multiple cities across the USA with fast, reliable 24/7 emergency plumbing services.',
     url: 'https://gdprofessionalplumbing.com/locations',
     siteName: 'GD Professional Plumbing',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Plumbing Services by Location | Find Local Plumbers Across the US',
+    title: 'Plumbing Services by Location | GD Professional Plumbing',
     description: 'Find professional plumbers in your area. GD Professional Plumbing serves multiple cities across the USA with fast, reliable 24/7 emergency plumbing services.',
   },
   alternates: {

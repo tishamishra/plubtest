@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import AboutPageContent from '@/components/AboutPageContent';
 
 export const metadata: Metadata = {
-  title: 'About GD Professional Plumbing | 50+ Years of Trusted Service in the US',
+  title: 'About GD Professional Plumbing in the US | GD Professional Plumbing',
   description: 'Learn about GD Professional Plumbing - 50+ years of trusted service across the USA. Licensed, insured, and committed to excellence in residential and commercial plumbing since 1973.',
   keywords: [
     'about GD Professional Plumbing',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     'plumbing service history'
   ],
   openGraph: {
-    title: 'About GD Professional Plumbing | 50+ Years of Trusted Service in the US',
+    title: 'About GD Professional Plumbing in the US | GD Professional Plumbing',
     description: 'Learn about GD Professional Plumbing - 50+ years of trusted service across the USA. Licensed, insured, and committed to excellence in residential and commercial plumbing since 1973.',
     url: 'https://gdprofessionalplumbing.com/about',
     siteName: 'GD Professional Plumbing',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About GD Professional Plumbing | 50+ Years of Trusted Service in the US',
+    title: 'About GD Professional Plumbing in the US | GD Professional Plumbing',
     description: 'Learn about GD Professional Plumbing - 50+ years of trusted service across the USA. Licensed, insured, and committed to excellence in residential and commercial plumbing since 1973.',
   },
   alternates: {

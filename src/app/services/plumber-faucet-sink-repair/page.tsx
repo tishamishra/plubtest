@@ -1,8 +1,62 @@
-"use client";
-
+import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import FloatingCTA from '@/components/FloatingCTA';
 import Footer from '@/components/Footer';
+
+export const metadata: Metadata = {
+  title: 'Expert Faucet & Sink Repair & Replacement Services in the US | GD Professional Plumbing',
+  description: 'Expert installation and repair of kitchen and bathroom faucets and sinks across the USA. Professional faucet and sink services with leak-free performance. Licensed, insured, and trusted since 1973. Call (833) 445-0128.',
+  keywords: [
+    'faucet repair',
+    'sink repair',
+    'faucet installation',
+    'sink installation',
+    'faucet repair near me',
+    'sink repair near me',
+    'professional faucet repair',
+    'professional sink repair',
+    'kitchen faucet repair',
+    'bathroom faucet repair',
+    'faucet repair company',
+    'sink repair company',
+    'faucet repair contractor',
+    'sink repair contractor',
+    'faucet repair expert',
+    'sink repair expert',
+    'faucet repair professional',
+    'sink repair professional',
+    'faucet repair residential',
+    'sink repair residential',
+    'faucet repair commercial',
+    'sink repair commercial',
+    'faucet repair 24/7',
+    'sink repair 24/7',
+    'faucet repair emergency',
+    'sink repair emergency',
+    'faucet repair cost',
+    'sink repair cost',
+    'faucet repair price',
+    'sink repair price',
+    'faucet repair service',
+    'sink repair service'
+  ],
+  openGraph: {
+    title: 'Expert Faucet & Sink Repair & Replacement Services in the US | GD Professional Plumbing',
+    description: 'Expert installation and repair of kitchen and bathroom faucets and sinks across the USA. Professional faucet and sink services with leak-free performance. Licensed, insured, and trusted since 1973.',
+    url: 'https://gdprofessionalplumbing.com/services/plumber-faucet-sink-repair',
+    siteName: 'GD Professional Plumbing',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Expert Faucet & Sink Repair & Replacement Services in the US | GD Professional Plumbing',
+    description: 'Expert installation and repair of kitchen and bathroom faucets and sinks across the USA. Professional faucet and sink services with leak-free performance. Licensed, insured, and trusted since 1973.',
+  },
+  alternates: {
+    canonical: 'https://gdprofessionalplumbing.com/services/plumber-faucet-sink-repair',
+  },
+};
 
 export default function FaucetsSinksRepairReplacementPage() {
   return (

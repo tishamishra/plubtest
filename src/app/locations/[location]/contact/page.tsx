@@ -189,42 +189,6 @@ export default async function ContactPage({ params }: LocationPageProps) {
         </div>
       </section>
 
-      {/* Call to Action Section */}
-      <section className="py-20 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Ready to Get Started?</h2>
-          <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
-            Don't wait for plumbing issues to get worse. Call us now for fast, reliable service in {location.name} and surrounding areas.
-          </p>
-          
-          <div className="bg-white rounded-3xl shadow-2xl p-12">
-            <div className="text-center mb-8">
-              <div className="text-6xl mb-6">📞</div>
-              <h3 className="text-3xl font-bold text-gray-900 mb-4">Call Us Now</h3>
-              <p className="text-lg text-gray-600 mb-8">
-                Our team is ready to help with all your plumbing needs in {location.name}
-              </p>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <a 
-                href="tel:8334450128"
-                className="inline-flex items-center bg-[#1c7bc8] hover:bg-[#0f5a9e] text-white font-bold px-8 py-4 rounded-xl text-xl transition-all duration-300 transform hover:scale-105 shadow-lg"
-              >
-                <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.423a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-                Call (833) 445-0128
-              </a>
-              
-              <div className="text-center sm:text-left">
-                <div className="text-sm text-gray-500 mb-2">Available 24/7</div>
-                <div className="text-sm text-gray-500">Emergency Service</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Contact Methods Section */}
       <section id="contact" className="py-16 px-4 bg-white">

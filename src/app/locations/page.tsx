@@ -136,7 +136,12 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
           <div className="space-y-8">
             {states.map((state) => (
               <div key={state} className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-2xl font-bold mb-4 text-gray-800">{state}</h3>
+                <a 
+                  href={`/states/${state.toLowerCase()}`}
+                  className="text-2xl font-bold mb-4 text-gray-800 hover:text-blue-600 transition-colors block"
+                >
+                  {state} →
+                </a>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                   {dedupedLocationsByState[state].map((location: BasicLocation) => (
                     <a

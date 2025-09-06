@@ -81,15 +81,23 @@ export function middleware(request: NextRequest) {
   // Block access to main domain service pages on sub-domains to prevent duplicate content
   const pathSegments = url.pathname.split('/').filter(Boolean);
   
-  // If trying to access /services/* on sub-domain, redirect to city-specific services page
+  // If trying to access /services/* on sub-domain, redirect to appropriate services page
   if (pathSegments[0] === 'services' && pathSegments.length === 1) {
-    url.pathname = `/locations/${subdomain}/services`;
+    if (isStateSubdomain) {
+      url.pathname = `/states/${subdomain}/services`;
+    } else {
+      url.pathname = `/locations/${subdomain}/services`;
+    }
     return NextResponse.rewrite(url);
   }
-  
-  // If trying to access /services/plumber-* on sub-domain, redirect to city-specific service page
+
+  // If trying to access /services/plumber-* on sub-domain, redirect to appropriate service page
   if (pathSegments[0] === 'services' && pathSegments.length === 2 && pathSegments[1].startsWith('plumber-')) {
-    url.pathname = `/locations/${subdomain}/${pathSegments[1]}`;
+    if (isStateSubdomain) {
+      url.pathname = `/states/${subdomain}/${pathSegments[1]}`;
+    } else {
+      url.pathname = `/locations/${subdomain}/${pathSegments[1]}`;
+    }
     return NextResponse.rewrite(url);
   }
   

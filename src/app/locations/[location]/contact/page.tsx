@@ -363,6 +363,88 @@ export default async function ContactPage({ params }: LocationPageProps) {
         </div>
       </section>
 
+      {/* Service Area Map Section */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              Service Area Map
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              We proudly serve {location.name} and surrounding areas with professional plumbing services
+            </p>
+          </div>
+          
+          <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+            <div className="relative h-96">
+              <iframe
+                src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dOWWgUfXzQzQzQ&q=${encodeURIComponent(location.name + ', ' + location.state)}&zoom=12`}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title={`Service area map for ${location.name}, ${location.state}`}
+              ></iframe>
+            </div>
+            <div className="p-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    Serving {location.name} and Surrounding Areas
+                  </h3>
+                  <p className="text-gray-600 mb-6">
+                    Our professional plumbing team is proud to serve {location.name} and the surrounding communities. We provide comprehensive plumbing services including emergency repairs, installations, and maintenance.
+                  </p>
+                  <div className="space-y-3">
+                    <div className="flex items-center">
+                      <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                      <span className="text-gray-700">Local {location.name} plumbers</span>
+                    </div>
+                    <div className="flex items-center">
+                      <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span className="text-gray-700">24/7 emergency service</span>
+                    </div>
+                    <div className="flex items-center">
+                      <svg className="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span className="text-gray-700">Licensed and insured</span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    Service Areas
+                  </h3>
+                  <div className="grid grid-cols-2 gap-3">
+                    {location.areas.slice(0, 8).map((area, index) => (
+                      <div key={index} className="flex items-center">
+                        <svg className="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span className="text-gray-700 text-sm">{area}</span>
+                      </div>
+                    ))}
+                  </div>
+                  {location.areas.length > 8 && (
+                    <p className="text-gray-600 text-sm mt-4">
+                      And {location.areas.length - 8} more areas...
+                    </p>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Regular CTA Section */}
       <section className="py-16 px-4 bg-[#1c7bc8] text-white">
         <div className="max-w-4xl mx-auto text-center">

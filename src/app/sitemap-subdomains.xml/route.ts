@@ -41,22 +41,20 @@ interface LocationsData {
 export async function GET() {
   const currentDate = new Date().toISOString()
   
-  // Generate location pages (sub-domains only)
-  const locationPages = (locationsData as LocationsData).locations.map((location: LocationData) => 
-    `  <url>
-    <loc>https://${location.id}.gdprofessionalplumbing.com</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>`
+  // Generate individual city sitemap entries
+  const citySitemaps = (locationsData as LocationsData).locations.map((location: LocationData) => 
+    `<sitemap>
+<loc>https://${location.id}.gdprofessionalplumbing.com/sitemap.xml</loc>
+<lastmod>${currentDate}</lastmod>
+</sitemap>`
   ).join('\n')
 
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${locationPages}
-</urlset>`
+  const sitemapIndex = `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${citySitemaps}
+</sitemapindex>`
 
-  return new NextResponse(sitemap, {
+  return new NextResponse(sitemapIndex, {
     headers: {
       'Content-Type': 'application/xml',
     },

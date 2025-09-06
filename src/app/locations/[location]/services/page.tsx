@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingCTA from '@/components/FloatingCTA';
@@ -106,38 +107,6 @@ export default async function ServicesPage({ params }: LocationPageProps) {
     notFound();
   }
 
-  const services = [
-    {
-      title: 'Water Heater Repair & Installation',
-      description: 'Professional water heater services including repair, replacement, and installation of tank and tankless systems.',
-      icon: '🔥'
-    },
-    {
-      title: 'Drain Cleaning Services',
-      description: 'Professional drain cleaning for clogged sinks, tubs, and sewer lines using advanced equipment.',
-      icon: '🚰'
-    },
-    {
-      title: 'Leak Detection & Repair',
-      description: 'Advanced leak detection technology to quickly locate and repair hidden water leaks.',
-      icon: '🔍'
-    },
-    {
-      title: 'Sewer Line Services',
-      description: 'Complete sewer line inspection, repair, and replacement services with camera technology.',
-      icon: '🔧'
-    },
-    {
-      title: 'Toilet Repair & Installation',
-      description: 'Fast and reliable toilet repair, replacement, and installation services for all types.',
-      icon: '🚽'
-    },
-    {
-      title: 'Faucet & Sink Repair',
-      description: 'Professional repair and installation of kitchen and bathroom faucets and sinks.',
-      icon: '💧'
-    }
-  ];
 
   return (
     <div className="bg-white min-h-screen flex flex-col font-sans">

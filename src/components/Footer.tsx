@@ -1,6 +1,13 @@
 "use client";
 
-export default function Footer() {
+interface FooterProps {
+  location?: {
+    name: string;
+    state: string;
+  };
+}
+
+export default function Footer({ location }: FooterProps) {
   return (
     <>
       {/* 24/7 CTA Banner with Van */}
@@ -49,7 +56,10 @@ export default function Footer() {
               title="Google Map" 
               height="350" 
               width="100%" 
-              src="https://maps.google.com/maps?q=United+States&t=&z=4&ie=UTF8&iwloc=&output=embed"
+              src={location 
+                ? `https://maps.google.com/maps?q=${encodeURIComponent(location.name + ', ' + location.state)}&t=&z=13&ie=UTF8&iwloc=&output=embed`
+                : "https://maps.google.com/maps?q=United+States&t=&z=4&ie=UTF8&iwloc=&output=embed"
+              }
               loading="lazy" 
               className="w-full" 
               style={{border:0}}

@@ -36,6 +36,12 @@ export function middleware(request: NextRequest) {
     return NextResponse.rewrite(url);
   }
 
+  // Handle services page (/services) - rewrite to location services page
+  if (url.pathname === '/services') {
+    url.pathname = `/locations/${subdomain}/services`;
+    return NextResponse.rewrite(url);
+  }
+
   // Handle service pages (e.g., /water-heater-repair) - rewrite to location service page
   const serviceSlugs = [
     'water-heater-repair',

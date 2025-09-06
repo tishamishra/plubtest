@@ -1033,8 +1033,8 @@ export default async function ServicePage({ params }: ServicePageProps) {
               if (serviceSlug === service) return null;
               
               return (
-                <Link key={serviceSlug} href={`/services/${serviceSlug}`} className="block">
-                  <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer border border-gray-200">
+                <div key={serviceSlug} className="block">
+                  <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
                     <img
                       src={serviceInfo.image}
                       alt={serviceInfo.title}
@@ -1047,7 +1047,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                       </p>
                     </div>
                   </div>
-                </Link>
+                </div>
               );
             })}
           </div>

@@ -123,10 +123,133 @@ export default async function LocationPage({ params }: LocationPageProps) {
     faqs: location.faqs || []
   };
 
-  // Get nearby locations from the same state (excluding current location)
-  const nearbyLocations = (locationsData as LocationsData).locations
-    .filter((loc: LocationData) => loc.state === safeLocation.state && loc.id !== safeLocation.id)
-    .slice(0, 20); // Limit to 20 locations
+  // Get nearby locations with comprehensive interlinking strategy
+  const allLocations = (locationsData as LocationsData).locations;
+  const currentLocationIndex = allLocations.findIndex((loc: LocationData) => loc.id === safeLocation.id);
+  
+  // Create a comprehensive interlinking strategy
+  const getNearbyLocations = () => {
+    const nearbyLocations: LocationData[] = [];
+    
+    // 1. Same state locations (prioritized for local SEO) - up to 8 locations
+    const sameStateLocations = allLocations
+      .filter((loc: LocationData) => loc.state === safeLocation.state && loc.id !== safeLocation.id)
+      .slice(0, 8);
+    nearbyLocations.push(...sameStateLocations);
+    
+    // 2. If we need more locations, add from neighboring states - up to 6 locations
+    if (nearbyLocations.length < 15) {
+      const neighboringStates = getNeighboringStates(safeLocation.state);
+      const neighboringLocations = allLocations
+        .filter((loc: LocationData) => 
+          neighboringStates.includes(loc.state) && 
+          loc.id !== safeLocation.id &&
+          !nearbyLocations.some(nearby => nearby.id === loc.id)
+        )
+        .slice(0, 6);
+      nearbyLocations.push(...neighboringLocations);
+    }
+    
+    // 3. Fill remaining slots with distributed locations from across the country
+    if (nearbyLocations.length < 20) {
+      const remainingSlots = 20 - nearbyLocations.length;
+      const distributedLocations = getDistributedLocations(
+        allLocations, 
+        currentLocationIndex, 
+        nearbyLocations, 
+        remainingSlots
+      );
+      nearbyLocations.push(...distributedLocations);
+    }
+    
+    return nearbyLocations.slice(0, 20);
+  };
+
+  // Helper function to get neighboring states (simplified mapping)
+  const getNeighboringStates = (state: string): string[] => {
+    const neighboringMap: { [key: string]: string[] } = {
+      'TX': ['OK', 'AR', 'LA', 'NM'],
+      'CA': ['OR', 'NV', 'AZ'],
+      'FL': ['GA', 'AL'],
+      'NY': ['NJ', 'CT', 'PA', 'VT', 'MA'],
+      'IL': ['WI', 'IN', 'KY', 'MO', 'IA'],
+      'PA': ['NY', 'NJ', 'DE', 'MD', 'WV', 'OH'],
+      'OH': ['PA', 'WV', 'KY', 'IN', 'MI'],
+      'GA': ['FL', 'AL', 'TN', 'NC', 'SC'],
+      'NC': ['VA', 'TN', 'GA', 'SC'],
+      'MI': ['OH', 'IN', 'WI'],
+      'NJ': ['NY', 'PA', 'DE'],
+      'VA': ['MD', 'DC', 'WV', 'KY', 'TN', 'NC'],
+      'WA': ['OR', 'ID'],
+      'AZ': ['CA', 'NV', 'UT', 'CO', 'NM'],
+      'MA': ['NH', 'VT', 'NY', 'CT', 'RI'],
+      'TN': ['KY', 'VA', 'NC', 'GA', 'AL', 'MS', 'AR', 'MO'],
+      'IN': ['MI', 'OH', 'KY', 'IL', 'WI'],
+      'MO': ['IA', 'IL', 'KY', 'TN', 'AR', 'OK', 'KS', 'NE'],
+      'MD': ['PA', 'DE', 'VA', 'WV', 'DC'],
+      'WI': ['MI', 'MN', 'IA', 'IL'],
+      'CO': ['WY', 'NE', 'KS', 'OK', 'NM', 'UT', 'AZ'],
+      'MN': ['WI', 'IA', 'SD', 'ND'],
+      'SC': ['NC', 'GA'],
+      'AL': ['TN', 'GA', 'FL', 'MS'],
+      'LA': ['TX', 'AR', 'MS'],
+      'KY': ['IL', 'IN', 'OH', 'WV', 'VA', 'TN', 'MO'],
+      'OR': ['WA', 'CA', 'NV', 'ID'],
+      'OK': ['TX', 'NM', 'CO', 'KS', 'MO', 'AR'],
+      'CT': ['NY', 'MA', 'RI'],
+      'UT': ['ID', 'WY', 'CO', 'AZ', 'NV'],
+      'IA': ['MN', 'WI', 'IL', 'MO', 'NE', 'SD'],
+      'NV': ['CA', 'OR', 'ID', 'UT', 'AZ'],
+      'AR': ['MO', 'TN', 'MS', 'LA', 'TX', 'OK'],
+      'MS': ['TN', 'AL', 'LA', 'AR'],
+      'KS': ['NE', 'MO', 'OK', 'CO'],
+      'NM': ['CO', 'OK', 'TX', 'AZ'],
+      'NE': ['SD', 'IA', 'MO', 'KS', 'CO', 'WY'],
+      'WV': ['PA', 'MD', 'VA', 'KY', 'OH'],
+      'ID': ['WA', 'OR', 'NV', 'UT', 'WY', 'MT'],
+      'NH': ['ME', 'VT', 'MA'],
+      'ME': ['NH'],
+      'RI': ['CT', 'MA'],
+      'HI': [],
+      'AK': [],
+      'DE': ['PA', 'NJ', 'MD'],
+      'SD': ['ND', 'MN', 'IA', 'NE', 'WY', 'MT'],
+      'ND': ['MN', 'SD', 'MT'],
+      'MT': ['ND', 'SD', 'WY', 'ID'],
+      'WY': ['MT', 'SD', 'NE', 'CO', 'UT', 'ID'],
+      'VT': ['NY', 'NH', 'MA'],
+      'DC': ['MD', 'VA']
+    };
+    
+    return neighboringMap[state] || [];
+  };
+
+  // Helper function to get distributed locations across the country
+  const getDistributedLocations = (
+    allLocations: LocationData[], 
+    currentIndex: number, 
+    existingLocations: LocationData[], 
+    count: number
+  ): LocationData[] => {
+    const distributed: LocationData[] = [];
+    const step = Math.max(1, Math.floor(allLocations.length / count));
+    
+    for (let i = 0; i < count && distributed.length < count; i++) {
+      const index = (currentIndex + (i + 1) * step) % allLocations.length;
+      const location = allLocations[index];
+      
+      if (location && 
+          location.id !== safeLocation.id && 
+          !existingLocations.some(existing => existing.id === location.id) &&
+          !distributed.some(dist => dist.id === location.id)) {
+        distributed.push(location);
+      }
+    }
+    
+    return distributed;
+  };
+
+  const nearbyLocations = getNearbyLocations();
 
   return (
     <div className="min-h-screen bg-white">
@@ -807,7 +930,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
         <section className="py-16 px-4 bg-gray-50">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
-              Areas We Serve in {safeLocation.state}
+              Areas We Serve Nationwide
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
               {nearbyLocations.map((nearbyLocation: LocationData) => (

@@ -793,25 +793,25 @@ export default async function ServicePage({ params }: ServicePageProps) {
             Looking for reliable {serviceInfo.title.toLowerCase()}? Our team of licensed and certified plumbers provides exceptional service at competitive prices. Whether you need new installation, replacement, or maintenance, we're your trusted plumbing experts. Serving {safeLocation.name} and surrounding areas with 24/7 availability and guaranteed satisfaction.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href={`tel:${safeLocation.phone.replace(/\D/g, '')}`}
+              <a
+                href={`tel:${safeLocation.phone.replace(/\D/g, '')}`}
               className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-3 rounded-lg text-lg transition-colors duration-300"
-            >
-              Call {safeLocation.phone} Now
-            </a>
+              >
+                Call {safeLocation.phone} Now
+              </a>
+            </div>
           </div>
-        </div>
       </section>
 
       {/* Search Block */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+          <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
                 Are you searching for expert {serviceInfo.title.toLowerCase()}?
-              </h2>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            </h2>
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Look no further! GD Professional Plumbing is your trusted plumbing expert in {safeLocation.name}. We provide comprehensive {serviceInfo.title.toLowerCase()} solutions for both residential and commercial properties, with 24/7 emergency service availability.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -847,7 +847,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
             <div>
               <div className="text-4xl font-bold text-blue-700 mb-2">50+</div>
               <div className="text-gray-600">Years Experience</div>
-            </div>
+                </div>
             <div>
               <div className="text-4xl font-bold text-blue-700 mb-2">24/7</div>
               <div className="text-gray-600">Emergency Service</div>
@@ -1021,35 +1021,268 @@ export default async function ServicePage({ params }: ServicePageProps) {
 
 
 
-      {/* Other Services */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
-            Other Plumbing Services in {safeLocation.name}
-          </h2>
+      {/* Types of Plumbing Services We Offer */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Types of Plumbing Services We Offer in {safeLocation.name}, {safeLocation.state}</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">GD Professional Plumbing Helps You with All Your Plumbing Projects including:</p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {Object.entries(serviceData).map(([serviceSlug, serviceInfo]) => {
-              // Skip the current service
-              if (serviceSlug === service) return null;
-              
-              return (
-                <div key={serviceSlug} className="block">
-                  <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
-                    <img
-                      src={serviceInfo.image}
-                      alt={serviceInfo.title}
+            {/* Water Heater Repair and Installation */}
+            <Link href={`/plumber-water-heater-repair`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Plumber%20Fixing%20Leaking%20Sink%20Pipe%20with%20Wrench.png?updatedAt=1756066955385"
+                  alt="Water Heater Repair and Installation"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Water Heater Repair and Installation in {safeLocation.name}, {safeLocation.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {safeLocation.phone}. Affordable water heater repair and professional installation for homes and commercial buildings in {safeLocation.name}—fast service, licensed plumbers, and energy-efficient systems.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Tankless Water Heater Installation */}
+            <Link href={`/plumber-tankless-water-heater`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Worker%20Adjusting%20Water%20Filtration%20System%20Valves?updatedAt=1756066968225"
+                  alt="Tankless Water Heater Installation"
                       className="w-full h-48 object-cover"
                     />
                     <div className="p-6">
-                      <h3 className="text-xl font-bold text-blue-700 mb-3">» {serviceInfo.title} in {safeLocation.name}, {safeLocation.state}</h3>
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Tankless Water Heater Installation in {safeLocation.name}, {safeLocation.state}</h3>
                       <p className="text-gray-600 leading-relaxed">
-                        Call GD Professional Plumbing at {safeLocation.phone}. {serviceInfo.description}
+                    Call GD Professional Plumbing at {safeLocation.phone}. Expert installation of energy-efficient tankless water heaters for homes and businesses in {safeLocation.name}—endless hot water, lower utility bills, and space-saving design.
                       </p>
                     </div>
                   </div>
+                </Link>
+
+            {/* Water Recirculation Pump */}
+            <Link href={`/plumber-water-recirculation-pump`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Maintenance%20Worker%20Adjusting%20Copper%20Plumbing%20Pipes.png?updatedAt=1756066948233"
+                  alt="Water Recirculation Pump"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Water Recirculation Pump Repair & Installation in {safeLocation.name}, {safeLocation.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {safeLocation.phone}. Professional repair and installation of hot water recirculation pumps for homes and businesses in {safeLocation.name}—get instant hot water, save water, and boost plumbing efficiency.
+                  </p>
                 </div>
-              );
-            })}
+              </div>
+            </Link>
+
+            {/* Faucets & Sinks */}
+            <Link href={`/plumber-faucet-sink-repair`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Smiling%20Plumber%20Repairing%20Bathroom%20Sink%20Pipe.png?updatedAt=1756066965094"
+                  alt="Faucets & Sinks"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Faucet and Sink Repair & Replacement in {safeLocation.name}, {safeLocation.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {safeLocation.phone}. Expert installation and repair of kitchen and bathroom faucets and sinks in {safeLocation.name}—leak-free performance, upgraded fixtures, and improved space functionality.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Water Conservation Plumbing */}
+            <Link href={`/plumber-water-conservation`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Plumbers%20Installing%20Wall-Mounted%20Water%20Tap?updatedAt=1756066963229"
+                  alt="Water Conservation Plumbing"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Water Conservation Plumbing Systems in {safeLocation.name}, {safeLocation.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {safeLocation.phone}. Eco-friendly water-saving plumbing solutions for homes and businesses in {safeLocation.name}—reduce water waste, cut utility bills, and support sustainable living.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Custom Bathroom Renovation */}
+            <Link href={`/plumber-bathroom-renovation`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/young%20female%20plumber%20fixing%20?updatedAt=1756066968835"
+                  alt="Custom Bathroom Renovation"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Custom Bathroom Renovation in {safeLocation.name}, {safeLocation.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {safeLocation.phone}. From outdated to outstanding—our expert team designs and renovates bathrooms in {safeLocation.name} with modern fixtures, efficient layouts, and timeless appeal for residential properties.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Water System Installation & Repair */}
+            <Link href={`/plumber-water-system-repair`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Industrial%20HVAC%20Technician%20Inspection.png?updatedAt=1756066941834"
+                  alt="Water System Installation & Repair"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Water System Installation & Repair in {safeLocation.name}, {safeLocation.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {safeLocation.phone}. We install, repair, and maintain residential and commercial water systems in {safeLocation.name}—delivering clean, safe, and uninterrupted water flow for your property.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Slab Leak Detection & Repair */}
+            <Link href={`/plumber-slab-leak-repair`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Old%20Rusty%20Pipe%20Dripping%20Water.png?updatedAt=1756066951741"
+                  alt="Slab Leak Detection & Repair"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Slab Leak Detection & Repair in {safeLocation.name}, {safeLocation.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {safeLocation.phone}. Fast and accurate slab leak detection with expert repairs in {safeLocation.name}—protect your foundation, prevent costly water damage, and preserve your property's structural integrity.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Sump Pump Installation & Repair */}
+            <Link href={`/plumber-sump-pump-repair`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Plumber%20Installing%20Water%20Pump%20in%20Basement.png?updatedAt=1756066964034"
+                  alt="Sump Pump Installation & Repair"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Sump Pump Installation & Repair in {safeLocation.name}, {safeLocation.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {safeLocation.phone}. Keep your basement dry and protected with professional sump pump repair, installation, and maintenance in {safeLocation.name}—flood prevention solutions built for long-term reliability.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Professional Drain Cleaning */}
+            <Link href={`/plumber-drain-cleaning`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/plumber%20clearing%20blocked%20sink%20with%20water?updatedAt=1756066954284"
+                  alt="Professional Drain Cleaning"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Professional Drain Cleaning in {safeLocation.name}, {safeLocation.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {safeLocation.phone}. Fast and effective drain cleaning for clogged sinks, tubs, and sewer lines in {safeLocation.name}—restore smooth drainage, eliminate blockages, and prevent future plumbing issues.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Expert Drain Repair */}
+            <Link href={`/plumber-drain-repair`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Plumber%20Fixing%20Leaking%20Sink%20Pipe%20with%20Wrench.png?updatedAt=1756066955385"
+                  alt="Expert Drain Repair"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Expert Drain Repair in {safeLocation.name}, {safeLocation.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {safeLocation.phone}. We fix damaged or leaking drains with precision in {safeLocation.name}—prevent backups, water damage, and ensure a smooth-flowing, reliable plumbing system in your home or business.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Sewer Line Inspection & Replacement */}
+            <Link href={`/plumber-sewer-line-repair`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Old%20Rusty%20Underground%20Pipeline.png?updatedAt=1756066953091"
+                  alt="Sewer Line Inspection & Replacement"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Sewer Line Inspection & Replacement in {safeLocation.name}, {safeLocation.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {safeLocation.phone}. Thorough sewer camera inspections, repairs, and full replacements in {safeLocation.name}—ensure proper waste flow, avoid costly backups, and keep your sewer system running smoothly.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Gas Line Installation & Repair */}
+            <Link href={`/plumber-gas-line-repair`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Plumber%20Installing%20Gas%20Line%20in%20Kitchen.png?updatedAt=1756066961834"
+                  alt="Gas Line Installation & Repair"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Gas Line Installation & Repair in {safeLocation.name}, {safeLocation.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {safeLocation.phone}. Safe and code-compliant gas line installations, repairs, and replacements in {safeLocation.name}—power your appliances with confidence and protect your property from gas hazards.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Leak Detection & Repair */}
+            <Link href={`/plumber-leak-detection`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/PVC%20Pipe%20Installation%20in%20Soil.png?updatedAt=1756066962271"
+                  alt="Leak Detection & Repair"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Leak Detection & Repair in {safeLocation.name}, {safeLocation.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {safeLocation.phone}. We use advanced leak detection tools to quickly locate and repair hidden water leaks in {safeLocation.name}—minimize damage, lower water bills, and keep your plumbing system efficient.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Toilet Repair & Installation */}
+            <Link href={`/plumber-toilet-repair`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Plumber%20Using%20Plunger%20on%20Toilet%20Bowl%20worker%20in%20orange%20uniform%20unclogging%20toilet?updatedAt=1756066962119"
+                  alt="Toilet Repair & Installation"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Toilet Repair & Installation in {safeLocation.name}, {safeLocation.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {safeLocation.phone}. Fast and reliable toilet plumbing services for clogs, leaks, and replacements in {safeLocation.name}—restore full function, improve efficiency, and prevent costly water waste.
+                  </p>
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -1081,4 +1314,4 @@ export default async function ServicePage({ params }: ServicePageProps) {
       </section>
     </div>
   );
-}
+} 

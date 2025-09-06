@@ -377,15 +377,14 @@ export default async function ContactPage({ params }: LocationPageProps) {
           
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
             <div className="relative h-96">
-              <iframe
-                src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dOWWgUfXzQzQzQ&q=${encodeURIComponent(location.name + ', ' + location.state)}&zoom=12`}
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title={`Service area map for ${location.name}, ${location.state}`}
+              <iframe 
+                title="Google Map" 
+                height="350" 
+                width="100%" 
+                src={`https://maps.google.com/maps?q=${encodeURIComponent(location.name + ', ' + location.state)}&t=&z=13&ie=UTF8&iwloc=&output=embed`} 
+                loading="lazy" 
+                className="w-full" 
+                style={{border: '0px'}}
               ></iframe>
             </div>
             <div className="p-8">

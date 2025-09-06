@@ -8,6 +8,43 @@ import type { Metadata } from 'next';
 import LocationTestimonials from '@/components/LocationTestimonials';
 import LocationFAQ from '@/components/LocationFAQ';
 
+// Type definitions for location data
+interface LocationData {
+  id: string;
+  name: string;
+  state: string;
+  fullName: string;
+  description: string;
+  phone: string;
+  heroTitle: string;
+  heroSubtitle: string;
+  services: Array<{
+    title: string;
+    description: string;
+    icon: string;
+  }>;
+  areas: string[];
+  zipCodes: string[];
+  image: string;
+  meta: {
+    title: string;
+    description: string;
+  };
+  faqs: Array<{
+    question: string;
+    answer: string;
+  }>;
+  testimonials: Array<{
+    name: string;
+    text: string;
+    location: string;
+  }>;
+}
+
+interface LocationsData {
+  locations: LocationData[];
+}
+
 interface LocationPageProps {
   params: Promise<{
     location: string;
@@ -16,7 +53,7 @@ interface LocationPageProps {
 
 export async function generateMetadata({ params }: LocationPageProps): Promise<Metadata> {
   const { location: locationId } = await params;
-  const location = (locationsData as any).locations.find((loc: any) => loc.id === locationId);
+  const location = (locationsData as LocationsData).locations.find((loc: LocationData) => loc.id === locationId);
   
   if (!location) {
     return {
@@ -70,7 +107,7 @@ export async function generateMetadata({ params }: LocationPageProps): Promise<M
 
 export default async function LocationPage({ params }: LocationPageProps) {
   const { location: locationId } = await params;
-  const location = (locationsData as any).locations.find((loc: any) => loc.id === locationId);
+  const location = (locationsData as LocationsData).locations.find((loc: LocationData) => loc.id === locationId);
   
   if (!location) {
     notFound();

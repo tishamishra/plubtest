@@ -4,6 +4,43 @@ import Header from '@/components/Header';
 import locationsData from '@/data/locations.json';
 import type { Metadata } from 'next';
 
+// Type definitions for location data
+interface LocationData {
+  id: string;
+  name: string;
+  state: string;
+  fullName: string;
+  description: string;
+  phone: string;
+  heroTitle: string;
+  heroSubtitle: string;
+  services: Array<{
+    title: string;
+    description: string;
+    icon: string;
+  }>;
+  areas: string[];
+  zipCodes: string[];
+  image: string;
+  meta: {
+    title: string;
+    description: string;
+  };
+  faqs: Array<{
+    question: string;
+    answer: string;
+  }>;
+  testimonials: Array<{
+    name: string;
+    text: string;
+    location: string;
+  }>;
+}
+
+interface LocationsData {
+  locations: LocationData[];
+}
+
 interface ServicePageProps {
   params: Promise<{
     location: string;
@@ -649,7 +686,7 @@ const serviceData = {
 
 export async function generateMetadata({ params }: ServicePageProps): Promise<Metadata> {
   const { location: locationId, service: serviceSlug } = await params;
-  const location = (locationsData as any).locations.find((loc: any) => loc.id === locationId);
+  const location = (locationsData as LocationsData).locations.find((loc: LocationData) => loc.id === locationId);
   const serviceInfo = serviceData[serviceSlug as keyof typeof serviceData];
   
   if (!location || !serviceInfo) {

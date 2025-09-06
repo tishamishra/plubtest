@@ -42,6 +42,18 @@ export function middleware(request: NextRequest) {
     return NextResponse.rewrite(url);
   }
 
+  // Handle about page (/about) - rewrite to location about page
+  if (url.pathname === '/about') {
+    url.pathname = `/locations/${subdomain}/about`;
+    return NextResponse.rewrite(url);
+  }
+
+  // Handle contact page (/contact) - rewrite to location contact page
+  if (url.pathname === '/contact') {
+    url.pathname = `/locations/${subdomain}/contact`;
+    return NextResponse.rewrite(url);
+  }
+
   // Handle service pages (e.g., /water-heater-repair) - rewrite to location service page
   const serviceSlugs = [
     'water-heater-repair',

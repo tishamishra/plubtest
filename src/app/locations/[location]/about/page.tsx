@@ -151,69 +151,116 @@ export default async function AboutPage({ params }: LocationPageProps) {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative h-[60vh] overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-700/90">
+      <section className="relative h-[80vh] overflow-hidden">
+        <div className="absolute inset-0">
           <img 
-            src="/hero-bg.jpg" 
+            src="https://ik.imagekit.io/nang9yead/Smiling%20Plumber%20Holding%20Wrench%20in%20Kitchen.png?updatedAt=1756066963942"
             alt="Professional plumber working"
-            className="w-full h-full object-cover mix-blend-multiply"
+            className="w-full h-full object-cover"
           />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-blue-700/60"></div>
         </div>
-        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-        
         <div className="relative z-10 h-full flex items-center justify-center">
-          <div className="text-center text-white px-4 max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              About Our Plumbing Services in {location.name}, {location.state}
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 opacity-90">
-              Trusted local plumbers serving {location.name} and surrounding areas with expert plumbing solutions
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="tel:+18334450128" 
-                className="bg-white text-blue-700 font-bold px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition inline-block"
-              >
-                Call (833) 445-0128
-              </a>
-              <a 
-                href="#about" 
-                className="border-2 border-white text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-white hover:text-blue-700 transition inline-block"
-              >
-                Learn More
-              </a>
+          <div className="text-center text-white px-6 max-w-6xl mx-auto">
+            <div className="transition-all duration-1000 opacity-100 translate-y-0">
+              <div className="mb-6">
+                <span className="bg-red-600 text-white px-6 py-3 rounded-full text-sm font-semibold animate-pulse">
+                  Since 1973
+                </span>
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+                About Our Plumbing Services in {location.name}, {location.state}
+              </h1>
+              <p className="text-xl md:text-2xl lg:text-3xl opacity-95 max-w-4xl mx-auto leading-relaxed mb-8">
+                Five decades of trusted service in {location.name}, innovation, and unwavering commitment to excellence
+              </p>
+              <div className="flex justify-center">
+                <a 
+                  href="tel:+18334450128" 
+                  className="group relative bg-white text-blue-700 font-bold px-8 py-4 rounded-xl text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl inline-flex items-center gap-3 animate-pulse"
+                >
+                  <div className="relative">
+                    <svg className="w-6 h-6 animate-bounce text-blue-700" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"/>
+                    </svg>
+                    <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full animate-ping"></div>
+                  </div>
+                  <span className="font-bold tracking-wide">(833) 445-0128</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-20 px-4 bg-gradient-to-br from-[#1c7bc8] to-[#0f5a9e] text-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="text-center group">
+              <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/30 transition-all duration-300 transform hover:scale-105">
+                <div className="text-4xl md:text-5xl font-bold mb-2">50+</div>
+                <div className="text-sm md:text-base opacity-90">Years of Experience</div>
+              </div>
+            </div>
+            <div className="text-center group">
+              <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/30 transition-all duration-300 transform hover:scale-105">
+                <div className="text-4xl md:text-5xl font-bold mb-2">50+</div>
+                <div className="text-sm md:text-base opacity-90">Expert Plumbers</div>
+              </div>
+            </div>
+            <div className="text-center group">
+              <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/30 transition-all duration-300 transform hover:scale-105">
+                <div className="text-4xl md:text-5xl font-bold mb-2">50,000+</div>
+                <div className="text-sm md:text-base opacity-90">Happy Customers</div>
+              </div>
+            </div>
+            <div className="text-center group">
+              <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/30 transition-all duration-300 transform hover:scale-105">
+                <div className="text-4xl md:text-5xl font-bold mb-2">5,000+</div>
+                <div className="text-sm md:text-base opacity-90">Projects Completed</div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Your Trusted Plumbing Experts in {location.name}
-              </h2>
-              <div className="space-y-4 text-lg text-gray-600">
-                <p>
-                  For over 50 years, GD Professional Plumbing has been the go-to plumbing company for residents and businesses in {location.name}, {location.state}. Our commitment to excellence, reliability, and customer satisfaction has made us the most trusted name in local plumbing services.
-                </p>
-                <p>
-                  We understand that plumbing issues can be stressful and disruptive to your daily life. That's why we've built our reputation on providing fast, reliable, and affordable plumbing solutions that you can count on. Whether you need emergency repairs, routine maintenance, or new installations, our experienced team is here to help.
-                </p>
-                <p>
-                  Our licensed and insured plumbers use the latest tools and techniques to ensure your plumbing system works efficiently and safely. We're proud to serve {location.name} and surrounding communities with 24/7 emergency service, transparent pricing, and guaranteed workmanship.
-                </p>
+      <section id="about" className="py-20 px-4 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Our Story & Values</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Discover the journey that made us the most trusted name in plumbing services in {location.name}
+            </p>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
+            <div className="p-8 md:p-12">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                  <h3 className="text-3xl font-bold text-gray-900 mb-6">A Legacy of Excellence in {location.name}, {location.state} Since 1973</h3>
+                  <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
+                    <p>
+                      Founded in 1973 by George Davidson, GD Professional Plumbing began as a small family business with a simple mission: to provide honest, reliable plumbing services in {location.name} and surrounding areas. What started as a one-man operation has grown into one of the most trusted names in professional plumbing services throughout {location.state}.
+                    </p>
+                    <p>
+                      Over the past five decades, we've witnessed the evolution of plumbing technology, from basic pipe systems to sophisticated smart home solutions. Through it all, we've maintained our commitment to quality, integrity, and customer satisfaction while expanding our reach to serve communities throughout {location.name} and the surrounding region.
+                    </p>
+                    <p>
+                      Today, GD Professional Plumbing serves thousands of residential and commercial customers in {location.name} with a team of over 50 licensed professionals, state-of-the-art equipment, and unwavering dedication to excellence in every project we undertake.
+                    </p>
+                  </div>
+                </div>
+                <div className="relative">
+                  <img 
+                    src="https://ik.imagekit.io/nang9yead/Plumber%20Fixing%20Leaking%20Sink%20Pipe%20with%20Wrench.png?updatedAt=1756066955385"
+                    alt="Plumber working professionally"
+                    className="rounded-2xl shadow-xl w-full h-96 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
+                </div>
               </div>
-            </div>
-            <div className="relative">
-              <img 
-                src="https://ik.imagekit.io/nang9yead/plumber%20working%20on%20pipes?updatedAt=1756066954284" 
-                alt="Professional plumber working in plumbing system"
-                className="w-full h-96 object-cover rounded-lg shadow-lg"
-              />
-              <div className="absolute inset-0 bg-blue-900/20 rounded-lg"></div>
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next'
 import locationsData from '@/data/locations.json'
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  // ABSOLUTELY FORCE the correct domain - NO affinsight.com references
   const baseUrl = 'https://www.gdprofessionalplumbing.com'
   const currentDate = new Date().toISOString()
 
@@ -63,7 +64,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  // Location pages (sub-domains)
+  // Location pages (sub-domains) - FORCE gdprofessionalplumbing.com
   const locationPages = (locationsData as any).locations.map((location: any) => ({
     url: `https://${location.id}.gdprofessionalplumbing.com`,
     lastModified: currentDate,
@@ -71,7 +72,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }))
 
-  // Location-specific service pages
+  // Location-specific service pages - FORCE gdprofessionalplumbing.com
   const locationServicePages = (locationsData as any).locations.flatMap((location: any) =>
     servicePages.map(service => ({
       url: `https://${location.id}.gdprofessionalplumbing.com/services/${service.url.split('/').pop()}`,
@@ -81,7 +82,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   )
 
-  // Location-specific about, contact, and services pages
+  // Location-specific about, contact, and services pages - FORCE gdprofessionalplumbing.com
   const locationSpecificPages = (locationsData as any).locations.flatMap((location: any) => [
     {
       url: `https://${location.id}.gdprofessionalplumbing.com/about`,

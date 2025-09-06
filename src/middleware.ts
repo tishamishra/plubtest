@@ -4,6 +4,17 @@ export function middleware(request: NextRequest) {
   const hostname = request.headers.get('host') || '';
   const url = request.nextUrl;
 
+  // Redirect to www version for main domains (SEO best practice)
+  if (hostname === 'gdprofessionalplumbing.com') {
+    url.hostname = 'www.gdprofessionalplumbing.com';
+    return NextResponse.redirect(url, 301); // Permanent redirect
+  }
+  
+  if (hostname === 'affinsight.com') {
+    url.hostname = 'www.affinsight.com';
+    return NextResponse.redirect(url, 301); // Permanent redirect
+  }
+
   // Handle different domain patterns
   let subdomain = '';
   

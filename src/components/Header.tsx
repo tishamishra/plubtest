@@ -12,6 +12,7 @@ export default function Header() {
   // Check if we're on a sub-domain (not main domain)
   const isSubDomain = typeof window !== 'undefined' && 
     window.location.hostname !== 'gdprofessionalplumbing.com' && 
+    window.location.hostname !== 'www.gdprofessionalplumbing.com' &&
     window.location.hostname.includes('.gdprofessionalplumbing.com');
 
   return (

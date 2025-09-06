@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import FloatingCTA from '@/components/FloatingCTA';
 import locationsData from '@/data/locations.json';
 
 interface LocationData {
@@ -311,7 +310,6 @@ export default async function ContactPage({ params }: LocationPageProps) {
       </section>
 
       <Footer location={{ name: location.name, state: location.state }} />
-      <FloatingCTA />
     </div>
   );
 }

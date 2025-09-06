@@ -290,23 +290,6 @@ export default async function ContactPage({ params }: LocationPageProps) {
         </div>
       </section>
 
-      {/* Emergency CTA Section */}
-      <section className="py-16 px-4 bg-red-600 text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Plumbing Emergency in {location.name}?
-          </h2>
-          <p className="text-xl mb-8">
-            Don't wait! Call us immediately for fast emergency plumbing service. We're available 24/7 to help you.
-          </p>
-          <a 
-            href="tel:+18334450128" 
-            className="bg-white text-red-600 font-bold px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition inline-block"
-          >
-            Call (833) 445-0128 Now
-          </a>
-        </div>
-      </section>
 
 
       {/* Regular CTA Section */}

@@ -19,7 +19,7 @@ export async function GET() {
 
   // Check if this is a state subdomain (2-letter state codes)
   const stateCodes = ['ca', 'ny', 'tx', 'fl', 'il', 'pa', 'oh', 'ga', 'nc', 'mi', 'nj', 'va', 'wa', 'az', 'ma', 'tn', 'in', 'mo', 'md', 'co', 'mn', 'wi', 'sc', 'al', 'la', 'ky', 'or', 'ok', 'ct', 'ut', 'ia', 'nv', 'ar', 'ms', 'ks', 'ne', 'id', 'nh', 'me', 'nm', 'ri', 'hi', 'mt', 'de', 'sd', 'nd', 'ak', 'vt', 'wy', 'wv'];
-  const isStateSubdomain = stateCodes.includes(subdomain.toLowerCase());
+  // const isStateSubdomain = stateCodes.includes(subdomain.toLowerCase()); // Currently not used in sitemap generation
   
   const serviceSlugs = [
     'plumber-water-heater-repair',

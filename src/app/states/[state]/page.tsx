@@ -155,10 +155,56 @@ export default async function StatePage({ params }: StatePageProps) {
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">GD Professional Plumbing Helps You with All Your Plumbing Projects including:</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Service cards will be added here - same as city pages */}
-            <div className="text-center text-gray-500">
-              Service cards loading...
-            </div>
+            {/* Water Heater Repair and Installation */}
+            <Link href={`/plumber-water-heater-repair`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Plumber%20Fixing%20Leaking%20Sink%20Pipe%20with%20Wrench.png?updatedAt=1756066955385"
+                  alt="Water Heater Repair and Installation"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Water Heater Repair and Installation in {stateFullName}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at (833) 609-0936. Affordable water heater repair and professional installation for homes and commercial buildings in {stateFullName}—fast service, licensed plumbers, and energy-efficient systems.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Tankless Water Heater Installation */}
+            <Link href={`/plumber-tankless-water-heater`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Worker%20Adjusting%20Water%20Filtration%20System%20Valves?updatedAt=1756066968225"
+                  alt="Tankless Water Heater Installation"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Tankless Water Heater Installation in {stateFullName}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at (833) 609-0936. Expert installation of energy-efficient tankless water heaters for homes and businesses in {stateFullName}—endless hot water, lower utility bills, and space-saving design.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Water Recirculation Pump */}
+            <Link href={`/plumber-water-recirculation-pump`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Maintenance%20Worker%20Adjusting%20Copper%20Plumbing%20Pipes.png?updatedAt=1756066948233"
+                  alt="Water Recirculation Pump"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Water Recirculation Pump Repair & Installation in {stateFullName}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at (833) 609-0936. Professional repair and installation of hot water recirculation pumps for homes and businesses in {stateFullName}—get instant hot water, save water, and boost plumbing efficiency.
+                  </p>
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </section>

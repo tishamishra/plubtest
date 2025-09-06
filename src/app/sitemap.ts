@@ -30,7 +30,7 @@ interface LocationData {
   testimonials: Array<{
     name: string;
     text: string;
-    rating: number;
+    location: string;
   }>;
 }
 

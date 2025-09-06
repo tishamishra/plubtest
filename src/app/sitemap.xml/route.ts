@@ -17,9 +17,8 @@ export async function GET() {
     return NextResponse.redirect('https://www.gdprofessionalplumbing.com/sitemap-main.xml', 301)
   }
 
-  // Check if this is a state subdomain (2-letter state codes)
-  const stateCodes = ['ca', 'ny', 'tx', 'fl', 'il', 'pa', 'oh', 'ga', 'nc', 'mi', 'nj', 'va', 'wa', 'az', 'ma', 'tn', 'in', 'mo', 'md', 'co', 'mn', 'wi', 'sc', 'al', 'la', 'ky', 'or', 'ok', 'ct', 'ut', 'ia', 'nv', 'ar', 'ms', 'ks', 'ne', 'id', 'nh', 'me', 'nm', 'ri', 'hi', 'mt', 'de', 'sd', 'nd', 'ak', 'vt', 'wy', 'wv'];
-  // const isStateSubdomain = stateCodes.includes(subdomain.toLowerCase()); // Currently not used in sitemap generation
+  // Note: State subdomain detection is not needed for sitemap generation
+  // as the sitemap structure is the same for both city and state subdomains
   
   const serviceSlugs = [
     'plumber-water-heater-repair',

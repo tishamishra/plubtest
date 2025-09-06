@@ -1,9 +1,46 @@
 import { MetadataRoute } from 'next'
 import locationsData from '@/data/locations.json'
 
+// Define proper types for location data
+interface LocationData {
+  id: string;
+  name: string;
+  state: string;
+  fullName: string;
+  description: string;
+  phone: string;
+  heroTitle: string;
+  heroSubtitle: string;
+  services: Array<{
+    title: string;
+    description: string;
+    icon: string;
+  }>;
+  areas: string[];
+  zipCodes: string[];
+  image: string;
+  meta: {
+    title: string;
+    description: string;
+    keywords: string[];
+  };
+  faqs: Array<{
+    question: string;
+    answer: string;
+  }>;
+  testimonials: Array<{
+    name: string;
+    text: string;
+    rating: number;
+  }>;
+}
+
+interface LocationsData {
+  locations: LocationData[];
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   // HARDCODE the correct domain - NO environment variables, NO affinsight.com
-  const baseUrl = 'https://www.gdprofessionalplumbing.com'
   const currentDate = new Date().toISOString()
 
   // Main domain pages - HARDCODED URLs
@@ -65,7 +102,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }))
 
   // Location pages (sub-domains) - HARDCODED gdprofessionalplumbing.com
-  const locationPages = (locationsData as any).locations.map((location: any) => ({
+  const locationPages = (locationsData as LocationsData).locations.map((location: LocationData) => ({
     url: `https://${location.id}.gdprofessionalplumbing.com`,
     lastModified: currentDate,
     changeFrequency: 'weekly' as const,
@@ -73,7 +110,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }))
 
   // Location-specific service pages - HARDCODED gdprofessionalplumbing.com
-  const locationServicePages = (locationsData as any).locations.flatMap((location: any) =>
+  const locationServicePages = (locationsData as LocationsData).locations.flatMap((location: LocationData) =>
     servicePages.map(service => ({
       url: `https://${location.id}.gdprofessionalplumbing.com/services/${service.url.split('/').pop()}`,
       lastModified: currentDate,
@@ -83,7 +120,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   )
 
   // Location-specific about, contact, and services pages - HARDCODED gdprofessionalplumbing.com
-  const locationSpecificPages = (locationsData as any).locations.flatMap((location: any) => [
+  const locationSpecificPages = (locationsData as LocationsData).locations.flatMap((location: LocationData) => [
     {
       url: `https://${location.id}.gdprofessionalplumbing.com/about`,
       lastModified: currentDate,

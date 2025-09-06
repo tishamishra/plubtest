@@ -91,14 +91,10 @@ export function middleware(request: NextRequest) {
     return NextResponse.rewrite(url);
   }
 
-  // If trying to access /services/plumber-* on sub-domain, redirect to appropriate service page
+  // Block access to /services/plumber-* on sub-domains to prevent duplicate content
   if (pathSegments[0] === 'services' && pathSegments.length === 2 && pathSegments[1].startsWith('plumber-')) {
-    if (isStateSubdomain) {
-      url.pathname = `/states/${subdomain}/${pathSegments[1]}`;
-    } else {
-      url.pathname = `/locations/${subdomain}/${pathSegments[1]}`;
-    }
-    return NextResponse.rewrite(url);
+    // Return 404 for /services/plumber-* URLs on subdomains
+    return new NextResponse('Not Found', { status: 404 });
   }
   
   // Block direct access to main domain service pages on sub-domains

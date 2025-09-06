@@ -54,23 +54,23 @@ export function middleware(request: NextRequest) {
     return NextResponse.rewrite(url);
   }
 
-  // Handle service pages (e.g., /water-heater-repair) - rewrite to location service page
+  // Handle service pages (e.g., /plumber-water-heater-repair) - rewrite to location service page
   const serviceSlugs = [
-    'water-heater-repair',
-    'tankless-water-heater',
-    'water-recirculation-pump',
-    'faucet-sink-repair',
-    'water-conservation-plumbing',
-    'custom-bathroom-renovation',
-    'water-system-installation',
-    'slab-leak-detection',
-    'sump-pump-installation',
-    'drain-cleaning',
-    'expert-drain-repair',
-    'sewer-line-inspection',
-    'gas-line-installation',
-    'leak-detection-repair',
-    'toilet-repair-installation'
+    'plumber-water-heater-repair',
+    'plumber-tankless-water-heater',
+    'plumber-water-recirculation-pump',
+    'plumber-faucet-sink-repair',
+    'plumber-water-conservation',
+    'plumber-bathroom-renovation',
+    'plumber-water-system-repair',
+    'plumber-slab-leak-repair',
+    'plumber-sump-pump-repair',
+    'plumber-drain-cleaning',
+    'plumber-sewer-line-repair',
+    'plumber-gas-line-repair',
+    'plumber-leak-detection',
+    'plumber-toilet-repair',
+    'plumber-emergency-service'
   ];
 
   const pathSegments = url.pathname.split('/').filter(Boolean);

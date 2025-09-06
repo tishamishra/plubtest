@@ -833,7 +833,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
               <img 
                 src="https://ik.imagekit.io/nang9yead/Smiling%20Plumber%20Holding%20Wrench%20in%20Kitchen.png?updatedAt=1756066963942" 
                 alt="Professional plumber working"
-                className="w-full h-96 object-cover rounded-2xl shadow-2xl"
+                className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-2xl shadow-2xl"
               />
             </div>
           </div>
@@ -906,7 +906,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
             <img
               src={serviceInfo.image}
               alt={serviceInfo.title}
-              className="w-full h-80 object-cover"
+              className="w-full h-48 sm:h-64 lg:h-80 object-cover"
             />
             <div className="p-6">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our {serviceInfo.shortTitle} Services</h3>

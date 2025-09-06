@@ -256,7 +256,7 @@ export default async function AboutPage({ params }: LocationPageProps) {
                   <img 
                     src="https://ik.imagekit.io/nang9yead/Plumber%20Fixing%20Leaking%20Sink%20Pipe%20with%20Wrench.png?updatedAt=1756066955385"
                     alt="Plumber working professionally"
-                    className="rounded-2xl shadow-xl w-full h-96 object-cover"
+                    className="rounded-2xl shadow-xl w-full h-64 sm:h-80 lg:h-96 object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
                 </div>

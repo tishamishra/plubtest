@@ -38,7 +38,7 @@ export default function Footer({ location }: FooterProps) {
               <img 
                 src="/van.png" 
                 alt="Plumbing service van"
-                className="w-80 h-80 object-contain scale-150 -mb-4"
+                className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 object-contain scale-100 sm:scale-110 lg:scale-150 -mb-4"
               />
             </div>
           </div>

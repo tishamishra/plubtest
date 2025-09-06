@@ -28,7 +28,7 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative h-[60vh] overflow-hidden">
+      <section className="relative min-h-[70vh] md:h-[60vh] overflow-hidden">
         {/* Background Image */}
         <img 
           src="/hero-bg.jpg" 
@@ -38,7 +38,7 @@ export default function Home() {
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-blue-700/60"></div>
         {/* Content */}
-        <div className="relative z-10 h-full flex items-center justify-center">
+        <div className="relative z-10 h-full flex items-center justify-center pb-20 md:pb-0">
           <div className="text-center text-white px-6 max-w-4xl mx-auto">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
               Top-Rated Plumbing Services in the US
@@ -122,7 +122,7 @@ export default function Home() {
               <img 
                 src="https://ik.imagekit.io/nang9yead/Smiling%20Plumber%20Holding%20Wrench%20in%20Kitchen.png?updatedAt=1756066963942"
                 alt="Professional plumbing services"
-                className="rounded-2xl shadow-lg w-full h-96 object-cover mb-6"
+                className="rounded-2xl shadow-lg w-full h-64 sm:h-80 lg:h-96 object-cover mb-6"
               />
               
 
@@ -137,12 +137,6 @@ export default function Home() {
                     </svg>
                     <span className="font-semibold">(833) 609-0936</span>
                   </div>
-                  <div className="flex items-center">
-                    <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    <span>info@gdprofessionalplumbing.com</span>
-          </div>
             </div>
                 <a href="tel:8336090936" className="inline-flex items-center bg-white text-[#1c7bc8] px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition text-sm">
                   <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -37,6 +37,11 @@ export const metadata: Metadata = {
     "pipe repair",
     "plumbing maintenance"
   ],
+  icons: {
+    icon: "https://ik.imagekit.io/nang9yead/8f7118ab-ec26-4a6f-88c3-dc61ebb150c3.png?updatedAt=1757159395174",
+    shortcut: "https://ik.imagekit.io/nang9yead/8f7118ab-ec26-4a6f-88c3-dc61ebb150c3.png?updatedAt=1757159395174",
+    apple: "https://ik.imagekit.io/nang9yead/8f7118ab-ec26-4a6f-88c3-dc61ebb150c3.png?updatedAt=1757159395174",
+  },
   openGraph: {
     title: "24/7 Emergency Plumbing & Repairs Services | GD Professional Plumbing",
     description: "Professional 24/7 emergency plumbing services across the USA. Water heater repair, drain cleaning, leak detection, and more. Licensed, insured, and trusted since 1973.",

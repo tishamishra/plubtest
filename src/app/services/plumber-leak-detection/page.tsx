@@ -128,7 +128,7 @@ export default function LeakDetectionRepairPage() {
               <img 
                 src="https://ik.imagekit.io/nang9yead/Smiling%20Plumber%20Holding%20Wrench%20in%20Kitchen.png?updatedAt=1756066963942" 
                 alt="Professional plumber working"
-                className="w-full h-96 object-cover rounded-2xl shadow-2xl"
+                className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-2xl shadow-2xl"
               />
             </div>
           </div>

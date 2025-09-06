@@ -698,7 +698,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
 
   return {
     title: `${serviceInfo.title} in ${location.name}, ${location.state} | GD Professional Plumbing`,
-    description: `Professional ${serviceInfo.title.toLowerCase()} services in ${location.name}, ${location.state}. ${serviceInfo.description} Call (833) 445-0128 for expert plumbing solutions.`,
+    description: `Professional ${serviceInfo.title.toLowerCase()} services in ${location.name}, ${location.state}. ${serviceInfo.description} Call (833) 609-0936 for expert plumbing solutions.`,
     keywords: [
       `${serviceInfo.title.toLowerCase()} ${location.name}`,
       `plumber ${location.name}`,
@@ -717,7 +717,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
     ],
     openGraph: {
       title: `${serviceInfo.title} in ${location.name}, ${location.state} | GD Professional Plumbing`,
-      description: `Professional ${serviceInfo.title.toLowerCase()} services in ${location.name}, ${location.state}. ${serviceInfo.description} Call (833) 445-0128 for expert plumbing solutions.`,
+      description: `Professional ${serviceInfo.title.toLowerCase()} services in ${location.name}, ${location.state}. ${serviceInfo.description} Call (833) 609-0936 for expert plumbing solutions.`,
       type: 'website',
       locale: 'en_US',
       siteName: 'GD Professional Plumbing'
@@ -725,7 +725,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
     twitter: {
       card: 'summary_large_image',
       title: `${serviceInfo.title} in ${location.name}, ${location.state} | GD Professional Plumbing`,
-      description: `Professional ${serviceInfo.title.toLowerCase()} services in ${location.name}, ${location.state}. ${serviceInfo.description} Call (833) 445-0128 for expert plumbing solutions.`
+      description: `Professional ${serviceInfo.title.toLowerCase()} services in ${location.name}, ${location.state}. ${serviceInfo.description} Call (833) 609-0936 for expert plumbing solutions.`
     },
     alternates: {
       canonical: `https://${location.id}.gdprofessionalplumbing.com/${serviceSlug}`

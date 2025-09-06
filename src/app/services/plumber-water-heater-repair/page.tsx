@@ -3,7 +3,7 @@ import WaterHeaterRepairPageContent from '@/components/WaterHeaterRepairPageCont
 
 export const metadata: Metadata = {
   title: 'Expert Water Heater Repair & Installation Services in the US | GD Professional Plumbing',
-  description: 'Professional water heater repair and installation services across the USA. Fast, reliable service for all water heater types. Licensed, insured, and trusted since 1973. Call (833) 445-0128.',
+  description: 'Professional water heater repair and installation services across the USA. Fast, reliable service for all water heater types. Licensed, insured, and trusted since 1973. Call (833) 609-0936.',
   keywords: [
     'water heater repair',
     'water heater installation',

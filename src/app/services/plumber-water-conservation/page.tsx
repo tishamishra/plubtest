@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Water Conservation Plumbing Systems & Solutions in the US | GD Professional Plumbing',
-  description: 'Professional water conservation plumbing solutions across the USA. Eco-friendly water-saving systems for homes and businesses. Reduce water waste, cut utility bills, and support sustainable living. Licensed, insured, and trusted since 1973. Call (833) 445-0128.',
+  description: 'Professional water conservation plumbing solutions across the USA. Eco-friendly water-saving systems for homes and businesses. Reduce water waste, cut utility bills, and support sustainable living. Licensed, insured, and trusted since 1973. Call (833) 609-0936.',
   keywords: [
     'water conservation plumbing',
     'eco-friendly plumbing',
@@ -75,7 +75,7 @@ export default function WaterConservationPage() {
             </p>
           </div>
         </div>
-        <FloatingCTA phone="8334450128" locationName="Your Area" />
+        <FloatingCTA phone="8336090936" locationName="Your Area" />
       </section>
 
       {/* SEO Intro Section */}
@@ -89,10 +89,10 @@ export default function WaterConservationPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="tel:8334450128"
+              href="tel:8336090936"
               className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-3 rounded-lg text-lg transition-colors duration-300"
             >
-              Call (833) 445-0128 Now
+              Call (833) 609-0936 Now
             </a>
           </div>
         </div>
@@ -287,10 +287,10 @@ export default function WaterConservationPage() {
           </p>
           <div className="flex justify-center">
             <a 
-              href="tel:8334450128"
+              href="tel:8336090936"
               className="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors duration-300"
             >
-              Call (833) 445-0128 Now
+              Call (833) 609-0936 Now
             </a>
           </div>
         </div>

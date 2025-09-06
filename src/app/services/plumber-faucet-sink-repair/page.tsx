@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Expert Faucet & Sink Repair & Replacement Services in the US | GD Professional Plumbing',
-  description: 'Expert installation and repair of kitchen and bathroom faucets and sinks across the USA. Professional faucet and sink services with leak-free performance. Licensed, insured, and trusted since 1973. Call (833) 445-0128.',
+  description: 'Expert installation and repair of kitchen and bathroom faucets and sinks across the USA. Professional faucet and sink services with leak-free performance. Licensed, insured, and trusted since 1973. Call (833) 609-0936.',
   keywords: [
     'faucet repair',
     'sink repair',
@@ -87,7 +87,7 @@ export default function FaucetsSinksRepairReplacementPage() {
             </p>
           </div>
         </div>
-        <FloatingCTA phone="8334450128" locationName="Your Area" />
+        <FloatingCTA phone="8336090936" locationName="Your Area" />
       </section>
       
       {/* SEO Intro Section */}
@@ -101,10 +101,10 @@ export default function FaucetsSinksRepairReplacementPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="tel:8334450128"
+              href="tel:8336090936"
               className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-3 rounded-lg text-lg transition-colors duration-300"
             >
-              Call (833) 445-0128 Now
+              Call (833) 609-0936 Now
             </a>
           </div>
         </div>
@@ -192,7 +192,7 @@ export default function FaucetsSinksRepairReplacementPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Faucet Repair</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Fast and reliable repair services for all faucet issues—fix leaks, drips, and malfunctions quickly.
+                  Call GD Professional Plumbing at (833) 609-0936. Fast and reliable repair services for all faucet issues—fix leaks, drips, and malfunctions quickly.
                 </p>
               </div>
             </div>
@@ -207,7 +207,7 @@ export default function FaucetsSinksRepairReplacementPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Faucet Installation</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Professional installation of new faucets with proper fitting and modern designs.
+                  Call GD Professional Plumbing at (833) 609-0936. Professional installation of new faucets with proper fitting and modern designs.
                 </p>
               </div>
             </div>
@@ -222,7 +222,7 @@ export default function FaucetsSinksRepairReplacementPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Sink Repair</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Expert repair services for kitchen and bathroom sinks—fix leaks and restore functionality.
+                  Call GD Professional Plumbing at (833) 609-0936. Expert repair services for kitchen and bathroom sinks—fix leaks and restore functionality.
                 </p>
               </div>
             </div>
@@ -237,7 +237,7 @@ export default function FaucetsSinksRepairReplacementPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Sink Replacement</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Complete sink replacement services—upgrade to newer, more efficient models.
+                  Call GD Professional Plumbing at (833) 609-0936. Complete sink replacement services—upgrade to newer, more efficient models.
                 </p>
               </div>
             </div>
@@ -252,7 +252,7 @@ export default function FaucetsSinksRepairReplacementPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Kitchen Faucet Services</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Specialized kitchen faucet installation and repair—modern fixtures for your kitchen.
+                  Call GD Professional Plumbing at (833) 609-0936. Specialized kitchen faucet installation and repair—modern fixtures for your kitchen.
                 </p>
               </div>
             </div>
@@ -267,7 +267,7 @@ export default function FaucetsSinksRepairReplacementPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Bathroom Faucet Services</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Professional bathroom faucet services—elegant fixtures for your bathroom.
+                  Call GD Professional Plumbing at (833) 609-0936. Professional bathroom faucet services—elegant fixtures for your bathroom.
                 </p>
               </div>
             </div>
@@ -379,7 +379,7 @@ export default function FaucetsSinksRepairReplacementPage() {
                 </li>
               </ul>
               <a 
-                href="tel:8334450128"
+                href="tel:8336090936"
                 className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg transition-colors duration-300"
               >
                 Call for Residential Service
@@ -412,7 +412,7 @@ export default function FaucetsSinksRepairReplacementPage() {
                 </li>
               </ul>
               <a 
-                href="tel:8334450128"
+                href="tel:8336090936"
                 className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg transition-colors duration-300"
               >
                 Call for Commercial Service

@@ -135,7 +135,7 @@ export default function Home() {
                     <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
-                    <span className="font-semibold">(833) 445-0128</span>
+                    <span className="font-semibold">(833) 609-0936</span>
                   </div>
                   <div className="flex items-center">
                     <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -144,7 +144,7 @@ export default function Home() {
                     <span>info@gdprofessionalplumbing.com</span>
           </div>
             </div>
-                <a href="tel:8334450128" className="inline-flex items-center bg-white text-[#1c7bc8] px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition text-sm">
+                <a href="tel:8336090936" className="inline-flex items-center bg-white text-[#1c7bc8] px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition text-sm">
                   <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
@@ -492,13 +492,13 @@ export default function Home() {
               {/* Left Side - Phone Number */}
               <div className="text-center md:text-left">
                 <div className="text-sm opacity-90 mb-1">Call us for a Cost estimate over free phone</div>
-                <div className="text-3xl md:text-4xl font-bold">(833) 445-0128</div>
+                <div className="text-3xl md:text-4xl font-bold">(833) 609-0936</div>
               </div>
               
               {/* Right Side - Order Service Button */}
               <div>
                 <a
-                  href="tel:8334450128"
+                  href="tel:8336090936"
                   className="inline-flex items-center bg-[#0d4a8a] hover:bg-[#0a3d75] text-white px-8 py-4 rounded-full font-bold text-lg transition shadow-lg"
                 >
                   Order Service now
@@ -640,7 +640,7 @@ export default function Home() {
                   When it comes to reliable plumbing services in the USA, GD Professional Plumbing is the name you can trust. We're proud to serve our community with top-quality plumbing solutions that keep your home or business running smoothly. Whether you're looking for routine maintenance, emergency repairs, or a complete plumbing overhaul, our team is ready to provide the expert service you deserve.
                 </p>
                 <a
-                  href="tel:+18334450128"
+                  href="tel:+18336090936"
                   className="inline-flex items-center bg-transparent border-2 border-white text-white font-bold px-8 py-4 rounded-xl text-lg hover:bg-white hover:text-[#1c7bc8] transition-all duration-300 self-start"
                 >
                   <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">

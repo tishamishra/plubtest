@@ -3,7 +3,7 @@ import ContactPageContent from '@/components/ContactPageContent';
 
 export const metadata: Metadata = {
   title: 'Contact Us Today | GD Professional Plumbing',
-  description: 'Contact GD Professional Plumbing for 24/7 emergency plumbing services across the USA. Call (833) 445-0128 for immediate assistance with water heater repair, drain cleaning, leak detection, and more.',
+  description: 'Contact GD Professional Plumbing for 24/7 emergency plumbing services across the USA. Call (833) 609-0936 for immediate assistance with water heater repair, drain cleaning, leak detection, and more.',
   keywords: [
     'contact plumber',
     'emergency plumber contact',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Contact Us Today | GD Professional Plumbing',
-    description: 'Contact GD Professional Plumbing for 24/7 emergency plumbing services across the USA. Call (833) 445-0128 for immediate assistance with water heater repair, drain cleaning, leak detection, and more.',
+    description: 'Contact GD Professional Plumbing for 24/7 emergency plumbing services across the USA. Call (833) 609-0936 for immediate assistance with water heater repair, drain cleaning, leak detection, and more.',
     url: 'https://gdprofessionalplumbing.com/contact',
     siteName: 'GD Professional Plumbing',
     locale: 'en_US',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Contact Us Today | GD Professional Plumbing',
-    description: 'Contact GD Professional Plumbing for 24/7 emergency plumbing services across the USA. Call (833) 445-0128 for immediate assistance with water heater repair, drain cleaning, leak detection, and more.',
+    description: 'Contact GD Professional Plumbing for 24/7 emergency plumbing services across the USA. Call (833) 609-0936 for immediate assistance with water heater repair, drain cleaning, leak detection, and more.',
   },
   alternates: {
     canonical: 'https://gdprofessionalplumbing.com/contact',

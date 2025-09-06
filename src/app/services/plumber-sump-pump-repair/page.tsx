@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Sump Pump Installation & Repair Services in the US | GD Professional Plumbing',
-  description: 'Professional sump pump installation, repair, and maintenance services across the USA. Keep your basement dry and protected with flood prevention solutions built for long-term reliability. Licensed, insured, and trusted since 1973. Call (833) 445-0128.',
+  description: 'Professional sump pump installation, repair, and maintenance services across the USA. Keep your basement dry and protected with flood prevention solutions built for long-term reliability. Licensed, insured, and trusted since 1973. Call (833) 609-0936.',
   keywords: [
     'sump pump installation',
     'sump pump repair',
@@ -75,7 +75,7 @@ export default function SumpPumpRepairPage() {
             </p>
           </div>
         </div>
-        <FloatingCTA phone="8334450128" locationName="Your Area" />
+        <FloatingCTA phone="8336090936" locationName="Your Area" />
       </section>
 
       {/* SEO Intro Section */}
@@ -89,10 +89,10 @@ export default function SumpPumpRepairPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="tel:8334450128"
+              href="tel:8336090936"
               className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-3 rounded-lg text-lg transition-colors duration-300"
             >
-              Call (833) 445-0128 Now
+              Call (833) 609-0936 Now
             </a>
           </div>
         </div>
@@ -287,10 +287,10 @@ export default function SumpPumpRepairPage() {
           </p>
           <div className="flex justify-center">
             <a 
-              href="tel:8334450128"
+              href="tel:8336090936"
               className="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors duration-300"
             >
-              Call (833) 445-0128 Now
+              Call (833) 609-0936 Now
             </a>
           </div>
         </div>

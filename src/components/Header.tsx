@@ -57,11 +57,11 @@ export default function Header() {
 
           {/* Phone Number - Desktop Only */}
           <div className="hidden md:flex items-center">
-            <a href="tel:8334450128" className="bg-[#1c7bc8] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#0f4c75] transition flex items-center">
+            <a href="tel:8336090936" className="bg-[#1c7bc8] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#0f4c75] transition flex items-center">
               <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
               </svg>
-              <span>(833) 445-0128</span>
+              <span>(833) 609-0936</span>
             </a>
           </div>
 
@@ -127,15 +127,15 @@ export default function Header() {
                 Contact
               </Link>
               <div className="pt-2 border-t border-gray-200">
-                <a 
-                  href="tel:8334450128" 
-                  className="block px-3 py-2 text-base font-medium bg-[#1c7bc8] text-white rounded-md hover:bg-[#0f4c75] transition-colors duration-200 text-center"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  <svg className="w-4 h-4 mr-2 inline" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
-                  </svg>
-                  (833) 445-0128
+                             <a
+                               href="tel:8336090936"
+                               className="block px-3 py-2 text-base font-medium bg-[#1c7bc8] text-white rounded-md hover:bg-[#0f4c75] transition-colors duration-200 text-center"
+                               onClick={() => setIsMobileMenuOpen(false)}
+                             >
+                               <svg className="w-4 h-4 mr-2 inline" fill="currentColor" viewBox="0 0 20 20">
+                                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                               </svg>
+                               (833) 609-0936
                 </a>
               </div>
             </div>

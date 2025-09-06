@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Expert Sewer Line Inspection & Replacement Services in the US | GD Professional Plumbing',
-  description: 'Professional sewer line inspection and replacement services across the USA. Complete sewer line services with camera technology. Licensed, insured, and trusted since 1973. Call (833) 445-0128.',
+  description: 'Professional sewer line inspection and replacement services across the USA. Complete sewer line services with camera technology. Licensed, insured, and trusted since 1973. Call (833) 609-0936.',
   keywords: [
     'sewer line repair',
     'sewer line inspection',
@@ -75,7 +75,7 @@ export default function SewerLineInspectionReplacementPage() {
             </p>
           </div>
         </div>
-        <FloatingCTA phone="8334450128" locationName="Your Area" />
+        <FloatingCTA phone="8336090936" locationName="Your Area" />
       </section>
       
       {/* SEO Intro Section */}
@@ -89,10 +89,10 @@ export default function SewerLineInspectionReplacementPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="tel:8334450128"
+              href="tel:8336090936"
               className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-3 rounded-lg text-lg transition-colors duration-300"
             >
-              Call (833) 445-0128 Now
+              Call (833) 609-0936 Now
             </a>
           </div>
         </div>
@@ -180,7 +180,7 @@ export default function SewerLineInspectionReplacementPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Camera Inspection</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Advanced camera technology to inspect sewer lines thoroughly.
+                  Call GD Professional Plumbing at (833) 609-0936. Advanced camera technology to inspect sewer lines thoroughly.
                 </p>
               </div>
             </div>
@@ -195,7 +195,7 @@ export default function SewerLineInspectionReplacementPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Sewer Line Repair</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Professional repair services to fix sewer line issues.
+                  Call GD Professional Plumbing at (833) 609-0936. Professional repair services to fix sewer line issues.
                 </p>
               </div>
             </div>
@@ -210,7 +210,7 @@ export default function SewerLineInspectionReplacementPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Sewer Line Replacement</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Complete replacement services for damaged sewer lines.
+                  Call GD Professional Plumbing at (833) 609-0936. Complete replacement services for damaged sewer lines.
                 </p>
               </div>
             </div>
@@ -225,7 +225,7 @@ export default function SewerLineInspectionReplacementPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Drain Cleaning</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Professional drain cleaning to prevent sewer backups.
+                  Call GD Professional Plumbing at (833) 609-0936. Professional drain cleaning to prevent sewer backups.
                 </p>
               </div>
             </div>
@@ -240,7 +240,7 @@ export default function SewerLineInspectionReplacementPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Trenchless Technology</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Modern trenchless methods for minimal disruption.
+                  Call GD Professional Plumbing at (833) 609-0936. Modern trenchless methods for minimal disruption.
                 </p>
               </div>
             </div>
@@ -255,7 +255,7 @@ export default function SewerLineInspectionReplacementPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Emergency Sewer Service</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. 24/7 emergency services for urgent sewer issues.
+                  Call GD Professional Plumbing at (833) 609-0936. 24/7 emergency services for urgent sewer issues.
                 </p>
               </div>
             </div>
@@ -367,7 +367,7 @@ export default function SewerLineInspectionReplacementPage() {
                 </li>
               </ul>
               <a 
-                href="tel:8334450128"
+                href="tel:8336090936"
                 className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg transition-colors duration-300"
               >
                 Call for Residential Service
@@ -400,7 +400,7 @@ export default function SewerLineInspectionReplacementPage() {
                 </li>
               </ul>
               <a 
-                href="tel:8334450128"
+                href="tel:8336090936"
                 className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg transition-colors duration-300"
               >
                 Call for Commercial Service

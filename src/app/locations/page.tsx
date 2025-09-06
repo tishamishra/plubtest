@@ -6,7 +6,7 @@ import locationsData from '@/data/locations.json';
 
 export const metadata: Metadata = {
   title: 'Plumbing Services by Location | GD Professional Plumbing',
-  description: 'Find professional plumbers in your area. GD Professional Plumbing serves multiple cities across the USA with fast, reliable 24/7 emergency plumbing services. Call (833) 445-0128.',
+  description: 'Find professional plumbers in your area. GD Professional Plumbing serves multiple cities across the USA with fast, reliable 24/7 emergency plumbing services. Call (833) 609-0936.',
   keywords: [
     'plumbing services by location',
     'local plumber',
@@ -111,7 +111,7 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
               </p>
               <div className="flex justify-center">
                 <a 
-                  href="tel:+18334450128" 
+                  href="tel:+18336090936" 
                   className="group relative bg-white text-blue-700 font-bold px-8 py-4 rounded-xl text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl inline-flex items-center gap-3 animate-pulse"
                 >
                   <div className="relative">
@@ -120,7 +120,7 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
                     </svg>
                     <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full animate-ping"></div>
                   </div>
-                  <span className="font-bold tracking-wide">(833) 445-0128</span>
+                  <span className="font-bold tracking-wide">(833) 609-0936</span>
                 </a>
               </div>
             </div>
@@ -179,10 +179,10 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
             <h2 className="text-3xl font-bold mb-4">Need Plumbing Services?</h2>
             <p className="text-xl mb-8">Call us today for fast, reliable service in your area.</p>
             <a 
-              href="tel:+18334450128" 
+              href="tel:+18336090936" 
               className="bg-white text-blue-700 font-bold px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition inline-block"
             >
-              Call (833) 445-0128
+              Call (833) 609-0936
             </a>
           </div>
         </section>

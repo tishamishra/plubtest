@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Gas Line Installation & Repair Services in the US | GD Professional Plumbing',
-  description: 'Professional gas line installation, repair, and replacement services across the USA. Safe and code-compliant gas line solutions to power your appliances with confidence and protect your property from gas hazards. Licensed, insured, and trusted since 1973. Call (833) 445-0128.',
+  description: 'Professional gas line installation, repair, and replacement services across the USA. Safe and code-compliant gas line solutions to power your appliances with confidence and protect your property from gas hazards. Licensed, insured, and trusted since 1973. Call (833) 609-0936.',
   keywords: [
     'gas line installation',
     'gas line repair',
@@ -75,7 +75,7 @@ export default function GasLineRepairPage() {
             </p>
           </div>
         </div>
-        <FloatingCTA phone="8334450128" locationName="Your Area" />
+        <FloatingCTA phone="8336090936" locationName="Your Area" />
       </section>
 
       {/* SEO Intro Section */}
@@ -89,10 +89,10 @@ export default function GasLineRepairPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="tel:8334450128"
+              href="tel:8336090936"
               className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-3 rounded-lg text-lg transition-colors duration-300"
             >
-              Call (833) 445-0128 Now
+              Call (833) 609-0936 Now
             </a>
           </div>
         </div>
@@ -287,10 +287,10 @@ export default function GasLineRepairPage() {
           </p>
           <div className="flex justify-center">
             <a 
-              href="tel:8334450128"
+              href="tel:8336090936"
               className="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors duration-300"
             >
-              Call (833) 445-0128 Now
+              Call (833) 609-0936 Now
             </a>
           </div>
         </div>

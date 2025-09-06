@@ -28,7 +28,7 @@ export default function Footer({ location }: FooterProps) {
                 </div>
                 <div>
                   <div className="text-sm opacity-90 mb-1">CALL TODAY</div>
-                  <div className="text-2xl md:text-3xl font-bold">(833) 445-0128</div>
+                  <div className="text-2xl md:text-3xl font-bold">(833) 609-0936</div>
                 </div>
               </div>
             </div>
@@ -74,10 +74,10 @@ export default function Footer({ location }: FooterProps) {
           <h2 className="text-4xl font-bold mb-8 animate-bounce">Need a Plumber Today? Get a Free Quote Now</h2>
           <div className="mb-8">
             <a 
-              href="tel:8334450128"
+              href="tel:8336090936"
               className="bg-white text-[#1c7bc8] font-bold px-12 py-6 rounded-xl text-3xl hover:bg-gray-50 transition shadow-lg inline-block animate-pulse"
             >
-              (833) 445-0128
+              (833) 609-0936
             </a>
           </div>
         </div>

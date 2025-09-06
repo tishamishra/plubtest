@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Expert Leak Detection & Repair Services in the US | GD Professional Plumbing',
-  description: 'Professional leak detection and repair services across the USA. Advanced technology to quickly locate and repair hidden water leaks. Licensed, insured, and trusted since 1973. Call (833) 445-0128.',
+  description: 'Professional leak detection and repair services across the USA. Advanced technology to quickly locate and repair hidden water leaks. Licensed, insured, and trusted since 1973. Call (833) 609-0936.',
   keywords: [
     'leak detection',
     'leak detection services',
@@ -75,7 +75,7 @@ export default function LeakDetectionRepairPage() {
             </p>
           </div>
         </div>
-        <FloatingCTA phone="8334450128" locationName="Your Area" />
+        <FloatingCTA phone="8336090936" locationName="Your Area" />
       </section>
       
       {/* SEO Intro Section */}
@@ -89,10 +89,10 @@ export default function LeakDetectionRepairPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="tel:8334450128"
+              href="tel:8336090936"
               className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-3 rounded-lg text-lg transition-colors duration-300"
             >
-              Call (833) 445-0128 Now
+              Call (833) 609-0936 Now
             </a>
           </div>
         </div>
@@ -180,7 +180,7 @@ export default function LeakDetectionRepairPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Advanced Leak Detection</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. State-of-the-art technology to locate hidden leaks accurately.
+                  Call GD Professional Plumbing at (833) 609-0936. State-of-the-art technology to locate hidden leaks accurately.
                 </p>
               </div>
             </div>
@@ -195,7 +195,7 @@ export default function LeakDetectionRepairPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Professional Leak Repair</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Expert repair services to fix leaks with lasting solutions.
+                  Call GD Professional Plumbing at (833) 609-0936. Expert repair services to fix leaks with lasting solutions.
                 </p>
               </div>
             </div>
@@ -210,7 +210,7 @@ export default function LeakDetectionRepairPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Pipe Leak Detection</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Specialized detection for pipe leaks in walls and underground.
+                  Call GD Professional Plumbing at (833) 609-0936. Specialized detection for pipe leaks in walls and underground.
                 </p>
               </div>
             </div>
@@ -225,7 +225,7 @@ export default function LeakDetectionRepairPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Fixture Leak Repair</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Repair leaks in faucets, toilets, and other fixtures.
+                  Call GD Professional Plumbing at (833) 609-0936. Repair leaks in faucets, toilets, and other fixtures.
                 </p>
               </div>
             </div>
@@ -240,7 +240,7 @@ export default function LeakDetectionRepairPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Preventive Leak Inspection</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Regular inspections to prevent future leaks.
+                  Call GD Professional Plumbing at (833) 609-0936. Regular inspections to prevent future leaks.
                 </p>
               </div>
             </div>
@@ -255,7 +255,7 @@ export default function LeakDetectionRepairPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Emergency Leak Service</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. 24/7 emergency services for urgent leak issues.
+                  Call GD Professional Plumbing at (833) 609-0936. 24/7 emergency services for urgent leak issues.
                 </p>
               </div>
             </div>
@@ -367,7 +367,7 @@ export default function LeakDetectionRepairPage() {
                 </li>
               </ul>
               <a 
-                href="tel:8334450128"
+                href="tel:8336090936"
                 className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg transition-colors duration-300"
               >
                 Call for Residential Service
@@ -400,7 +400,7 @@ export default function LeakDetectionRepairPage() {
                 </li>
               </ul>
               <a 
-                href="tel:8334450128"
+                href="tel:8336090936"
                 className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg transition-colors duration-300"
               >
                 Call for Commercial Service

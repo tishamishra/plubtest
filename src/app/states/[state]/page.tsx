@@ -37,10 +37,10 @@ export default async function StatePage({ params }: StatePageProps) {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="tel:(833) 445-0128" 
+              href="tel:(833) 609-0936" 
               className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors"
             >
-              Call (833) 445-0128
+              Call (833) 609-0936
             </a>
             <a 
               href="#cities" 
@@ -96,10 +96,10 @@ export default async function StatePage({ params }: StatePageProps) {
           </p>
           <div className="flex justify-center">
             <a 
-              href="tel:(833) 445-0128" 
+              href="tel:(833) 609-0936" 
               className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors"
             >
-              Call (833) 445-0128
+              Call (833) 609-0936
             </a>
           </div>
         </div>

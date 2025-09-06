@@ -106,8 +106,8 @@ export default async function ContactPage({ params }: LocationPageProps) {
     {
       title: 'Call Us Now',
       description: 'Speak directly with our plumbing experts',
-      contact: '(833) 445-0128',
-      action: 'tel:+18334450128',
+      contact: '(833) 609-0936',
+      action: 'tel:+18336090936',
       icon: '📞',
       highlight: true
     },
@@ -115,7 +115,7 @@ export default async function ContactPage({ params }: LocationPageProps) {
       title: 'Emergency Service',
       description: '24/7 emergency plumbing available',
       contact: 'Available 24/7',
-      action: 'tel:+18334450128',
+      action: 'tel:+18336090936',
       icon: '🚨',
       highlight: true
     },
@@ -189,7 +189,7 @@ export default async function ContactPage({ params }: LocationPageProps) {
                 <div className="text-4xl mb-4">{method.icon}</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{method.title}</h3>
                 <p className="text-gray-600 mb-4">{method.description}</p>
-                {method.action === 'tel:+18334450128' ? (
+                {method.action === 'tel:+18336090936' ? (
                   <a 
                     href={method.action}
                     className={`font-bold text-lg ${method.highlight ? 'text-blue-700 hover:text-blue-800' : 'text-gray-700 hover:text-gray-800'} transition`}
@@ -302,10 +302,10 @@ export default async function ContactPage({ params }: LocationPageProps) {
             Contact our {location.name} team today for reliable, professional plumbing services. We're here to help with all your plumbing needs.
           </p>
           <a 
-            href="tel:+18334450128" 
+            href="tel:+18336090936" 
             className="bg-white text-[#1c7bc8] font-bold px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition inline-block"
           >
-            Call (833) 445-0128
+            Call (833) 609-0936
           </a>
         </div>
       </section>

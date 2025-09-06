@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Expert Toilet Repair & Installation Services in the US | GD Professional Plumbing',
-  description: 'Fast and reliable toilet repair and installation services across the USA. Professional toilet services for clogs, leaks, and replacements. Licensed, insured, and trusted since 1973. Call (833) 445-0128.',
+  description: 'Fast and reliable toilet repair and installation services across the USA. Professional toilet services for clogs, leaks, and replacements. Licensed, insured, and trusted since 1973. Call (833) 609-0936.',
   keywords: [
     'toilet repair',
     'toilet installation',
@@ -75,7 +75,7 @@ export default function ToiletRepairInstallationPage() {
             </p>
           </div>
         </div>
-        <FloatingCTA phone="8334450128" locationName="Your Area" />
+        <FloatingCTA phone="8336090936" locationName="Your Area" />
       </section>
       
       {/* SEO Intro Section */}
@@ -89,10 +89,10 @@ export default function ToiletRepairInstallationPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="tel:8334450128"
+              href="tel:8336090936"
               className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-3 rounded-lg text-lg transition-colors duration-300"
             >
-              Call (833) 445-0128 Now
+              Call (833) 609-0936 Now
             </a>
           </div>
         </div>
@@ -180,7 +180,7 @@ export default function ToiletRepairInstallationPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Toilet Repair</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Fast and reliable repair services for all toilet issues—fix leaks, clogs, and malfunctions quickly.
+                  Call GD Professional Plumbing at (833) 609-0936. Fast and reliable repair services for all toilet issues—fix leaks, clogs, and malfunctions quickly.
                 </p>
               </div>
             </div>
@@ -195,7 +195,7 @@ export default function ToiletRepairInstallationPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Toilet Installation</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Professional installation of new toilets with proper sizing and modern fixtures.
+                  Call GD Professional Plumbing at (833) 609-0936. Professional installation of new toilets with proper sizing and modern fixtures.
                 </p>
               </div>
             </div>
@@ -210,7 +210,7 @@ export default function ToiletRepairInstallationPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Toilet Replacement</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Complete toilet replacement services—upgrade to newer, more efficient models.
+                  Call GD Professional Plumbing at (833) 609-0936. Complete toilet replacement services—upgrade to newer, more efficient models.
                 </p>
               </div>
             </div>
@@ -225,7 +225,7 @@ export default function ToiletRepairInstallationPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Toilet Unclogging</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Emergency unclogging services for blocked toilets—restore function quickly.
+                  Call GD Professional Plumbing at (833) 609-0936. Emergency unclogging services for blocked toilets—restore function quickly.
                 </p>
               </div>
             </div>
@@ -240,7 +240,7 @@ export default function ToiletRepairInstallationPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Toilet Maintenance</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Preventive maintenance services—keep your toilets running efficiently and prevent issues.
+                  Call GD Professional Plumbing at (833) 609-0936. Preventive maintenance services—keep your toilets running efficiently and prevent issues.
                 </p>
               </div>
             </div>
@@ -255,7 +255,7 @@ export default function ToiletRepairInstallationPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Emergency Toilet Service</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. 24/7 emergency toilet services—rapid response for urgent toilet issues.
+                  Call GD Professional Plumbing at (833) 609-0936. 24/7 emergency toilet services—rapid response for urgent toilet issues.
                 </p>
               </div>
             </div>
@@ -367,7 +367,7 @@ export default function ToiletRepairInstallationPage() {
                 </li>
               </ul>
               <a 
-                href="tel:8334450128"
+                href="tel:8336090936"
                 className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg transition-colors duration-300"
               >
                 Call for Residential Service
@@ -400,7 +400,7 @@ export default function ToiletRepairInstallationPage() {
                 </li>
               </ul>
               <a 
-                href="tel:8334450128"
+                href="tel:8336090936"
                 className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg transition-colors duration-300"
               >
                 Call for Commercial Service

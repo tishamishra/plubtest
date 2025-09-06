@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Professional Drain Cleaning Services in the US | GD Professional Plumbing',
-  description: 'Professional drain cleaning services across the USA. Fast and effective cleaning for clogged sinks, tubs, and sewer lines. Licensed, insured, and trusted since 1973. Call (833) 445-0128.',
+  description: 'Professional drain cleaning services across the USA. Fast and effective cleaning for clogged sinks, tubs, and sewer lines. Licensed, insured, and trusted since 1973. Call (833) 609-0936.',
   keywords: [
     'drain cleaning',
     'drain cleaning services',
@@ -75,7 +75,7 @@ export default function ProfessionalDrainCleaningPage() {
             </p>
           </div>
         </div>
-        <FloatingCTA phone="8334450128" locationName="Your Area" />
+        <FloatingCTA phone="8336090936" locationName="Your Area" />
       </section>
       
       {/* SEO Intro Section */}
@@ -89,10 +89,10 @@ export default function ProfessionalDrainCleaningPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="tel:8334450128"
+              href="tel:8336090936"
               className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-3 rounded-lg text-lg transition-colors duration-300"
             >
-              Call (833) 445-0128 Now
+              Call (833) 609-0936 Now
             </a>
           </div>
         </div>
@@ -180,7 +180,7 @@ export default function ProfessionalDrainCleaningPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Kitchen Drain Cleaning</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Fast and effective cleaning for clogged kitchen sinks and garbage disposals—restore smooth drainage quickly.
+                  Call GD Professional Plumbing at (833) 609-0936. Fast and effective cleaning for clogged kitchen sinks and garbage disposals—restore smooth drainage quickly.
                 </p>
               </div>
             </div>
@@ -195,7 +195,7 @@ export default function ProfessionalDrainCleaningPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Bathroom Drain Cleaning</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Professional cleaning for shower drains, bathtub drains, and bathroom sinks—eliminate blockages and odors.
+                  Call GD Professional Plumbing at (833) 609-0936. Professional cleaning for shower drains, bathtub drains, and bathroom sinks—eliminate blockages and odors.
                 </p>
               </div>
             </div>
@@ -210,7 +210,7 @@ export default function ProfessionalDrainCleaningPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Sewer Line Cleaning</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Advanced sewer line cleaning and inspection—prevent backups and ensure proper waste flow.
+                  Call GD Professional Plumbing at (833) 609-0936. Advanced sewer line cleaning and inspection—prevent backups and ensure proper waste flow.
                 </p>
               </div>
             </div>
@@ -225,7 +225,7 @@ export default function ProfessionalDrainCleaningPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Emergency Drain Cleaning</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. 24/7 emergency drain cleaning services—rapid response for urgent drainage issues.
+                  Call GD Professional Plumbing at (833) 609-0936. 24/7 emergency drain cleaning services—rapid response for urgent drainage issues.
                 </p>
               </div>
             </div>
@@ -240,7 +240,7 @@ export default function ProfessionalDrainCleaningPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Preventive Maintenance</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Regular drain cleaning and maintenance—prevent clogs and extend plumbing system lifespan.
+                  Call GD Professional Plumbing at (833) 609-0936. Regular drain cleaning and maintenance—prevent clogs and extend plumbing system lifespan.
                 </p>
               </div>
             </div>
@@ -255,7 +255,7 @@ export default function ProfessionalDrainCleaningPage() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-700 mb-3">» Commercial Drain Cleaning</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Call GD Professional Plumbing at (833) 445-0128. Large-scale commercial drain cleaning—keep your business running smoothly with clean drains.
+                  Call GD Professional Plumbing at (833) 609-0936. Large-scale commercial drain cleaning—keep your business running smoothly with clean drains.
                 </p>
               </div>
             </div>
@@ -367,7 +367,7 @@ export default function ProfessionalDrainCleaningPage() {
                 </li>
               </ul>
               <a 
-                href="tel:8334450128"
+                href="tel:8336090936"
                 className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg transition-colors duration-300"
               >
                 Call for Residential Service
@@ -400,7 +400,7 @@ export default function ProfessionalDrainCleaningPage() {
                 </li>
               </ul>
               <a 
-                href="tel:8334450128"
+                href="tel:8336090936"
                 className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg transition-colors duration-300"
               >
                 Call for Commercial Service

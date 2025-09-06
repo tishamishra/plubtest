@@ -1,6 +1,6 @@
 import { PhoneIcon } from '@heroicons/react/24/solid'
 
-export default function FloatingCTA({ phone = '8334450128', locationName = '' }: { phone?: string, locationName?: string }) {
+export default function FloatingCTA({ phone = '8336090936', locationName = '' }: { phone?: string, locationName?: string }) {
   return (
     <>
       {/* Desktop Floating CTA - Full Banner */}

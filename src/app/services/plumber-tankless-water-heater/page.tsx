@@ -3,7 +3,7 @@ import TanklessWaterHeaterPageContent from '@/components/TanklessWaterHeaterPage
 
 export const metadata: Metadata = {
   title: 'Tankless Water Heater Installation Services | Expert Installation Across the US',
-  description: 'Professional tankless water heater installation services across the USA. Energy-efficient, endless hot water, lower utility bills. Licensed, insured, and trusted since 1973. Call (833) 445-0128.',
+  description: 'Professional tankless water heater installation services across the USA. Energy-efficient, endless hot water, lower utility bills. Licensed, insured, and trusted since 1973. Call (833) 609-0936.',
   keywords: [
     'tankless water heater installation',
     'tankless water heater services',

@@ -131,7 +131,7 @@ export default async function ToiletRepairPage({ params }: ServicePageProps) {
             </p>
           </div>
         </div>
-        <FloatingCTA phone="8334450128" locationName={location.name} />
+        <FloatingCTA phone="8336090936" locationName={location.name} />
       </section>
 
       {/* SEO Intro Section */}

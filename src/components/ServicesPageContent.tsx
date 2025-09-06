@@ -70,7 +70,7 @@ export default function ServicesPageContent() {
               </p>
               <div className="flex justify-center">
                 <a 
-                  href="tel:+18334450128" 
+                  href="tel:+18336090936" 
                   className="group relative bg-white text-blue-700 font-bold px-8 py-4 rounded-xl text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl inline-flex items-center gap-3 animate-pulse"
                 >
                   <div className="relative">
@@ -79,7 +79,7 @@ export default function ServicesPageContent() {
                     </svg>
                     <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full animate-ping"></div>
                   </div>
-                  <span className="font-bold tracking-wide">(833) 445-0128</span>
+                  <span className="font-bold tracking-wide">(833) 609-0936</span>
                 </a>
               </div>
             </div>
@@ -257,13 +257,13 @@ export default function ServicesPageContent() {
           </p>
           <div className="flex justify-center">
             <a
-              href="tel:+18334450128"
+              href="tel:+18336090936"
               className="inline-flex items-center bg-white text-[#1c7bc8] font-bold px-8 py-4 rounded-xl text-lg hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              Call (833) 445-0128
+              Call (833) 609-0936
             </a>
           </div>
         </div>

@@ -123,6 +123,11 @@ export default async function LocationPage({ params }: LocationPageProps) {
     faqs: location.faqs || []
   };
 
+  // Get nearby locations from the same state (excluding current location)
+  const nearbyLocations = (locationsData as LocationsData).locations
+    .filter((loc: LocationData) => loc.state === safeLocation.state && loc.id !== safeLocation.id)
+    .slice(0, 20); // Limit to 20 locations
+
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -796,6 +801,30 @@ export default async function LocationPage({ params }: LocationPageProps) {
           </div>
           </div>
         </section>
+
+      {/* Nearby Locations Section */}
+      {nearbyLocations.length > 0 && (
+        <section className="py-16 px-4 bg-gray-50">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+              Areas We Serve in {safeLocation.state}
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+              {nearbyLocations.map((nearbyLocation: LocationData) => (
+                <Link
+                  key={nearbyLocation.id}
+                  href={`https://${nearbyLocation.id}.gdprofessionalplumbing.com/`}
+                  className="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 hover:text-[#1c7bc8]"
+                >
+                  <span className="text-sm font-medium text-gray-700 hover:text-[#1c7bc8] transition-colors duration-200">
+                    {nearbyLocation.name}
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Big CTA Banner */}
       <section className="bg-[#1c7bc8] text-white py-16 px-4 mt-auto">

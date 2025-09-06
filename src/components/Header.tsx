@@ -9,6 +9,11 @@ export default function Header() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  // Check if we're on a sub-domain (not main domain)
+  const isSubDomain = typeof window !== 'undefined' && 
+    window.location.hostname !== 'gdprofessionalplumbing.com' && 
+    window.location.hostname.includes('.gdprofessionalplumbing.com');
+
   return (
     <header className="bg-white shadow-sm border-b sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,10 +35,12 @@ export default function Header() {
               <span className="relative z-10">Home</span>
               <div className="absolute inset-0 bg-gradient-to-r from-[#1c7bc8]/10 to-[#1c7bc8]/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </Link>
-            <Link href="/locations" className="text-gray-700 hover:text-[#1c7bc8] px-4 py-2 text-base font-semibold transition-all duration-300 hover:bg-gray-50 rounded-lg relative group">
-              <span className="relative z-10">Locations</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-[#1c7bc8]/10 to-[#1c7bc8]/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </Link>
+            {!isSubDomain && (
+              <Link href="/locations" className="text-gray-700 hover:text-[#1c7bc8] px-4 py-2 text-base font-semibold transition-all duration-300 hover:bg-gray-50 rounded-lg relative group">
+                <span className="relative z-10">Locations</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#1c7bc8]/10 to-[#1c7bc8]/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </Link>
+            )}
             <Link href="/services" className="text-gray-700 hover:text-[#1c7bc8] px-4 py-2 text-base font-semibold transition-all duration-300 hover:bg-gray-50 rounded-lg relative group">
               <span className="relative z-10">Services</span>
               <div className="absolute inset-0 bg-gradient-to-r from-[#1c7bc8]/10 to-[#1c7bc8]/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -89,13 +96,15 @@ export default function Header() {
               >
                 Home
               </Link>
-              <Link 
-                href="/locations" 
-                className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-[#1c7bc8] hover:bg-gray-50 rounded-md transition-colors duration-200"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Locations
-              </Link>
+              {!isSubDomain && (
+                <Link 
+                  href="/locations" 
+                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-[#1c7bc8] hover:bg-gray-50 rounded-md transition-colors duration-200"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Locations
+                </Link>
+              )}
               <Link 
                 href="/services" 
                 className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-[#1c7bc8] hover:bg-gray-50 rounded-md transition-colors duration-200"

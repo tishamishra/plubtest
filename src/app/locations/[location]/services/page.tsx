@@ -192,123 +192,257 @@ export default async function ServicesPage({ params }: LocationPageProps) {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Service Cards */}
-            <Link href={`/plumber-water-heater-repair`} className="group">
-              <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
-                <img 
+            {/* Water Heater Repair and Installation */}
+            <Link href={`/locations/${locationId}/plumber-water-heater-repair`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
                   src="https://ik.imagekit.io/nang9yead/Plumber%20Fixing%20Leaking%20Sink%20Pipe%20with%20Wrench.png?updatedAt=1756066955385"
-                  alt="Water Heater Repair"
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  alt="Water Heater Repair and Installation"
+                  className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Water Heater Repair & Installation</h3>
-                  <p className="text-gray-600 mb-4">Professional water heater services including repair, replacement, and installation of tank and tankless systems.</p>
-                  <div className="flex items-center text-[#1c7bc8] font-semibold">
-                    Learn More
-                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Water Heater Repair and Installation in {location.name}, {location.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {location.phone}. Affordable water heater repair and professional installation for homes and commercial buildings in {location.name}—fast service, licensed plumbers, and energy-efficient systems.
+                  </p>
                 </div>
               </div>
             </Link>
 
-            <Link href={`/plumber-drain-cleaning`} className="group">
-              <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
-                <img 
-                  src="https://ik.imagekit.io/nang9yead/plumber%20clearing%20blocked%20sink%20with%20water?updatedAt=1756066954284"
-                  alt="Drain Cleaning"
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+            {/* Tankless Water Heater Installation */}
+            <Link href={`/locations/${locationId}/plumber-tankless-water-heater`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Worker%20Adjusting%20Water%20Filtration%20System%20Valves?updatedAt=1756066968225"
+                  alt="Tankless Water Heater Installation"
+                  className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Drain Cleaning Services</h3>
-                  <p className="text-gray-600 mb-4">Professional drain cleaning for clogged sinks, tubs, and sewer lines using advanced equipment.</p>
-                  <div className="flex items-center text-[#1c7bc8] font-semibold">
-                    Learn More
-                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Tankless Water Heater Installation in {location.name}, {location.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {location.phone}. Expert installation of energy-efficient tankless water heaters for homes and businesses in {location.name}—endless hot water, lower utility bills, and space-saving design.
+                  </p>
                 </div>
               </div>
             </Link>
 
-            <Link href={`/plumber-leak-detection`} className="group">
-              <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
-                <img 
-                  src="https://ik.imagekit.io/nang9yead/PVC%20Pipe%20Installation%20in%20Soil.png?updatedAt=1756066962271"
-                  alt="Leak Detection"
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+            {/* Water Recirculation Pump */}
+            <Link href={`/locations/${locationId}/plumber-water-recirculation-pump`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Maintenance%20Worker%20Adjusting%20Copper%20Plumbing%20Pipes.png?updatedAt=1756066948233"
+                  alt="Water Recirculation Pump"
+                  className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Leak Detection & Repair</h3>
-                  <p className="text-gray-600 mb-4">Advanced leak detection technology to quickly locate and repair hidden water leaks.</p>
-                  <div className="flex items-center text-[#1c7bc8] font-semibold">
-                    Learn More
-                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Water Recirculation Pump Repair & Installation in {location.name}, {location.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {location.phone}. Professional repair and installation of hot water recirculation pumps for homes and businesses in {location.name}—get instant hot water, save water, and boost plumbing efficiency.
+                  </p>
                 </div>
               </div>
             </Link>
 
-            <Link href={`/plumber-sewer-line-repair`} className="group">
-              <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
-                <img 
-                  src="https://ik.imagekit.io/nang9yead/Old%20Rusty%20Underground%20Pipeline.png?updatedAt=1756066953091"
-                  alt="Sewer Line Repair"
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Sewer Line Services</h3>
-                  <p className="text-gray-600 mb-4">Complete sewer line inspection, repair, and replacement services with camera technology.</p>
-                  <div className="flex items-center text-[#1c7bc8] font-semibold">
-                    Learn More
-                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </Link>
-
-            <Link href={`/plumber-toilet-repair`} className="group">
-              <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
-                <img 
-                  src="https://ik.imagekit.io/nang9yead/Plumber%20Using%20Plunger%20on%20Toilet%20Bowl%20worker%20in%20orange%20uniform%20unclogging%20toilet?updatedAt=1756066962119"
-                  alt="Toilet Repair"
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Toilet Repair & Installation</h3>
-                  <p className="text-gray-600 mb-4">Fast and reliable toilet repair, replacement, and installation services for all types.</p>
-                  <div className="flex items-center text-[#1c7bc8] font-semibold">
-                    Learn More
-                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </Link>
-
-            <Link href={`/plumber-faucet-sink-repair`} className="group">
-              <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
-                <img 
+            {/* Faucets & Sinks */}
+            <Link href={`/locations/${locationId}/plumber-faucet-sink-repair`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
                   src="https://ik.imagekit.io/nang9yead/Smiling%20Plumber%20Repairing%20Bathroom%20Sink%20Pipe.png?updatedAt=1756066965094"
-                  alt="Faucet & Sink Repair"
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  alt="Faucets & Sinks"
+                  className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Faucet & Sink Repair</h3>
-                  <p className="text-gray-600 mb-4">Professional repair and installation of kitchen and bathroom faucets and sinks.</p>
-                  <div className="flex items-center text-[#1c7bc8] font-semibold">
-                    Learn More
-                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Faucet and Sink Repair & Replacement in {location.name}, {location.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {location.phone}. Expert installation and repair of kitchen and bathroom faucets and sinks in {location.name}—leak-free performance, upgraded fixtures, and improved space functionality.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Water Conservation Plumbing */}
+            <Link href={`/locations/${locationId}/plumber-water-conservation`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Plumbers%20Installing%20Wall-Mounted%20Water%20Tap?updatedAt=1756066963229"
+                  alt="Water Conservation Plumbing"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Water Conservation Plumbing Systems in {location.name}, {location.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {location.phone}. Eco-friendly water-saving plumbing solutions for homes and businesses in {location.name}—reduce water waste, cut utility bills, and support sustainable living.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Custom Bathroom Renovation */}
+            <Link href={`/locations/${locationId}/plumber-bathroom-renovation`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/young%20female%20plumber%20fixing%20?updatedAt=1756066968835"
+                  alt="Custom Bathroom Renovation"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Custom Bathroom Renovation in {location.name}, {location.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {location.phone}. From outdated to outstanding—our expert team designs and renovates bathrooms in {location.name} with modern fixtures, efficient layouts, and timeless appeal for residential properties.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Water System Installation & Repair */}
+            <Link href={`/locations/${locationId}/plumber-water-system-repair`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Industrial%20HVAC%20Technician%20Inspection.png?updatedAt=1756066941834"
+                  alt="Water System Installation & Repair"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Water System Installation & Repair in {location.name}, {location.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {location.phone}. We install, repair, and maintain residential and commercial water systems in {location.name}—delivering clean, safe, and uninterrupted water flow for your property.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Slab Leak Detection & Repair */}
+            <Link href={`/locations/${locationId}/plumber-slab-leak-repair`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Old%20Rusty%20Pipe%20Dripping%20Water.png?updatedAt=1756066951741"
+                  alt="Slab Leak Detection & Repair"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Slab Leak Detection & Repair in {location.name}, {location.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {location.phone}. Fast and accurate slab leak detection with expert repairs in {location.name}—protect your foundation, prevent costly water damage, and preserve your property's structural integrity.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Sump Pump Installation & Repair */}
+            <Link href={`/locations/${locationId}/plumber-sump-pump-repair`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Plumber%20Installing%20Water%20Pump%20in%20Basement.png?updatedAt=1756066964034"
+                  alt="Sump Pump Installation & Repair"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Sump Pump Installation & Repair in {location.name}, {location.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {location.phone}. Keep your basement dry and protected with professional sump pump repair, installation, and maintenance in {location.name}—flood prevention solutions built for long-term reliability.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Professional Drain Cleaning */}
+            <Link href={`/locations/${locationId}/plumber-drain-cleaning`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/plumber%20clearing%20blocked%20sink%20with%20water?updatedAt=1756066954284"
+                  alt="Professional Drain Cleaning"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Professional Drain Cleaning in {location.name}, {location.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {location.phone}. Fast and effective drain cleaning for clogged sinks, tubs, and sewer lines in {location.name}—restore smooth drainage, eliminate blockages, and prevent future plumbing issues.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Expert Drain Repair */}
+            <Link href={`/locations/${locationId}/plumber-drain-repair`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Plumber%20Fixing%20Leaking%20Sink%20Pipe%20with%20Wrench.png?updatedAt=1756066955385"
+                  alt="Expert Drain Repair"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Expert Drain Repair in {location.name}, {location.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {location.phone}. We fix damaged or leaking drains with precision in {location.name}—prevent backups, water damage, and ensure a smooth-flowing, reliable plumbing system in your home or business.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Sewer Line Inspection & Replacement */}
+            <Link href={`/locations/${locationId}/plumber-sewer-line-repair`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Old%20Rusty%20Underground%20Pipeline.png?updatedAt=1756066953091"
+                  alt="Sewer Line Inspection & Replacement"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Sewer Line Inspection & Replacement in {location.name}, {location.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {location.phone}. Thorough sewer camera inspections, repairs, and full replacements in {location.name}—ensure proper waste flow, avoid costly backups, and keep your sewer system running smoothly.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Gas Line Installation & Repair */}
+            <Link href={`/locations/${locationId}/plumber-gas-line-repair`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Plumber%20Installing%20Gas%20Line%20in%20Kitchen.png?updatedAt=1756066961834"
+                  alt="Gas Line Installation & Repair"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Gas Line Installation & Repair in {location.name}, {location.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {location.phone}. Safe and code-compliant gas line installations, repairs, and replacements in {location.name}—power your appliances with confidence and protect your property from gas hazards.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Leak Detection & Repair */}
+            <Link href={`/locations/${locationId}/plumber-leak-detection`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/PVC%20Pipe%20Installation%20in%20Soil.png?updatedAt=1756066962271"
+                  alt="Leak Detection & Repair"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Leak Detection & Repair in {location.name}, {location.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {location.phone}. We use advanced leak detection tools to quickly locate and repair hidden water leaks in {location.name}—minimize damage, lower water bills, and keep your plumbing system efficient.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Toilet Repair & Installation */}
+            <Link href={`/locations/${locationId}/plumber-toilet-repair`} className="block">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                <img
+                  src="https://ik.imagekit.io/nang9yead/Plumber%20Using%20Plunger%20on%20Toilet%20Bowl%20worker%20in%20orange%20uniform%20unclogging%20toilet?updatedAt=1756066962119"
+                  alt="Toilet Repair & Installation"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">» Toilet Repair & Installation in {location.name}, {location.state}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Call GD Professional Plumbing at {location.phone}. Fast and reliable toilet plumbing services for clogs, leaks, and replacements in {location.name}—restore full function, improve efficiency, and prevent costly water waste.
+                  </p>
                 </div>
               </div>
             </Link>

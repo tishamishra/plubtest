@@ -54,7 +54,22 @@ export function middleware(request: NextRequest) {
     return NextResponse.rewrite(url);
   }
 
-  // Handle service pages (e.g., /plumber-water-heater-repair) - rewrite to location service page
+  // Block access to main domain service pages on sub-domains to prevent duplicate content
+  const pathSegments = url.pathname.split('/').filter(Boolean);
+  
+  // If trying to access /services/* on sub-domain, redirect to city-specific services page
+  if (pathSegments[0] === 'services' && pathSegments.length === 1) {
+    url.pathname = `/locations/${subdomain}/services`;
+    return NextResponse.rewrite(url);
+  }
+  
+  // If trying to access /services/plumber-* on sub-domain, redirect to city-specific service page
+  if (pathSegments[0] === 'services' && pathSegments.length === 2 && pathSegments[1].startsWith('plumber-')) {
+    url.pathname = `/locations/${subdomain}/${pathSegments[1]}`;
+    return NextResponse.rewrite(url);
+  }
+  
+  // Block direct access to main domain service pages on sub-domains
   const serviceSlugs = [
     'plumber-water-heater-repair',
     'plumber-tankless-water-heater',
@@ -73,10 +88,23 @@ export function middleware(request: NextRequest) {
     'plumber-emergency-service'
   ];
 
-  const pathSegments = url.pathname.split('/').filter(Boolean);
+  // If trying to access main domain service page directly on sub-domain, redirect to city-specific version
   if (pathSegments.length === 1 && serviceSlugs.includes(pathSegments[0])) {
     url.pathname = `/locations/${subdomain}/${pathSegments[0]}`;
     return NextResponse.rewrite(url);
+  }
+
+  // Block access to other main domain pages on sub-domains to prevent duplicate content
+  const blockedPaths = [
+    'states',
+    'api',
+    'robots.txt',
+    'sitemap.xml'
+  ];
+  
+  if (pathSegments.length > 0 && blockedPaths.includes(pathSegments[0])) {
+    // Return 404 for blocked paths on sub-domains
+    return new NextResponse('Not Found', { status: 404 });
   }
 
   // For all other routes, let them go through normally

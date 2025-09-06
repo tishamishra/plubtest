@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import locationsData from '@/data/locations.json';
 import FloatingCTA from '@/components/FloatingCTA';
+import type { Metadata } from 'next';
 
 import LocationTestimonials from '@/components/LocationTestimonials';
 import LocationFAQ from '@/components/LocationFAQ';
@@ -13,9 +14,63 @@ interface LocationPageProps {
   }>;
 }
 
+export async function generateMetadata({ params }: LocationPageProps): Promise<Metadata> {
+  const { location: locationId } = await params;
+  const location = (locationsData as any).locations.find((loc: any) => loc.id === locationId);
+  
+  if (!location) {
+    return {
+      title: 'Local Plumbers | GD Professional Plumbing',
+      description: 'Professional plumbing services across the USA. Licensed, experienced, and affordable for repairs, installs, or maintenance!'
+    };
+  }
+
+  return {
+    title: `Local Plumbers in ${location.name}, ${location.state} Area | GD Professional Plumbing`,
+    description: `Trusted plumbing experts in ${location.name}, ${location.state}. Licensed, experienced, and affordable for repairs, installs, or maintenance! Call (833) 445-0128`,
+    keywords: [
+      `plumber ${location.name}`,
+      `plumbing services ${location.name}`,
+      `emergency plumber ${location.name}`,
+      `local plumber ${location.name}`,
+      `plumber near me ${location.name}`,
+      `plumbing repair ${location.name}`,
+      `water heater repair ${location.name}`,
+      `drain cleaning ${location.name}`,
+      `toilet repair ${location.name}`,
+      `leak detection ${location.name}`,
+      `sewer line repair ${location.name}`,
+      `gas line repair ${location.name}`,
+      `plumbing installation ${location.name}`,
+      `24/7 plumber ${location.name}`,
+      `licensed plumber ${location.name}`,
+      `plumbing contractor ${location.name}`,
+      `residential plumbing ${location.name}`,
+      `commercial plumbing ${location.name}`,
+      `plumbing maintenance ${location.name}`,
+      `plumbing emergency ${location.name}`
+    ],
+    openGraph: {
+      title: `Local Plumbers in ${location.name}, ${location.state} Area | GD Professional Plumbing`,
+      description: `Trusted plumbing experts in ${location.name}, ${location.state}. Licensed, experienced, and affordable for repairs, installs, or maintenance! Call (833) 445-0128`,
+      type: 'website',
+      locale: 'en_US',
+      siteName: 'GD Professional Plumbing'
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `Local Plumbers in ${location.name}, ${location.state} Area | GD Professional Plumbing`,
+      description: `Trusted plumbing experts in ${location.name}, ${location.state}. Licensed, experienced, and affordable for repairs, installs, or maintenance! Call (833) 445-0128`
+    },
+    alternates: {
+      canonical: `https://${location.id}.gdprofessionalplumbing.com/`
+    }
+  };
+}
+
 export default async function LocationPage({ params }: LocationPageProps) {
   const { location: locationId } = await params;
-  const location = locationsData.locations.find(loc => loc.id === locationId);
+  const location = (locationsData as any).locations.find((loc: any) => loc.id === locationId);
   
   if (!location) {
     notFound();

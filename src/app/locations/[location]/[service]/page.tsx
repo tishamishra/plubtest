@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import locationsData from '@/data/locations.json';
+import type { Metadata } from 'next';
 
 interface ServicePageProps {
   params: Promise<{
@@ -646,6 +647,55 @@ const serviceData = {
   }
 };
 
+export async function generateMetadata({ params }: ServicePageProps): Promise<Metadata> {
+  const { location: locationId, service: serviceSlug } = await params;
+  const location = (locationsData as any).locations.find((loc: any) => loc.id === locationId);
+  const serviceInfo = serviceData[serviceSlug as keyof typeof serviceData];
+  
+  if (!location || !serviceInfo) {
+    return {
+      title: 'Plumbing Services | GD Professional Plumbing',
+      description: 'Professional plumbing services across the USA. Licensed, experienced, and affordable for repairs, installs, or maintenance!'
+    };
+  }
+
+  return {
+    title: `${serviceInfo.title} in ${location.name}, ${location.state} | GD Professional Plumbing`,
+    description: `Professional ${serviceInfo.title.toLowerCase()} services in ${location.name}, ${location.state}. ${serviceInfo.description} Call (833) 445-0128 for expert plumbing solutions.`,
+    keywords: [
+      `${serviceInfo.title.toLowerCase()} ${location.name}`,
+      `plumber ${location.name}`,
+      `plumbing services ${location.name}`,
+      `emergency plumber ${location.name}`,
+      `local plumber ${location.name}`,
+      `plumber near me ${location.name}`,
+      `plumbing repair ${location.name}`,
+      `24/7 plumber ${location.name}`,
+      `licensed plumber ${location.name}`,
+      `plumbing contractor ${location.name}`,
+      `residential plumbing ${location.name}`,
+      `commercial plumbing ${location.name}`,
+      `plumbing maintenance ${location.name}`,
+      `plumbing emergency ${location.name}`
+    ],
+    openGraph: {
+      title: `${serviceInfo.title} in ${location.name}, ${location.state} | GD Professional Plumbing`,
+      description: `Professional ${serviceInfo.title.toLowerCase()} services in ${location.name}, ${location.state}. ${serviceInfo.description} Call (833) 445-0128 for expert plumbing solutions.`,
+      type: 'website',
+      locale: 'en_US',
+      siteName: 'GD Professional Plumbing'
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${serviceInfo.title} in ${location.name}, ${location.state} | GD Professional Plumbing`,
+      description: `Professional ${serviceInfo.title.toLowerCase()} services in ${location.name}, ${location.state}. ${serviceInfo.description} Call (833) 445-0128 for expert plumbing solutions.`
+    },
+    alternates: {
+      canonical: `https://${location.id}.gdprofessionalplumbing.com/${serviceSlug}`
+    }
+  };
+}
+
 export default async function ServicePage({ params }: ServicePageProps) {
   const { location, service } = await params;
   
@@ -792,7 +842,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
               if (serviceSlug === service) return null;
               
               return (
-                <Link key={serviceSlug} href={`https://${location.toLowerCase()}.gdprofessionalplumbing.com/${serviceSlug}`} className="block">
+                <Link key={serviceSlug} href={`/services/${serviceSlug}`} className="block">
                   <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer border border-gray-200">
                     <img
                       src={serviceInfo.image}
@@ -830,7 +880,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
               Call {safeLocation.phone}
             </a>
             <Link
-              href={`https://${location.toLowerCase()}.gdprofessionalplumbing.com`}
+              href={`/services`}
               className="border-2 border-white text-white font-bold px-8 py-4 rounded-lg text-xl hover:bg-white hover:text-[#1c7bc8] transition-colors duration-300"
             >
               View All Services
@@ -840,4 +890,4 @@ export default async function ServicePage({ params }: ServicePageProps) {
       </section>
     </div>
   );
-} 
+}

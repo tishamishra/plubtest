@@ -193,7 +193,7 @@ export default async function ServicesPage({ params }: LocationPageProps) {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Water Heater Repair and Installation */}
-            <Link href={`/locations/${locationId}/plumber-water-heater-repair`} className="block">
+            <Link href={`/plumber-water-heater-repair`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://ik.imagekit.io/nang9yead/Plumber%20Fixing%20Leaking%20Sink%20Pipe%20with%20Wrench.png?updatedAt=1756066955385"
@@ -210,7 +210,7 @@ export default async function ServicesPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Tankless Water Heater Installation */}
-            <Link href={`/locations/${locationId}/plumber-tankless-water-heater`} className="block">
+            <Link href={`/plumber-tankless-water-heater`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://ik.imagekit.io/nang9yead/Worker%20Adjusting%20Water%20Filtration%20System%20Valves?updatedAt=1756066968225"
@@ -227,7 +227,7 @@ export default async function ServicesPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Water Recirculation Pump */}
-            <Link href={`/locations/${locationId}/plumber-water-recirculation-pump`} className="block">
+            <Link href={`/plumber-water-recirculation-pump`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://ik.imagekit.io/nang9yead/Maintenance%20Worker%20Adjusting%20Copper%20Plumbing%20Pipes.png?updatedAt=1756066948233"
@@ -244,7 +244,7 @@ export default async function ServicesPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Faucets & Sinks */}
-            <Link href={`/locations/${locationId}/plumber-faucet-sink-repair`} className="block">
+            <Link href={`/plumber-faucet-sink-repair`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://ik.imagekit.io/nang9yead/Smiling%20Plumber%20Repairing%20Bathroom%20Sink%20Pipe.png?updatedAt=1756066965094"
@@ -261,7 +261,7 @@ export default async function ServicesPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Water Conservation Plumbing */}
-            <Link href={`/locations/${locationId}/plumber-water-conservation`} className="block">
+            <Link href={`/plumber-water-conservation`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://ik.imagekit.io/nang9yead/Plumbers%20Installing%20Wall-Mounted%20Water%20Tap?updatedAt=1756066963229"
@@ -278,7 +278,7 @@ export default async function ServicesPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Custom Bathroom Renovation */}
-            <Link href={`/locations/${locationId}/plumber-bathroom-renovation`} className="block">
+            <Link href={`/plumber-bathroom-renovation`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://ik.imagekit.io/nang9yead/young%20female%20plumber%20fixing%20?updatedAt=1756066968835"
@@ -295,7 +295,7 @@ export default async function ServicesPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Water System Installation & Repair */}
-            <Link href={`/locations/${locationId}/plumber-water-system-repair`} className="block">
+            <Link href={`/plumber-water-system-repair`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://ik.imagekit.io/nang9yead/Industrial%20HVAC%20Technician%20Inspection.png?updatedAt=1756066941834"
@@ -312,7 +312,7 @@ export default async function ServicesPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Slab Leak Detection & Repair */}
-            <Link href={`/locations/${locationId}/plumber-slab-leak-repair`} className="block">
+            <Link href={`/plumber-slab-leak-repair`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://ik.imagekit.io/nang9yead/Old%20Rusty%20Pipe%20Dripping%20Water.png?updatedAt=1756066951741"
@@ -329,7 +329,7 @@ export default async function ServicesPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Sump Pump Installation & Repair */}
-            <Link href={`/locations/${locationId}/plumber-sump-pump-repair`} className="block">
+            <Link href={`/plumber-sump-pump-repair`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://ik.imagekit.io/nang9yead/Plumber%20Installing%20Water%20Pump%20in%20Basement.png?updatedAt=1756066964034"
@@ -346,7 +346,7 @@ export default async function ServicesPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Professional Drain Cleaning */}
-            <Link href={`/locations/${locationId}/plumber-drain-cleaning`} className="block">
+            <Link href={`/plumber-drain-cleaning`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://ik.imagekit.io/nang9yead/plumber%20clearing%20blocked%20sink%20with%20water?updatedAt=1756066954284"
@@ -363,7 +363,7 @@ export default async function ServicesPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Expert Drain Repair */}
-            <Link href={`/locations/${locationId}/plumber-drain-repair`} className="block">
+            <Link href={`/plumber-drain-repair`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://ik.imagekit.io/nang9yead/Plumber%20Fixing%20Leaking%20Sink%20Pipe%20with%20Wrench.png?updatedAt=1756066955385"
@@ -380,7 +380,7 @@ export default async function ServicesPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Sewer Line Inspection & Replacement */}
-            <Link href={`/locations/${locationId}/plumber-sewer-line-repair`} className="block">
+            <Link href={`/plumber-sewer-line-repair`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://ik.imagekit.io/nang9yead/Old%20Rusty%20Underground%20Pipeline.png?updatedAt=1756066953091"
@@ -397,7 +397,7 @@ export default async function ServicesPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Gas Line Installation & Repair */}
-            <Link href={`/locations/${locationId}/plumber-gas-line-repair`} className="block">
+            <Link href={`/plumber-gas-line-repair`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://ik.imagekit.io/nang9yead/Plumber%20Installing%20Gas%20Line%20in%20Kitchen.png?updatedAt=1756066961834"
@@ -414,7 +414,7 @@ export default async function ServicesPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Leak Detection & Repair */}
-            <Link href={`/locations/${locationId}/plumber-leak-detection`} className="block">
+            <Link href={`/plumber-leak-detection`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://ik.imagekit.io/nang9yead/PVC%20Pipe%20Installation%20in%20Soil.png?updatedAt=1756066962271"
@@ -431,7 +431,7 @@ export default async function ServicesPage({ params }: LocationPageProps) {
             </Link>
 
             {/* Toilet Repair & Installation */}
-            <Link href={`/locations/${locationId}/plumber-toilet-repair`} className="block">
+            <Link href={`/plumber-toilet-repair`} className="block">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <img
                   src="https://ik.imagekit.io/nang9yead/Plumber%20Using%20Plunger%20on%20Toilet%20Bowl%20worker%20in%20orange%20uniform%20unclogging%20toilet?updatedAt=1756066962119"

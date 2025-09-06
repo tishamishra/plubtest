@@ -10,12 +10,31 @@ interface LocationData {
   name: string;
   state: string;
   fullName: string;
+  description: string;
   phone: string;
-  address: string;
-  city: string;
-  zip: string;
-  lat: number;
-  lng: number;
+  heroTitle: string;
+  heroSubtitle: string;
+  services: Array<{
+    title: string;
+    description: string;
+    icon: string;
+  }>;
+  areas: string[];
+  zipCodes: string[];
+  image: string;
+  meta: {
+    title: string;
+    description: string;
+  };
+  faqs: Array<{
+    question: string;
+    answer: string;
+  }>;
+  testimonials: Array<{
+    name: string;
+    text: string;
+    location: string;
+  }>;
 }
 
 interface LocationsData {

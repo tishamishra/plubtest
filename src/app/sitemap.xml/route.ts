@@ -12,9 +12,9 @@ export async function GET() {
     subdomain = host.replace('.gdprofessionalplumbing.com', '')
   }
   
-  // If it's the main domain, return 404 (main domain uses sitemap-main.xml)
+  // If it's the main domain, redirect to sitemap-main.xml
   if (subdomain === 'www' || subdomain === 'gdprofessionalplumbing' || !subdomain) {
-    return new NextResponse('Not Found', { status: 404 })
+    return NextResponse.redirect('https://www.gdprofessionalplumbing.com/sitemap-main.xml', 301)
   }
   
   const serviceSlugs = [

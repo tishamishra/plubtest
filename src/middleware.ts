@@ -102,8 +102,7 @@ export function middleware(request: NextRequest) {
   const blockedPaths = [
     'states',
     'api',
-    'robots.txt',
-    'sitemap.xml'
+    'robots.txt'
   ];
   
   if (pathSegments.length > 0 && blockedPaths.includes(pathSegments[0])) {

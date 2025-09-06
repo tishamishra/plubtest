@@ -2,45 +2,45 @@ import { MetadataRoute } from 'next'
 import locationsData from '@/data/locations.json'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // ABSOLUTELY FORCE the correct domain - NO affinsight.com references
+  // HARDCODE the correct domain - NO environment variables, NO affinsight.com
   const baseUrl = 'https://www.gdprofessionalplumbing.com'
   const currentDate = new Date().toISOString()
 
-  // Main domain pages
+  // Main domain pages - HARDCODED URLs
   const mainPages = [
     {
-      url: baseUrl,
+      url: 'https://www.gdprofessionalplumbing.com',
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/services`,
+      url: 'https://www.gdprofessionalplumbing.com/services',
       lastModified: currentDate,
       changeFrequency: 'weekly' as const,
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/about`,
+      url: 'https://www.gdprofessionalplumbing.com/about',
       lastModified: currentDate,
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/contact`,
+      url: 'https://www.gdprofessionalplumbing.com/contact',
       lastModified: currentDate,
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/locations`,
+      url: 'https://www.gdprofessionalplumbing.com/locations',
       lastModified: currentDate,
       changeFrequency: 'weekly' as const,
       priority: 0.9,
     },
   ]
 
-  // Main domain service pages
+  // Main domain service pages - HARDCODED URLs
   const servicePages = [
     'plumber-water-heater-repair',
     'plumber-tankless-water-heater',
@@ -58,13 +58,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'plumber-toilet-repair',
     'plumber-emergency-service'
   ].map(service => ({
-    url: `${baseUrl}/services/${service}`,
+    url: `https://www.gdprofessionalplumbing.com/services/${service}`,
     lastModified: currentDate,
     changeFrequency: 'weekly' as const,
     priority: 0.8,
   }))
 
-  // Location pages (sub-domains) - FORCE gdprofessionalplumbing.com
+  // Location pages (sub-domains) - HARDCODED gdprofessionalplumbing.com
   const locationPages = (locationsData as any).locations.map((location: any) => ({
     url: `https://${location.id}.gdprofessionalplumbing.com`,
     lastModified: currentDate,
@@ -72,7 +72,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }))
 
-  // Location-specific service pages - FORCE gdprofessionalplumbing.com
+  // Location-specific service pages - HARDCODED gdprofessionalplumbing.com
   const locationServicePages = (locationsData as any).locations.flatMap((location: any) =>
     servicePages.map(service => ({
       url: `https://${location.id}.gdprofessionalplumbing.com/services/${service.url.split('/').pop()}`,
@@ -82,7 +82,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   )
 
-  // Location-specific about, contact, and services pages - FORCE gdprofessionalplumbing.com
+  // Location-specific about, contact, and services pages - HARDCODED gdprofessionalplumbing.com
   const locationSpecificPages = (locationsData as any).locations.flatMap((location: any) => [
     {
       url: `https://${location.id}.gdprofessionalplumbing.com/about`,

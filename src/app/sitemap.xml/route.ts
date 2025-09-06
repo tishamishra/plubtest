@@ -16,6 +16,10 @@ export async function GET() {
   if (subdomain === 'www' || subdomain === 'gdprofessionalplumbing' || !subdomain) {
     return NextResponse.redirect('https://www.gdprofessionalplumbing.com/sitemap-main.xml', 301)
   }
+
+  // Check if this is a state subdomain (2-letter state codes)
+  const stateCodes = ['ca', 'ny', 'tx', 'fl', 'il', 'pa', 'oh', 'ga', 'nc', 'mi', 'nj', 'va', 'wa', 'az', 'ma', 'tn', 'in', 'mo', 'md', 'co', 'mn', 'wi', 'sc', 'al', 'la', 'ky', 'or', 'ok', 'ct', 'ut', 'ia', 'nv', 'ar', 'ms', 'ks', 'ne', 'id', 'nh', 'me', 'nm', 'ri', 'hi', 'mt', 'de', 'sd', 'nd', 'ak', 'vt', 'wy', 'wv'];
+  const isStateSubdomain = stateCodes.includes(subdomain.toLowerCase());
   
   const serviceSlugs = [
     'plumber-water-heater-repair',

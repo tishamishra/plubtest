@@ -24,6 +24,10 @@ export function middleware(request: NextRequest) {
     }
   }
 
+  // Check if this is a state subdomain (2-letter state codes)
+  const stateCodes = ['ca', 'ny', 'tx', 'fl', 'il', 'pa', 'oh', 'ga', 'nc', 'mi', 'nj', 'va', 'wa', 'az', 'ma', 'tn', 'in', 'mo', 'md', 'co', 'mn', 'wi', 'sc', 'al', 'la', 'ky', 'or', 'ok', 'ct', 'ut', 'ia', 'nv', 'ar', 'ms', 'ks', 'ne', 'id', 'nh', 'me', 'nm', 'ri', 'hi', 'mt', 'de', 'sd', 'nd', 'ak', 'vt', 'wy', 'wv'];
+  const isStateSubdomain = stateCodes.includes(subdomain.toLowerCase());
+
   // If it's www or the root domain, let it go normally
   if (subdomain === 'www' || subdomain === 'gdprofessionalplumbing' || subdomain === 'localhost') {
     return NextResponse.next();
@@ -34,27 +38,43 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // Handle homepage (/) - rewrite to location page
+  // Handle homepage (/) - rewrite to appropriate page
   if (url.pathname === '/') {
-    url.pathname = `/locations/${subdomain}`;
+    if (isStateSubdomain) {
+      url.pathname = `/states/${subdomain}`;
+    } else {
+      url.pathname = `/locations/${subdomain}`;
+    }
     return NextResponse.rewrite(url);
   }
 
-  // Handle services page (/services) - rewrite to location services page
+  // Handle services page (/services) - rewrite to appropriate services page
   if (url.pathname === '/services') {
-    url.pathname = `/locations/${subdomain}/services`;
+    if (isStateSubdomain) {
+      url.pathname = `/states/${subdomain}/services`;
+    } else {
+      url.pathname = `/locations/${subdomain}/services`;
+    }
     return NextResponse.rewrite(url);
   }
 
-  // Handle about page (/about) - rewrite to location about page
+  // Handle about page (/about) - rewrite to appropriate about page
   if (url.pathname === '/about') {
-    url.pathname = `/locations/${subdomain}/about`;
+    if (isStateSubdomain) {
+      url.pathname = `/states/${subdomain}/about`;
+    } else {
+      url.pathname = `/locations/${subdomain}/about`;
+    }
     return NextResponse.rewrite(url);
   }
 
-  // Handle contact page (/contact) - rewrite to location contact page
+  // Handle contact page (/contact) - rewrite to appropriate contact page
   if (url.pathname === '/contact') {
-    url.pathname = `/locations/${subdomain}/contact`;
+    if (isStateSubdomain) {
+      url.pathname = `/states/${subdomain}/contact`;
+    } else {
+      url.pathname = `/locations/${subdomain}/contact`;
+    }
     return NextResponse.rewrite(url);
   }
 
@@ -92,9 +112,13 @@ export function middleware(request: NextRequest) {
     'plumber-emergency-service'
   ];
 
-  // If trying to access main domain service page directly on sub-domain, redirect to city-specific version
+  // If trying to access main domain service page directly on sub-domain, redirect to appropriate version
   if (pathSegments.length === 1 && serviceSlugs.includes(pathSegments[0])) {
-    url.pathname = `/locations/${subdomain}/${pathSegments[0]}`;
+    if (isStateSubdomain) {
+      url.pathname = `/states/${subdomain}/${pathSegments[0]}`;
+    } else {
+      url.pathname = `/locations/${subdomain}/${pathSegments[0]}`;
+    }
     return NextResponse.rewrite(url);
   }
 

@@ -4,14 +4,9 @@ export function middleware(request: NextRequest) {
   const hostname = request.headers.get('host') || '';
   const url = request.nextUrl;
 
-  // Redirect to www version for main domains (SEO best practice)
+  // Redirect to www version for main domain (SEO best practice)
   if (hostname === 'gdprofessionalplumbing.com') {
     url.hostname = 'www.gdprofessionalplumbing.com';
-    return NextResponse.redirect(url, 301); // Permanent redirect
-  }
-  
-  if (hostname === 'affinsight.com') {
-    url.hostname = 'www.affinsight.com';
     return NextResponse.redirect(url, 301); // Permanent redirect
   }
 
@@ -21,8 +16,6 @@ export function middleware(request: NextRequest) {
   // Handle gdprofessionalplumbing.com domain
   if (hostname.includes('.gdprofessionalplumbing.com')) {
     subdomain = hostname.replace('.gdprofessionalplumbing.com', '');
-  } else if (hostname.includes('.affinsight.com')) {
-    subdomain = hostname.replace('.affinsight.com', '');
   } else if (hostname.includes('localhost')) {
     // For local development, extract subdomain from localhost
     const parts = hostname.split('.');
@@ -32,7 +25,7 @@ export function middleware(request: NextRequest) {
   }
 
   // If it's www or the root domain, let it go normally
-  if (subdomain === 'www' || subdomain === 'gdprofessionalplumbing' || subdomain === 'affinsight' || subdomain === 'localhost') {
+  if (subdomain === 'www' || subdomain === 'gdprofessionalplumbing' || subdomain === 'localhost') {
     return NextResponse.next();
   }
 

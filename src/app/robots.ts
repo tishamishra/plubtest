@@ -1,14 +1,17 @@
-import { MetadataRoute } from 'next';
+import { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://affinsight.com';
-  
   return {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/api/', '/_next/'],
+      disallow: [
+        '/api/',
+        '/_next/',
+        '/admin/',
+        '/private/',
+      ],
     },
-    sitemap: `${baseUrl}/sitemap.xml`,
-  };
-} 
+    sitemap: 'https://www.gdprofessionalplumbing.com/sitemap.xml',
+  }
+}

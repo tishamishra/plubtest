@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 import locationsData from '@/data/locations.json'
 
-// Define proper types for location data
+// Define proper types for location data based on actual JSON structure
 interface LocationData {
   id: string;
   name: string;
@@ -22,7 +22,6 @@ interface LocationData {
   meta: {
     title: string;
     description: string;
-    keywords: string[];
   };
   faqs: Array<{
     question: string;

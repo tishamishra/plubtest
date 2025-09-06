@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: LocationPageProps): Promise<M
 
   return {
     title: `Local Plumbers in ${location.name}, ${location.state} Area | GD Professional Plumbing`,
-    description: `Trusted plumbing experts in ${location.name}, ${location.state}. Licensed, experienced, and affordable for repairs, installs, or maintenance! Call (833) 445-0128`,
+    description: `Need plumbing help in ${location.name}? GD Professional Plumbing offers expert drain cleaning, water heater repair & 24/7 emergency plumber services. Call today!`,
     keywords: [
       `plumber ${location.name}`,
       `plumbing services ${location.name}`,
@@ -89,7 +89,7 @@ export async function generateMetadata({ params }: LocationPageProps): Promise<M
     ],
     openGraph: {
       title: `Local Plumbers in ${location.name}, ${location.state} Area | GD Professional Plumbing`,
-      description: `Trusted plumbing experts in ${location.name}, ${location.state}. Licensed, experienced, and affordable for repairs, installs, or maintenance! Call (833) 445-0128`,
+      description: `Need plumbing help in ${location.name}? GD Professional Plumbing offers expert drain cleaning, water heater repair & 24/7 emergency plumber services. Call today!`,
       type: 'website',
       locale: 'en_US',
       siteName: 'GD Professional Plumbing'
@@ -97,7 +97,7 @@ export async function generateMetadata({ params }: LocationPageProps): Promise<M
     twitter: {
       card: 'summary_large_image',
       title: `Local Plumbers in ${location.name}, ${location.state} Area | GD Professional Plumbing`,
-      description: `Trusted plumbing experts in ${location.name}, ${location.state}. Licensed, experienced, and affordable for repairs, installs, or maintenance! Call (833) 445-0128`
+      description: `Need plumbing help in ${location.name}? GD Professional Plumbing offers expert drain cleaning, water heater repair & 24/7 emergency plumber services. Call today!`
     },
     alternates: {
       canonical: `https://${location.id}.gdprofessionalplumbing.com/`

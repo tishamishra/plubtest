@@ -1,4 +1,5 @@
 import { NextResponse, NextRequest } from 'next/server';
+import { isValidSubdomain } from './utils/subdomain';
 
 export function middleware(request: NextRequest) {
   const hostname = request.headers.get('host') || '';
@@ -93,8 +94,15 @@ export function middleware(request: NextRequest) {
 
   // Block access to /services/plumber-* on sub-domains to prevent duplicate content
   if (pathSegments[0] === 'services' && pathSegments.length === 2 && pathSegments[1].startsWith('plumber-')) {
-    // Return 404 for /services/plumber-* URLs on subdomains
-    return new NextResponse('Not Found', { status: 404 });
+    // Redirect to main domain for /services/plumber-* URLs on subdomains
+    if (isStateSubdomain) {
+      url.hostname = 'www.gdprofessionalplumbing.com';
+      url.pathname = `/services/${pathSegments[1]}`;
+    } else {
+      url.hostname = 'www.gdprofessionalplumbing.com';
+      url.pathname = `/services/${pathSegments[1]}`;
+    }
+    return NextResponse.redirect(url, 301);
   }
   
   // Block direct access to main domain service pages on sub-domains
@@ -134,8 +142,17 @@ export function middleware(request: NextRequest) {
   ];
   
   if (pathSegments.length > 0 && blockedPaths.includes(pathSegments[0])) {
-    // Return 404 for blocked paths on sub-domains
-    return new NextResponse('Not Found', { status: 404 });
+    // Redirect to main domain for blocked paths on sub-domains
+    url.hostname = 'www.gdprofessionalplumbing.com';
+    return NextResponse.redirect(url, 301);
+  }
+
+  // Handle invalid subdomains - redirect to main domain
+  if (subdomain && !isStateSubdomain) {
+    if (!isValidSubdomain(subdomain)) {
+      url.hostname = 'www.gdprofessionalplumbing.com';
+      return NextResponse.redirect(url, 301);
+    }
   }
 
   // For all other routes, let them go through normally

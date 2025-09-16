@@ -15,11 +15,11 @@ export default function GlobalError({
   }, [error]);
 
   // For 404 errors, redirect to main domain
-  if (error.message.includes('404') || error.message.includes('Not Found')) {
-    useEffect(() => {
+  useEffect(() => {
+    if (error.message.includes('404') || error.message.includes('Not Found')) {
       window.location.href = 'https://www.gdprofessionalplumbing.com';
-    }, []);
-  }
+    }
+  }, [error]);
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center items-center px-4">
